@@ -1,0 +1,4 @@
+# Local LAN hosting helpers (not part of the GitHub Pages deployment)
+LAN-HOSTING.md
+lan-server.js
+start-lan-server.bat
