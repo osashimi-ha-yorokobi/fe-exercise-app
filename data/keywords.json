@@ -1888,7 +1888,7 @@
     },
     {
       "id": "KW122",
-      "keyword": "ラスタ画像",
+      "keyword": "ラスターデータ",
       "version": "9.0",
       "field": "UX・UI",
       "subField": "メディア技術",
@@ -1904,7 +1904,7 @@
     },
     {
       "id": "KW123",
-      "keyword": "ベクタ画像",
+      "keyword": "ベクターデータ",
       "version": "9.0",
       "field": "UX・UI",
       "subField": "メディア技術",
@@ -2448,7 +2448,7 @@
     },
     {
       "id": "KW157",
-      "keyword": "トレーサビリティマトリックス",
+      "keyword": "トレーサビリティマトリクス",
       "version": "9.0",
       "field": "開発技術・サービスマネジメント",
       "subField": "設計・開発・運用",

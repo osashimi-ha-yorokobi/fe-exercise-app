@@ -98,13 +98,12 @@
             <button class="mode-button is-active" data-mode="all"><span>全ての問題</span><b id="count-all">—</b></button>
             <button class="mode-button" data-mode="wrong"><span>間違えた問題</span><b id="count-wrong">0</b></button>
             <button class="mode-button" data-mode="unanswered"><span>未回答問題</span><b id="count-unanswered">—</b></button>
-            <button class="mode-button" data-mode="review"><span>後で見直す</span><b id="count-review">0</b></button>
           </nav>
         </section>
 
         <section class="side-section filter-stack">
           <p class="side-label">絞り込み</p>
-          <label class="field-label" for="field-filter">分野</label>
+          <label class="field-label" id="field-label" for="field-filter">分野</label>
           <div class="select-wrap">
             <select id="field-filter"><option value="all">すべての分野</option></select>
           </div>
@@ -150,10 +149,6 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
           </button>
           <div class="topbar-context">
-            <div class="subject-tabs" aria-label="科目選択">
-              <button class="subject-tab is-active" data-subject="A">科目 A</button>
-              <button class="subject-tab" data-subject="B">科目 B</button>
-            </div>
             <div class="top-title">
               <span class="live-dot" aria-hidden="true"></span>
               <span id="top-context">新出範囲ドリル</span>
@@ -161,7 +156,7 @@
           </div>
           <div class="top-actions">
             <span class="save-state" id="save-state">この端末に自動保存</span>
-            <button class="ghost-button compact" id="finish-button">採点する</button>
+            <button class="ghost-button compact" id="finish-button">総合評価</button>
           </div>
         </header>
 
@@ -198,7 +193,6 @@
     </div>
 
     <div class="scrim" id="scrim"></div>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script src="js/questions.js"></script>
     <script src="js/questions-b.js"></script>

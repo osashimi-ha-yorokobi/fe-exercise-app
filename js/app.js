@@ -3,6 +3,13 @@
 
   const STORAGE_KEY = "fe-update-cbt-progress-v1";
   const letters = ["ア", "イ", "ウ", "エ"];
+  const SUBJECT_B_TAG_ORDER = [
+    "線形探索・集計系",
+    "探索・二分探索系",
+    "整列（ソート）系",
+    "データ構造操作系（スタック/キュー/リスト）",
+    "再帰・木構造系"
+  ];
   const questionBanks = {
     A: [
       ...(Array.isArray(window.FE_QUESTIONS) ? window.FE_QUESTIONS : []),
@@ -22,13 +29,13 @@
     startCountLibrary: document.querySelector("#start-count-library"),
     home: document.querySelector("#home-button"),
     stage: document.querySelector("#question-stage"),
+    fieldLabel: document.querySelector("#field-label"),
     field: document.querySelector("#field-filter"),
     search: document.querySelector("#keyword-search"),
     applyFilter: document.querySelector("#apply-filter"),
     shuffleQuestions: document.querySelector("#shuffle-questions"),
     shuffleChoices: document.querySelector("#shuffle-choices"),
     modeList: document.querySelector("#mode-list"),
-    subjectTabs: document.querySelectorAll("[data-subject]"),
     topContext: document.querySelector("#top-context"),
     finish: document.querySelector("#finish-button"),
     coverageValue: document.querySelector("#coverage-value"),
@@ -42,17 +49,14 @@
     countAll: document.querySelector("#count-all"),
     countWrong: document.querySelector("#count-wrong"),
     countUnanswered: document.querySelector("#count-unanswered"),
-    countReview: document.querySelector("#count-review"),
     saveState: document.querySelector("#save-state"),
     menu: document.querySelector("#menu-button"),
     sidebar: document.querySelector("#sidebar"),
-    scrim: document.querySelector("#scrim"),
-    toast: document.querySelector("#toast")
+    scrim: document.querySelector("#scrim")
   };
 
   const emptyStore = () => ({
     stats: {},
-    reviews: {},
     settings: { shuffleQuestions: false, shuffleChoices: false },
     activeSubject: "A",
     lastSession: null
@@ -61,7 +65,9 @@
   const loadStore = () => {
     try {
       const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      return { ...emptyStore(), ...saved, settings: { ...emptyStore().settings, ...(saved?.settings || {}) } };
+      const savedStore = { ...(saved || {}) };
+      delete savedStore.reviews;
+      return { ...emptyStore(), ...savedStore, settings: { ...emptyStore().settings, ...(saved?.settings || {}) } };
     } catch (_) {
       return emptyStore();
     }
@@ -145,14 +151,6 @@
     }
   };
 
-  let toastTimer;
-  const showToast = (message) => {
-    clearTimeout(toastTimer);
-    elements.toast.textContent = message;
-    elements.toast.classList.add("is-visible");
-    toastTimer = setTimeout(() => elements.toast.classList.remove("is-visible"), 2200);
-  };
-
   const closeMenu = () => {
     elements.sidebar.classList.remove("is-open");
     elements.scrim.classList.remove("is-open");
@@ -195,8 +193,7 @@
       const stats = app.store.stats[question.id];
       const matchesMode = app.mode === "all"
         || (app.mode === "wrong" && stats?.lastResult === false)
-        || (app.mode === "unanswered" && !stats)
-        || (app.mode === "review" && app.store.reviews[question.id]);
+        || (app.mode === "unanswered" && !stats);
       const matchesField = field === "all" || question.field === field;
       const haystack = `${question.keyword} ${question.field} ${question.subField}`.toLocaleLowerCase("ja-JP");
       return matchesMode && matchesField && (!query || haystack.includes(query));
@@ -260,8 +257,6 @@
 
     const feedbackHtml = answer ? renderFeedback(question, answer, presented) : "";
     const progress = ((app.position + 1) / app.queue.length) * 100;
-    const isReviewed = Boolean(app.store.reviews[question.id]);
-
     elements.stage.innerHTML = `
       <article class="question-card">
         <header class="question-head">
@@ -282,7 +277,6 @@
           ${question.code ? `<pre class="code-block"><code>${escapeHtml(question.code)}</code></pre>` : ""}
           <div class="choices" role="radiogroup" aria-label="解答選択肢">${choicesHtml}</div>
           <div class="answer-actions">
-            <label class="review-check"><input id="review-current" type="checkbox" ${isReviewed ? "checked" : ""} /> 後で見直す</label>
             <button class="primary-button" id="submit-answer" ${selectedOriginal === undefined || answer ? "disabled" : ""}>${answer ? "回答済み" : "回答する"}</button>
           </div>
           ${feedbackHtml}
@@ -325,8 +319,7 @@
     const labelsByMode = {
       all: "条件に合う問題がありません",
       wrong: "復習待ちの問題はありません",
-      unanswered: "未回答の問題はありません",
-      review: "見直し問題はありません"
+      unanswered: "未回答の問題はありません"
     };
     elements.stage.innerHTML = `
       <section class="empty-card">
@@ -349,7 +342,6 @@
       choice.addEventListener("click", () => selectChoice(Number(choice.dataset.choice)));
     });
     document.querySelector("#submit-answer")?.addEventListener("click", submitAnswer);
-    document.querySelector("#review-current")?.addEventListener("change", (event) => setReview(event.target.checked));
     document.querySelector("#previous-question")?.addEventListener("click", () => goTo(app.position - 1));
     document.querySelector("#next-question")?.addEventListener("click", () => {
       if (app.position === app.queue.length - 1) showResults();
@@ -387,18 +379,9 @@
     requestAnimationFrame(() => document.querySelector(".feedback")?.focus({ preventScroll: true }));
   };
 
-  const setReview = (checked) => {
-    const question = currentQuestion();
-    if (!question) return;
-    if (checked) app.store.reviews[question.id] = true;
-    else delete app.store.reviews[question.id];
-    saveStore();
-    updateModeCounts();
-    showToast(checked ? "見直しリストに追加しました" : "見直しリストから外しました");
-  };
-
   const goTo = (position) => {
     if (position < 0 || position >= app.queue.length) return;
+    app.showingResult = false;
     app.position = position;
     renderQuestion();
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -421,11 +404,9 @@
     const stats = app.store.stats;
     const wrong = questions.filter((question) => stats[question.id]?.lastResult === false).length;
     const unanswered = questions.filter((question) => !stats[question.id]).length;
-    const review = questions.filter((question) => app.store.reviews[question.id]).length;
     elements.countAll.textContent = questions.length;
     elements.countWrong.textContent = wrong;
     elements.countUnanswered.textContent = unanswered;
-    elements.countReview.textContent = review;
   };
 
   const showResults = () => {
@@ -462,7 +443,7 @@
           </div>
         </header>
         <div class="result-body">
-          <h3>分野別の正答率</h3>
+          <h3>${app.subject === "B" ? "タグ別" : "分野別"}の正答率</h3>
           <div class="field-results">${fieldsHtml || "<p>解答データがありません。</p>"}</div>
           <div class="result-actions">
             <button class="primary-button" id="review-wrong" ${wrong === 0 ? "disabled" : ""}>間違えた問題を復習</button>
@@ -487,23 +468,22 @@
     });
   };
 
-  const syncSubjectButtons = () => {
-    elements.subjectTabs.forEach((button) => {
-      const active = button.dataset.subject === app.subject;
-      button.classList.toggle("is-active", active);
-      button.setAttribute("aria-pressed", String(active));
-    });
+  const syncSubjectContext = () => {
     elements.topContext.textContent = app.subject === "B"
       ? "アルゴリズム演習・情報セキュリティ除外"
       : "新出範囲ドリル";
+    elements.fieldLabel.textContent = app.subject === "B" ? "タグ" : "分野";
     elements.search.placeholder = app.subject === "B"
       ? "例：二分探索、スタック"
       : "例：LLM、SBOM";
   };
 
   const populateFields = () => {
-    const fields = [...new Set(questions.map((question) => question.field))].sort((a, b) => a.localeCompare(b, "ja"));
-    elements.field.innerHTML = '<option value="all">すべての分野</option>';
+    const fields = [...new Set(questions.map((question) => question.field))];
+    fields.sort((a, b) => app.subject === "B"
+      ? SUBJECT_B_TAG_ORDER.indexOf(a) - SUBJECT_B_TAG_ORDER.indexOf(b)
+      : a.localeCompare(b, "ja"));
+    elements.field.innerHTML = `<option value="all">${app.subject === "B" ? "すべてのタグ" : "すべての分野"}</option>`;
     elements.field.insertAdjacentHTML("beforeend", fields.map((field) => `<option value="${escapeHtml(field)}">${escapeHtml(field)}</option>`).join(""));
   };
 
@@ -559,7 +539,7 @@
     app.mode = "all";
     elements.search.value = "";
     populateFields();
-    syncSubjectButtons();
+    syncSubjectContext();
     syncModeButtons();
     updateModeCounts();
     updateCoverage();
@@ -575,12 +555,6 @@
       });
     });
     elements.home.addEventListener("click", showStartScreen);
-    elements.subjectTabs.forEach((button) => {
-      button.addEventListener("click", () => {
-        switchSubject(button.dataset.subject);
-        updateLocation();
-      });
-    });
     elements.modeList.addEventListener("click", (event) => {
       const button = event.target.closest("[data-mode]");
       if (!button) return;
@@ -602,6 +576,10 @@
     });
     elements.finish.addEventListener("click", () => {
       if (!app.queue.length) return;
+      if (app.showingResult) {
+        goTo(app.position);
+        return;
+      }
       showResults();
     });
     elements.menu.addEventListener("click", () => {
@@ -653,8 +631,8 @@
         type: "object",
         properties: {
           subject: { type: "string", enum: ["A", "B"] },
-          mode: { type: "string", enum: ["all", "wrong", "unanswered", "review"] },
-          field: { type: "string", description: "表示されている分野名。省略時は全分野。" },
+          mode: { type: "string", enum: ["all", "wrong", "unanswered"] },
+          field: { type: "string", description: "科目Aの分野名又は科目Bのタグ名。省略時は全件。" },
           keyword: { type: "string", description: "対象キーワードの部分一致検索。" },
           shuffleQuestions: { type: "boolean" },
           shuffleChoices: { type: "boolean" }
@@ -663,7 +641,7 @@
       },
       annotations: { readOnlyHint: false, untrustedContentHint: false },
       execute(input = {}) {
-        const allowedModes = new Set(["all", "wrong", "unanswered", "review"]);
+        const allowedModes = new Set(["all", "wrong", "unanswered"]);
         if (input.mode !== undefined && !allowedModes.has(input.mode)) throw new TypeError("modeが不正です");
         if (input.subject !== undefined && !questionBanks[input.subject]) throw new TypeError("subjectが不正です");
         if (input.subject && input.subject !== app.subject) {
@@ -671,14 +649,14 @@
           questions = questionBanks[input.subject];
           app.store.activeSubject = input.subject;
           populateFields();
-          syncSubjectButtons();
+          syncSubjectContext();
           updateModeCounts();
           updateCoverage();
         }
         showStudyScreen();
         const fieldValues = [...elements.field.options].map((option) => option.value);
         const requestedField = input.field || "all";
-        if (!fieldValues.includes(requestedField)) throw new RangeError("存在しない分野です");
+        if (!fieldValues.includes(requestedField)) throw new RangeError("存在しない分野又はタグです");
         app.mode = input.mode || "all";
         elements.field.value = requestedField;
         elements.search.value = typeof input.keyword === "string" ? input.keyword.trim() : "";
@@ -706,8 +684,7 @@
       inputSchema: {
         type: "object",
         properties: {
-          choice: { type: "integer", minimum: 1, maximum: 4 },
-          reviewLater: { type: "boolean" }
+          choice: { type: "integer", minimum: 1, maximum: 4 }
         },
         required: ["choice"],
         additionalProperties: false
@@ -721,7 +698,6 @@
         const presented = getPresentedChoices(question);
         const selected = presented[input.choice - 1];
         selectChoice(selected.originalIndex);
-        if (typeof input.reviewLater === "boolean") setReview(input.reviewLater);
         submitAnswer();
         const result = app.sessionAnswers[question.id];
         const correctPosition = presented.findIndex((choice) => choice.originalIndex === question.answer) + 1;
@@ -753,7 +729,7 @@
     if (requestedSubject && params.get("keyword")) {
       elements.search.value = params.get("keyword").trim();
     }
-    syncSubjectButtons();
+    syncSubjectContext();
     bindGlobalEvents();
     updateModeCounts();
     buildSession();

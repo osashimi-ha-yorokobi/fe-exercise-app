@@ -4,6 +4,13 @@
   const SOURCE_INDEX = "https://www.ipa.go.jp/shiken/mondai-kaiotu/index.html";
   const SOURCE_LABEL = "IPA 令和5～8年度 科目B公開問題及び科目Bサンプル問題2種の傾向を参照したオリジナル問題";
   const labels = ["ア", "イ", "ウ", "エ"];
+  const CATEGORY_TAGS = {
+    "線形探索・集計": "線形探索・集計系",
+    "探索・二分探索": "探索・二分探索系",
+    "整列（ソート）": "整列（ソート）系",
+    "データ構造操作": "データ構造操作系（スタック/キュー/リスト）",
+    "再帰・木構造": "再帰・木構造系"
+  };
 
   const references = [
     {
@@ -38,11 +45,12 @@
     keyword,
     subject: "B",
     version: "現行",
-    field: pattern,
+    field: CATEGORY_TAGS[pattern],
+    categoryTag: CATEGORY_TAGS[pattern],
     subField,
     difficulty,
     changeType: difficulty,
-    trendPattern: pattern,
+    trendPattern: CATEGORY_TAGS[pattern],
     scope: "アルゴリズムのみ",
     question,
     code,

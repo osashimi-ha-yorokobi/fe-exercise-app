@@ -4,6 +4,45 @@
   const SOURCE_PUBLIC = "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2026r08.html";
   const SOURCE_PSEUDO = "https://www.ipa.go.jp/shiken/syllabus/doe3um0000002djj-att/shiken_yougo_ver5_1.pdf";
   const letters = ["ア", "イ", "ウ", "エ"];
+  const CATEGORY_TAGS = {
+    linear: "線形探索・集計系",
+    search: "探索・二分探索系",
+    sort: "整列（ソート）系",
+    structure: "データ構造操作系（スタック/キュー/リスト）",
+    recursive: "再帰・木構造系"
+  };
+  const CATEGORY_BY_ID = {
+    BQ001: CATEGORY_TAGS.linear,
+    BQ002: CATEGORY_TAGS.structure,
+    BQ003: CATEGORY_TAGS.linear,
+    BQ004: CATEGORY_TAGS.linear,
+    BQ005: CATEGORY_TAGS.linear,
+    BQ006: CATEGORY_TAGS.linear,
+    BQ007: CATEGORY_TAGS.linear,
+    BQ008: CATEGORY_TAGS.linear,
+    BQ009: CATEGORY_TAGS.structure,
+    BQ010: CATEGORY_TAGS.structure,
+    BQ011: CATEGORY_TAGS.structure,
+    BQ012: CATEGORY_TAGS.structure,
+    BQ013: CATEGORY_TAGS.recursive,
+    BQ014: CATEGORY_TAGS.recursive,
+    BQ015: CATEGORY_TAGS.search,
+    BQ016: CATEGORY_TAGS.linear,
+    BQ017: CATEGORY_TAGS.sort,
+    BQ018: CATEGORY_TAGS.sort,
+    BQ019: CATEGORY_TAGS.sort,
+    BQ020: CATEGORY_TAGS.sort,
+    BQ021: CATEGORY_TAGS.search,
+    BQ022: CATEGORY_TAGS.search,
+    BQ023: CATEGORY_TAGS.search,
+    BQ024: CATEGORY_TAGS.recursive,
+    BQ025: CATEGORY_TAGS.search,
+    BQ026: CATEGORY_TAGS.search,
+    BQ027: CATEGORY_TAGS.structure,
+    BQ028: CATEGORY_TAGS.linear,
+    BQ029: CATEGORY_TAGS.linear,
+    BQ030: CATEGORY_TAGS.linear
+  };
 
   const makeQuestion = ({ id, keyword, field, subField, difficulty, question, code, choices, answer, explanation, choiceNotes, sourceUrl = SOURCE_PUBLIC }) => ({
     id,
@@ -11,7 +50,9 @@
     keyword,
     subject: "B",
     version: "現行",
-    field,
+    field: CATEGORY_BY_ID[id],
+    categoryTag: CATEGORY_BY_ID[id],
+    topicField: field,
     subField,
     difficulty,
     changeType: difficulty,
