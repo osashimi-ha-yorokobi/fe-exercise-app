@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="基本情報技術者試験 科目Aの新シラバス追加キーワード集" />
+    <title>科目A キーワード集 — FE UPDATE</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/keywords.css" />
+  </head>
+  <body class="library-page">
+    <header class="library-topbar">
+      <div class="library-topbar-inner">
+        <a class="start-brand" href="index.html" aria-label="スタート画面へ戻る">
+          <span class="brand-mark" aria-hidden="true">FE</span>
+          <span>
+            <span class="eyebrow">SYLLABUS UPDATE</span>
+            <strong>基本情報技術者</strong>
+          </span>
+        </a>
+        <nav class="library-nav" aria-label="ページ移動">
+          <a href="index.html?subject=A">科目A</a>
+          <a href="index.html?subject=B">科目B</a>
+          <a class="is-current" href="keywords.html" aria-current="page">キーワード集</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="library-hero" aria-labelledby="library-title">
+        <div class="library-container library-hero-grid">
+          <div>
+            <p class="library-kicker">SUBJECT A · KEYWORD LIBRARY</p>
+            <h1 id="library-title">新シラバス<br />キーワード集</h1>
+            <p class="library-lead">科目Aの問題に使用している追加用語を、対応する解説とIPA一次資料の出典付きで一覧にしました。</p>
+          </div>
+          <dl class="library-summary" aria-label="収録状況">
+            <div><dt>収録キーワード</dt><dd id="library-total">—</dd></div>
+            <div><dt>問題への収録</dt><dd id="library-covered">—</dd></div>
+            <div><dt>確認済み</dt><dd id="library-verified">—</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="library-main library-container">
+        <div class="library-toolbar" aria-label="キーワードの絞り込み">
+          <label class="library-search">
+            <span>キーワードを検索</span>
+            <div>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+              <input id="library-search" type="search" placeholder="例：LLM、SBOM、AI" autocomplete="off" />
+            </div>
+          </label>
+          <label>
+            <span>シラバス</span>
+            <select id="library-version"><option value="all">すべての版</option></select>
+          </label>
+          <label>
+            <span>分野</span>
+            <select id="library-field"><option value="all">すべての分野</option></select>
+          </label>
+          <button class="library-reset" id="library-reset" type="button">条件をリセット</button>
+        </div>
+
+        <div class="library-result-head">
+          <p><strong id="library-result-count">—</strong> 件を表示</p>
+          <p>用語を選ぶと科目Aの対応問題へ移動できます。</p>
+        </div>
+
+        <div class="keyword-grid" id="keyword-grid" aria-live="polite">
+          <div class="library-loading"><span class="loader"></span><p>キーワード台帳を読み込んでいます</p></div>
+        </div>
+        <div class="library-more-wrap" id="library-more-wrap" hidden>
+          <button class="library-more" id="library-more" type="button">さらに表示</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="library-footer">
+      <div class="library-container">
+        <p>本ページは学習用に独自作成した非公式教材です。用語の追加判定は各カードに記載したIPA一次資料で確認しています。</p>
+        <a href="index.html">スタート画面へ戻る</a>
+      </div>
+    </footer>
+
+    <script src="js/questions.js"></script>
+    <script src="js/questions-extra.js"></script>
+    <script src="js/keywords-supplemental.js"></script>
+    <script src="js/keywords-page.js"></script>
+  </body>
+</html>

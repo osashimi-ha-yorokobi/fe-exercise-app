@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="基本情報技術者試験の科目A新出範囲と、科目Bアルゴリズム問題を学ぶCBT形式問題集" />
+    <title>FE UPDATE — 科目A・科目B CBT問題集</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="start-screen" id="start-screen" aria-labelledby="start-title">
+      <div class="start-wrap">
+        <header class="start-header">
+          <a class="start-brand" href="index.html" aria-label="FE UPDATE ホーム">
+            <span class="brand-mark" aria-hidden="true">FE</span>
+            <span>
+              <span class="eyebrow">SYLLABUS UPDATE</span>
+              <strong>基本情報技術者</strong>
+            </span>
+          </a>
+          <span class="start-status"><i aria-hidden="true"></i> 学習記録はこの端末に保存</span>
+        </header>
+
+        <div class="start-hero">
+          <p class="start-kicker">FE EXAM STUDY HUB</p>
+          <h1 id="start-title">学習するコンテンツを選択してください。</h1>
+          <p>科目Aの新シラバス追加範囲と、科目Bのアルゴリズム問題を一つの画面から学習できます。</p>
+        </div>
+
+        <div class="start-grid" aria-label="学習コンテンツ">
+          <article class="start-card subject-a-card">
+            <div class="start-card-top">
+              <span class="start-card-number">01</span>
+              <span class="start-card-badge">四肢択一</span>
+            </div>
+            <p class="start-card-label">SUBJECT A</p>
+            <h2>科目A</h2>
+            <p>CBT化後・新シラバスで追加された用語を、分野別の4択問題で確認します。</p>
+            <dl class="start-card-stats">
+              <div><dt>収録問題</dt><dd id="start-count-a">—</dd></div>
+              <div><dt>キーワード</dt><dd id="start-count-keywords">—</dd></div>
+            </dl>
+            <button class="start-action" type="button" data-start-subject="A">科目Aを始める <span>→</span></button>
+          </article>
+
+          <article class="start-card subject-b-card">
+            <div class="start-card-top">
+              <span class="start-card-number">02</span>
+              <span class="start-card-badge">アルゴリズム</span>
+            </div>
+            <p class="start-card-label">SUBJECT B</p>
+            <h2>科目B</h2>
+            <p>擬似言語、探索、整列、データ構造、再帰・木構造を中心に演習します。</p>
+            <dl class="start-card-stats">
+              <div><dt>収録問題</dt><dd id="start-count-b">—</dd></div>
+              <div><dt>情報セキュリティ</dt><dd>0問</dd></div>
+            </dl>
+            <button class="start-action" type="button" data-start-subject="B">科目Bを始める <span>→</span></button>
+          </article>
+
+          <article class="start-card keyword-card">
+            <div class="start-card-top">
+              <span class="start-card-number">03</span>
+              <span class="start-card-badge">用語確認</span>
+            </div>
+            <p class="start-card-label">KEYWORD LIBRARY</p>
+            <h2>キーワード集</h2>
+            <p>科目Aで出題する新シラバス追加用語を、意味・分野・追加版・IPA出典とともに確認します。</p>
+            <dl class="start-card-stats">
+              <div><dt>収録用語</dt><dd id="start-count-library">—</dd></div>
+              <div><dt>出典確認</dt><dd>IPA</dd></div>
+            </dl>
+            <a class="start-action" href="keywords.html">キーワードを調べる <span>→</span></a>
+          </article>
+        </div>
+
+        <footer class="start-footer">
+          <p>本問題集は学習用に独自作成した非公式教材です。IPA公式サイト・公式問題集ではありません。</p>
+          <a href="SPECIFICATION.md">仕様・出典管理方針</a>
+        </footer>
+      </div>
+    </section>
+
+    <div class="app-shell" id="app-shell" hidden>
+      <aside class="sidebar" id="sidebar" aria-label="学習メニュー">
+        <button class="brand brand-home" id="home-button" type="button" aria-label="スタート画面へ戻る">
+          <div class="brand-mark" aria-hidden="true">FE</div>
+          <div>
+            <p class="eyebrow">SYLLABUS UPDATE</p>
+            <h1>基本情報技術者</h1>
+          </div>
+        </button>
+
+        <section class="side-section">
+          <p class="side-label">学習モード</p>
+          <nav class="mode-list" id="mode-list" aria-label="出題モード">
+            <button class="mode-button is-active" data-mode="all"><span>全ての問題</span><b id="count-all">—</b></button>
+            <button class="mode-button" data-mode="wrong"><span>間違えた問題</span><b id="count-wrong">0</b></button>
+            <button class="mode-button" data-mode="unanswered"><span>未回答問題</span><b id="count-unanswered">—</b></button>
+            <button class="mode-button" data-mode="review"><span>後で見直す</span><b id="count-review">0</b></button>
+          </nav>
+        </section>
+
+        <section class="side-section filter-stack">
+          <p class="side-label">絞り込み</p>
+          <label class="field-label" for="field-filter">分野</label>
+          <div class="select-wrap">
+            <select id="field-filter"><option value="all">すべての分野</option></select>
+          </div>
+          <label class="field-label" for="keyword-search">キーワード</label>
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+            <input id="keyword-search" type="search" placeholder="例：LLM、SBOM" autocomplete="off" />
+          </div>
+          <button class="ghost-button full" id="apply-filter">この条件で出題</button>
+        </section>
+
+        <section class="side-section settings">
+          <p class="side-label">出題設定</p>
+          <label class="switch-row">
+            <span>問題順をランダム</span>
+            <input id="shuffle-questions" type="checkbox" />
+            <i aria-hidden="true"></i>
+          </label>
+          <label class="switch-row">
+            <span>選択肢をランダム</span>
+            <input id="shuffle-choices" type="checkbox" />
+            <i aria-hidden="true"></i>
+          </label>
+        </section>
+
+        <section class="side-section">
+          <a class="library-link" href="keywords.html">
+            <span><b>KW</b> 科目A キーワード集</span>
+            <i aria-hidden="true">→</i>
+          </a>
+        </section>
+
+        <div class="coverage-card">
+          <div class="coverage-top"><span>収録チェック</span><strong id="coverage-value">— / —</strong></div>
+          <div class="coverage-bar"><i id="coverage-fill"></i></div>
+          <p id="coverage-copy">キーワード台帳を照合中</p>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <button class="icon-button menu-button" id="menu-button" aria-label="メニューを開く" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+          </button>
+          <div class="topbar-context">
+            <div class="subject-tabs" aria-label="科目選択">
+              <button class="subject-tab is-active" data-subject="A">科目 A</button>
+              <button class="subject-tab" data-subject="B">科目 B</button>
+            </div>
+            <div class="top-title">
+              <span class="live-dot" aria-hidden="true"></span>
+              <span id="top-context">新出範囲ドリル</span>
+            </div>
+          </div>
+          <div class="top-actions">
+            <span class="save-state" id="save-state">この端末に自動保存</span>
+            <button class="ghost-button compact" id="finish-button">採点する</button>
+          </div>
+        </header>
+
+        <div class="workspace">
+          <section class="question-stage" id="question-stage" aria-live="polite">
+            <div class="loading-card">
+              <span class="loader"></span>
+              <p>問題データを準備しています</p>
+            </div>
+          </section>
+
+          <aside class="progress-rail" aria-label="セッション進捗">
+            <div class="score-dial" id="score-dial">
+              <svg viewBox="0 0 92 92" aria-hidden="true">
+                <circle class="dial-track" cx="46" cy="46" r="38"></circle>
+                <circle class="dial-value" id="dial-value" cx="46" cy="46" r="38"></circle>
+              </svg>
+              <div><strong id="dial-percent">0%</strong><span>正答率</span></div>
+            </div>
+            <dl class="mini-stats">
+              <div><dt>正解</dt><dd id="stat-correct">0</dd></div>
+              <div><dt>不正解</dt><dd id="stat-wrong">0</dd></div>
+              <div><dt>未回答</dt><dd id="stat-open">—</dd></div>
+            </dl>
+            <div class="shortcut-card">
+              <p>KEYBOARD</p>
+              <span><kbd>1</kbd>–<kbd>4</kbd> 選択</span>
+              <span><kbd>Enter</kbd> 回答</span>
+              <span><kbd>←</kbd><kbd>→</kbd> 移動</span>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <div class="scrim" id="scrim"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/questions-b.js"></script>
+    <script src="js/questions-b-trends.js"></script>
+    <script src="js/questions-extra.js"></script>
+    <script src="js/keywords-supplemental.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

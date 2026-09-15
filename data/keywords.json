@@ -1,0 +1,3474 @@
+{
+  "meta": {
+    "title": "基本情報技術者試験 CBT化後・新シラバス追加キーワード台帳",
+    "scope": "IPA 基本情報技術者試験シラバス Ver.9.0変更箇所表示版の追加語を中心とする監査済み初版、およびVer.9.2の変更語",
+    "currentSyllabus": "9.2",
+    "generatedAt": "2026-09-14",
+    "sourcePriority": "IPA一次資料",
+    "coverageRule": "keywordsの各IDにquestions.jsの問題が1問以上存在すること",
+    "questionCount": 220,
+    "extraQuestionFile": "js/questions-extra.js"
+  },
+  "keywords": [
+    {
+      "id": "KW001",
+      "keyword": "箱ひげ図",
+      "version": "9.0",
+      "field": "データサイエンス",
+      "subField": "統計・可視化",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 8,
+      "verified": true,
+      "questionIds": [
+        "Q001"
+      ]
+    },
+    {
+      "id": "KW002",
+      "keyword": "擬似相関",
+      "version": "9.0",
+      "field": "データサイエンス",
+      "subField": "統計・因果",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 8,
+      "verified": true,
+      "questionIds": [
+        "Q002"
+      ]
+    },
+    {
+      "id": "KW003",
+      "keyword": "p値",
+      "version": "9.0",
+      "field": "データサイエンス",
+      "subField": "仮説検定",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 8,
+      "verified": true,
+      "questionIds": [
+        "Q003"
+      ]
+    },
+    {
+      "id": "KW004",
+      "keyword": "検出力",
+      "version": "9.0",
+      "field": "データサイエンス",
+      "subField": "仮説検定",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 8,
+      "verified": true,
+      "questionIds": [
+        "Q004"
+      ]
+    },
+    {
+      "id": "KW005",
+      "keyword": "ロジスティック回帰",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "機械学習",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 9,
+      "verified": true,
+      "questionIds": [
+        "Q005"
+      ]
+    },
+    {
+      "id": "KW006",
+      "keyword": "ランダムフォレスト",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "機械学習",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 9,
+      "verified": true,
+      "questionIds": [
+        "Q006"
+      ]
+    },
+    {
+      "id": "KW007",
+      "keyword": "交差検証",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "モデル評価",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 9,
+      "verified": true,
+      "questionIds": [
+        "Q007"
+      ]
+    },
+    {
+      "id": "KW008",
+      "keyword": "ROC曲線",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "モデル評価",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 9,
+      "verified": true,
+      "questionIds": [
+        "Q008"
+      ]
+    },
+    {
+      "id": "KW009",
+      "keyword": "基盤モデル",
+      "version": "9.0",
+      "field": "生成AI",
+      "subField": "生成AI",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 10,
+      "verified": true,
+      "questionIds": [
+        "Q009"
+      ]
+    },
+    {
+      "id": "KW010",
+      "keyword": "大規模言語モデル（LLM）",
+      "version": "9.0",
+      "field": "生成AI",
+      "subField": "生成AI",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 10,
+      "verified": true,
+      "questionIds": [
+        "Q010"
+      ]
+    },
+    {
+      "id": "KW011",
+      "keyword": "拡散モデル",
+      "version": "9.0",
+      "field": "生成AI",
+      "subField": "生成モデル",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 10,
+      "verified": true,
+      "questionIds": [
+        "Q011"
+      ]
+    },
+    {
+      "id": "KW012",
+      "keyword": "自己教師あり学習",
+      "version": "9.0",
+      "field": "生成AI",
+      "subField": "学習手法",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 10,
+      "verified": true,
+      "questionIds": [
+        "Q012"
+      ]
+    },
+    {
+      "id": "KW013",
+      "keyword": "プロンプトエンジニアリング",
+      "version": "9.0",
+      "field": "生成AI",
+      "subField": "生成AI",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 10,
+      "verified": true,
+      "questionIds": [
+        "Q013"
+      ]
+    },
+    {
+      "id": "KW014",
+      "keyword": "説明可能なAI（XAI）",
+      "version": "9.0",
+      "field": "AIガバナンス",
+      "subField": "AI利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 99,
+      "verified": true,
+      "questionIds": [
+        "Q014"
+      ]
+    },
+    {
+      "id": "KW015",
+      "keyword": "ヒューマンインザループ",
+      "version": "9.0",
+      "field": "AIガバナンス",
+      "subField": "AI利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 99,
+      "verified": true,
+      "questionIds": [
+        "Q015"
+      ]
+    },
+    {
+      "id": "KW016",
+      "keyword": "ハルシネーション",
+      "version": "9.0",
+      "field": "AIガバナンス",
+      "subField": "AI利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 99,
+      "verified": true,
+      "questionIds": [
+        "Q016"
+      ]
+    },
+    {
+      "id": "KW017",
+      "keyword": "敵対的サンプル",
+      "version": "9.0",
+      "field": "AIセキュリティ",
+      "subField": "AIへの脅威",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "verified": true,
+      "questionIds": [
+        "Q017"
+      ]
+    },
+    {
+      "id": "KW018",
+      "keyword": "プロンプトインジェクション",
+      "version": "9.0",
+      "field": "AIセキュリティ",
+      "subField": "AIへの脅威",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "verified": true,
+      "questionIds": [
+        "Q018"
+      ]
+    },
+    {
+      "id": "KW019",
+      "keyword": "IaC",
+      "version": "9.0",
+      "field": "クラウド・基盤",
+      "subField": "システム構成",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 21,
+      "verified": true,
+      "questionIds": [
+        "Q019"
+      ]
+    },
+    {
+      "id": "KW020",
+      "keyword": "サーバレス",
+      "version": "9.0",
+      "field": "クラウド・基盤",
+      "subField": "クラウド",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 21,
+      "verified": true,
+      "questionIds": [
+        "Q020"
+      ]
+    },
+    {
+      "id": "KW021",
+      "keyword": "ローコード／ノーコード",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "開発手法",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 66,
+      "verified": true,
+      "questionIds": [
+        "Q021"
+      ]
+    },
+    {
+      "id": "KW022",
+      "keyword": "マイクロサービスアーキテクチャ",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "アーキテクチャ",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 55,
+      "verified": true,
+      "questionIds": [
+        "Q022"
+      ]
+    },
+    {
+      "id": "KW023",
+      "keyword": "クリーンアーキテクチャ",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "アーキテクチャ",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 55,
+      "verified": true,
+      "questionIds": [
+        "Q023"
+      ]
+    },
+    {
+      "id": "KW024",
+      "keyword": "SOLID",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "設計原則",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 57,
+      "verified": true,
+      "questionIds": [
+        "Q024"
+      ]
+    },
+    {
+      "id": "KW025",
+      "keyword": "DDD",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "設計手法",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 57,
+      "verified": true,
+      "questionIds": [
+        "Q025"
+      ]
+    },
+    {
+      "id": "KW026",
+      "keyword": "DevSecOps",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "DevOps",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 65,
+      "verified": true,
+      "questionIds": [
+        "Q026"
+      ]
+    },
+    {
+      "id": "KW027",
+      "keyword": "SRE",
+      "version": "9.0",
+      "field": "サービスマネジメント",
+      "subField": "DevOps",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 65,
+      "verified": true,
+      "questionIds": [
+        "Q027"
+      ]
+    },
+    {
+      "id": "KW028",
+      "keyword": "MLOps",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "機械学習運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 65,
+      "verified": true,
+      "questionIds": [
+        "Q028"
+      ]
+    },
+    {
+      "id": "KW029",
+      "keyword": "カオスエンジニアリング",
+      "version": "9.0",
+      "field": "開発技術",
+      "subField": "信頼性",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 65,
+      "verified": true,
+      "questionIds": [
+        "Q029"
+      ]
+    },
+    {
+      "id": "KW030",
+      "keyword": "ファジング",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "テスト",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 60,
+      "verified": true,
+      "questionIds": [
+        "Q030"
+      ]
+    },
+    {
+      "id": "KW031",
+      "keyword": "PWA",
+      "version": "9.0",
+      "field": "Web技術",
+      "subField": "Webアプリ",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 66,
+      "verified": true,
+      "questionIds": [
+        "Q031"
+      ]
+    },
+    {
+      "id": "KW032",
+      "keyword": "ドキュメント指向DB",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "NoSQL",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "questionIds": [
+        "Q032"
+      ]
+    },
+    {
+      "id": "KW033",
+      "keyword": "グラフDB",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "NoSQL",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "questionIds": [
+        "Q033"
+      ]
+    },
+    {
+      "id": "KW034",
+      "keyword": "カバリングインデックス",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "索引",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "questionIds": [
+        "Q034"
+      ]
+    },
+    {
+      "id": "KW035",
+      "keyword": "ELT",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "データ連携",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "questionIds": [
+        "Q035"
+      ]
+    },
+    {
+      "id": "KW036",
+      "keyword": "データレイク",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "データ基盤",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 37,
+      "verified": true,
+      "questionIds": [
+        "Q036"
+      ]
+    },
+    {
+      "id": "KW037",
+      "keyword": "セキュアバイデザイン",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "セキュリティ設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "verified": true,
+      "questionIds": [
+        "Q037"
+      ]
+    },
+    {
+      "id": "KW038",
+      "keyword": "二重脅迫",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "ランサムウェア",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "verified": true,
+      "questionIds": [
+        "Q038"
+      ]
+    },
+    {
+      "id": "KW039",
+      "keyword": "クレデンシャルスタッフィング",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "認証攻撃",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "verified": true,
+      "questionIds": [
+        "Q039"
+      ]
+    },
+    {
+      "id": "KW040",
+      "keyword": "ファイルレスマルウェア",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "マルウェア",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "verified": true,
+      "questionIds": [
+        "Q040"
+      ]
+    },
+    {
+      "id": "KW041",
+      "keyword": "FIDO",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "認証",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 46,
+      "verified": true,
+      "questionIds": [
+        "Q041"
+      ]
+    },
+    {
+      "id": "KW042",
+      "keyword": "責任共有モデル",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "クラウドセキュリティ",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 46,
+      "verified": true,
+      "questionIds": [
+        "Q042"
+      ]
+    },
+    {
+      "id": "KW043",
+      "keyword": "ISMAP",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "制度",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 48,
+      "verified": true,
+      "questionIds": [
+        "Q043"
+      ]
+    },
+    {
+      "id": "KW044",
+      "keyword": "SBOM",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脆弱性管理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 49,
+      "verified": true,
+      "questionIds": [
+        "Q044"
+      ]
+    },
+    {
+      "id": "KW045",
+      "keyword": "イミュータブルバックアップ",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "ランサムウェア対策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 49,
+      "verified": true,
+      "questionIds": [
+        "Q045"
+      ]
+    },
+    {
+      "id": "KW046",
+      "keyword": "DMARC",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "電子メール",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 50,
+      "verified": true,
+      "questionIds": [
+        "Q046"
+      ]
+    },
+    {
+      "id": "KW047",
+      "keyword": "UXデザイン五段階モデル",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "UXデザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "questionIds": [
+        "Q047"
+      ]
+    },
+    {
+      "id": "KW048",
+      "keyword": "レスポンシブWebデザイン",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "Webデザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "questionIds": [
+        "Q048"
+      ]
+    },
+    {
+      "id": "KW049",
+      "keyword": "ワイヤーフレーム",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "画面設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "questionIds": [
+        "Q049"
+      ]
+    },
+    {
+      "id": "KW050",
+      "keyword": "デザイン原則（近接・整列・反復・対比）",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "questionIds": [
+        "Q050"
+      ]
+    },
+    {
+      "id": "KW051",
+      "keyword": "デジタルツイン",
+      "version": "9.0",
+      "field": "経営・DX",
+      "subField": "デジタル技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "verified": true,
+      "questionIds": [
+        "Q051"
+      ]
+    },
+    {
+      "id": "KW052",
+      "keyword": "CPS",
+      "version": "9.0",
+      "field": "経営・DX",
+      "subField": "デジタル技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "verified": true,
+      "questionIds": [
+        "Q052"
+      ]
+    },
+    {
+      "id": "KW053",
+      "keyword": "MaaS",
+      "version": "9.0",
+      "field": "経営・DX",
+      "subField": "モビリティ",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 102,
+      "verified": true,
+      "questionIds": [
+        "Q053"
+      ]
+    },
+    {
+      "id": "KW054",
+      "keyword": "CBDC",
+      "version": "9.0",
+      "field": "経営・DX",
+      "subField": "デジタル通貨",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 100,
+      "verified": true,
+      "questionIds": [
+        "Q054"
+      ]
+    },
+    {
+      "id": "KW055",
+      "keyword": "NFT",
+      "version": "9.0",
+      "field": "経営・DX",
+      "subField": "電子商取引",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 100,
+      "verified": true,
+      "questionIds": [
+        "Q055"
+      ]
+    },
+    {
+      "id": "KW056",
+      "keyword": "ELSI",
+      "version": "9.0",
+      "field": "法務・倫理",
+      "subField": "情報倫理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 113,
+      "verified": true,
+      "questionIds": [
+        "Q056"
+      ]
+    },
+    {
+      "id": "KW057",
+      "keyword": "中小受託取引適正化法",
+      "version": "9.2",
+      "field": "法務・倫理",
+      "subField": "法務",
+      "changeType": "変更",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.2",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kpe-att/syllabus_fe_ver9_2.pdf",
+      "sourcePage": 110,
+      "verified": true,
+      "questionIds": [
+        "Q057"
+      ]
+    },
+    {
+      "id": "KW058",
+      "keyword": "マルチモーダルAI",
+      "version": "9.0",
+      "field": "生成AI",
+      "subField": "AI利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "verified": true,
+      "questionIds": [
+        "Q058"
+      ]
+    },
+    {
+      "id": "KW059",
+      "keyword": "AI利用者の関与によるバイアス",
+      "version": "9.0",
+      "field": "AIガバナンス",
+      "subField": "AI利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "verified": true,
+      "questionIds": [
+        "Q059"
+      ]
+    },
+    {
+      "id": "KW060",
+      "keyword": "AIサービスのオプトアウトポリシー",
+      "version": "9.0",
+      "field": "AIガバナンス",
+      "subField": "AI利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "verified": true,
+      "questionIds": [
+        "Q060"
+      ]
+    },
+    {
+      "id": "KW061",
+      "keyword": "特化型AI",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q061"
+      ]
+    },
+    {
+      "id": "KW062",
+      "keyword": "汎用AI",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q062"
+      ]
+    },
+    {
+      "id": "KW063",
+      "keyword": "フレーム問題",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q063"
+      ]
+    },
+    {
+      "id": "KW064",
+      "keyword": "シンボルグラウンディング問題",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q064"
+      ]
+    },
+    {
+      "id": "KW065",
+      "keyword": "AIによる認識",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q065"
+      ]
+    },
+    {
+      "id": "KW066",
+      "keyword": "AIによる自動化",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q066"
+      ]
+    },
+    {
+      "id": "KW067",
+      "keyword": "AIアシスタント",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q067"
+      ]
+    },
+    {
+      "id": "KW068",
+      "keyword": "生成AI",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q068"
+      ]
+    },
+    {
+      "id": "KW069",
+      "keyword": "ランダム性",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q069"
+      ]
+    },
+    {
+      "id": "KW070",
+      "keyword": "アルゴリズムのバイアス",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q070"
+      ]
+    },
+    {
+      "id": "KW071",
+      "keyword": "AIサービスの責任論",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q071"
+      ]
+    },
+    {
+      "id": "KW072",
+      "keyword": "ディープフェイク",
+      "version": "9.0",
+      "field": "AI・機械学習",
+      "subField": "AIの分類・利活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 98,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q072"
+      ]
+    },
+    {
+      "id": "KW073",
+      "keyword": "B木",
+      "version": "9.0",
+      "field": "基礎理論・アルゴリズム",
+      "subField": "データ構造・グラフアルゴリズム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 11,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q073"
+      ]
+    },
+    {
+      "id": "KW074",
+      "keyword": "AVL木",
+      "version": "9.0",
+      "field": "基礎理論・アルゴリズム",
+      "subField": "データ構造・グラフアルゴリズム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 11,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q074"
+      ]
+    },
+    {
+      "id": "KW075",
+      "keyword": "ダイクストラ法",
+      "version": "9.0",
+      "field": "基礎理論・アルゴリズム",
+      "subField": "データ構造・グラフアルゴリズム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 12,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q075"
+      ]
+    },
+    {
+      "id": "KW076",
+      "keyword": "ベルマンフォード法",
+      "version": "9.0",
+      "field": "基礎理論・アルゴリズム",
+      "subField": "データ構造・グラフアルゴリズム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 12,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q076"
+      ]
+    },
+    {
+      "id": "KW077",
+      "keyword": "n-gram",
+      "version": "9.0",
+      "field": "基礎理論・アルゴリズム",
+      "subField": "データ構造・グラフアルゴリズム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 12,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q077"
+      ]
+    },
+    {
+      "id": "KW078",
+      "keyword": "文章間類似度",
+      "version": "9.0",
+      "field": "基礎理論・アルゴリズム",
+      "subField": "データ構造・グラフアルゴリズム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 12,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q078"
+      ]
+    },
+    {
+      "id": "KW079",
+      "keyword": "HTTP/2",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 39,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q079"
+      ]
+    },
+    {
+      "id": "KW080",
+      "keyword": "HTTP/3",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 39,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q080"
+      ]
+    },
+    {
+      "id": "KW081",
+      "keyword": "10GBASE-T",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 39,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q081"
+      ]
+    },
+    {
+      "id": "KW082",
+      "keyword": "Wi-Fi 6E",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 39,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q082"
+      ]
+    },
+    {
+      "id": "KW083",
+      "keyword": "ip",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 40,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q083"
+      ]
+    },
+    {
+      "id": "KW084",
+      "keyword": "ss",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 40,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q084"
+      ]
+    },
+    {
+      "id": "KW085",
+      "keyword": "dig",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 40,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q085"
+      ]
+    },
+    {
+      "id": "KW086",
+      "keyword": "traceroute",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 40,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q086"
+      ]
+    },
+    {
+      "id": "KW087",
+      "keyword": "ローカル5G",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 41,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q087"
+      ]
+    },
+    {
+      "id": "KW088",
+      "keyword": "eSIM",
+      "version": "9.0",
+      "field": "ネットワーク",
+      "subField": "通信プロトコル・インタフェース",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 41,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q088"
+      ]
+    },
+    {
+      "id": "KW089",
+      "keyword": "プロパティグラフ",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "データモデル・データ資源管理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 32,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q089"
+      ]
+    },
+    {
+      "id": "KW090",
+      "keyword": "トリプルストア",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "データモデル・データ資源管理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 32,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q090"
+      ]
+    },
+    {
+      "id": "KW091",
+      "keyword": "分散ファイルシステム",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "データモデル・データ資源管理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 35,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q091"
+      ]
+    },
+    {
+      "id": "KW092",
+      "keyword": "転置インデックス",
+      "version": "9.0",
+      "field": "データベース",
+      "subField": "データモデル・データ資源管理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 35,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q092"
+      ]
+    },
+    {
+      "id": "KW093",
+      "keyword": "シングルボードコンピュータ（SBC）",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 14,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q093"
+      ]
+    },
+    {
+      "id": "KW094",
+      "keyword": "DIMM",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 14,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q094"
+      ]
+    },
+    {
+      "id": "KW095",
+      "keyword": "SO-DIMM",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 14,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q095"
+      ]
+    },
+    {
+      "id": "KW096",
+      "keyword": "ウェアレベリング",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 15,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q096"
+      ]
+    },
+    {
+      "id": "KW097",
+      "keyword": "Thunderbolt",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 15,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q097"
+      ]
+    },
+    {
+      "id": "KW098",
+      "keyword": "ヘッドマウントディスプレイ",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 16,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q098"
+      ]
+    },
+    {
+      "id": "KW099",
+      "keyword": "アイトラッキングデバイス",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 16,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q099"
+      ]
+    },
+    {
+      "id": "KW100",
+      "keyword": "ハプティックデバイス",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 16,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q100"
+      ]
+    },
+    {
+      "id": "KW101",
+      "keyword": "RAID10",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 20,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q101"
+      ]
+    },
+    {
+      "id": "KW102",
+      "keyword": "フォールトマスキング",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "コンピュータ構成要素・信頼性設計",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 21,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q102"
+      ]
+    },
+    {
+      "id": "KW103",
+      "keyword": "モバイル端末用OS",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "オペレーティングシステム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 22,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q103"
+      ]
+    },
+    {
+      "id": "KW104",
+      "keyword": "セキュアOS",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "オペレーティングシステム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 22,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q104"
+      ]
+    },
+    {
+      "id": "KW105",
+      "keyword": "クラウドコンピューティング用OS",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "オペレーティングシステム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 22,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q105"
+      ]
+    },
+    {
+      "id": "KW106",
+      "keyword": "OSGi",
+      "version": "9.0",
+      "field": "コンピュータシステム",
+      "subField": "オペレーティングシステム",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 24,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q106"
+      ]
+    },
+    {
+      "id": "KW107",
+      "keyword": "NUI",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 29,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q107"
+      ]
+    },
+    {
+      "id": "KW108",
+      "keyword": "ジェスチャインタフェース",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 29,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q108"
+      ]
+    },
+    {
+      "id": "KW109",
+      "keyword": "マルチタッチ",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 29,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q109"
+      ]
+    },
+    {
+      "id": "KW110",
+      "keyword": "トグル",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q110"
+      ]
+    },
+    {
+      "id": "KW111",
+      "keyword": "アコーディオン",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q111"
+      ]
+    },
+    {
+      "id": "KW112",
+      "keyword": "ホバー",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q112"
+      ]
+    },
+    {
+      "id": "KW113",
+      "keyword": "ツールチップ",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q113"
+      ]
+    },
+    {
+      "id": "KW114",
+      "keyword": "UXライティング",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q114"
+      ]
+    },
+    {
+      "id": "KW115",
+      "keyword": "カルーセル",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q115"
+      ]
+    },
+    {
+      "id": "KW116",
+      "keyword": "ピクトグラム",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q116"
+      ]
+    },
+    {
+      "id": "KW117",
+      "keyword": "UDフォント",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q117"
+      ]
+    },
+    {
+      "id": "KW118",
+      "keyword": "インフォグラフィック",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q118"
+      ]
+    },
+    {
+      "id": "KW119",
+      "keyword": "ムードボード",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q119"
+      ]
+    },
+    {
+      "id": "KW120",
+      "keyword": "タイポグラフィ",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 30,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q120"
+      ]
+    },
+    {
+      "id": "KW121",
+      "keyword": "参加型デザイン",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "ユーザインタフェース・情報デザイン",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q121"
+      ]
+    },
+    {
+      "id": "KW122",
+      "keyword": "ラスタ画像",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q122"
+      ]
+    },
+    {
+      "id": "KW123",
+      "keyword": "ベクタ画像",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q123"
+      ]
+    },
+    {
+      "id": "KW124",
+      "keyword": "加法混色",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q124"
+      ]
+    },
+    {
+      "id": "KW125",
+      "keyword": "減法混色",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q125"
+      ]
+    },
+    {
+      "id": "KW126",
+      "keyword": "dpi",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q126"
+      ]
+    },
+    {
+      "id": "KW127",
+      "keyword": "ppi",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q127"
+      ]
+    },
+    {
+      "id": "KW128",
+      "keyword": "レイヤー",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q128"
+      ]
+    },
+    {
+      "id": "KW129",
+      "keyword": "トリミング",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q129"
+      ]
+    },
+    {
+      "id": "KW130",
+      "keyword": "MR",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q130"
+      ]
+    },
+    {
+      "id": "KW131",
+      "keyword": "ホログラム",
+      "version": "9.0",
+      "field": "UX・UI",
+      "subField": "メディア技術",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 31,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q131"
+      ]
+    },
+    {
+      "id": "KW132",
+      "keyword": "アクセス権の設定ミス",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q132"
+      ]
+    },
+    {
+      "id": "KW133",
+      "keyword": "ボット",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q133"
+      ]
+    },
+    {
+      "id": "KW134",
+      "keyword": "RAT",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q134"
+      ]
+    },
+    {
+      "id": "KW135",
+      "keyword": "C&Cサーバ",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q135"
+      ]
+    },
+    {
+      "id": "KW136",
+      "keyword": "内部統制の不備",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q136"
+      ]
+    },
+    {
+      "id": "KW137",
+      "keyword": "逆ブルートフォース攻撃",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q137"
+      ]
+    },
+    {
+      "id": "KW138",
+      "keyword": "オープンリレー",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q138"
+      ]
+    },
+    {
+      "id": "KW139",
+      "keyword": "SEOポイズニング",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q139"
+      ]
+    },
+    {
+      "id": "KW140",
+      "keyword": "オープンリゾルバの悪用",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 44,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q140"
+      ]
+    },
+    {
+      "id": "KW141",
+      "keyword": "SHA-256",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q141"
+      ]
+    },
+    {
+      "id": "KW142",
+      "keyword": "メッセージダイジェスト",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q142"
+      ]
+    },
+    {
+      "id": "KW143",
+      "keyword": "EMV 3-Dセキュア",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q143"
+      ]
+    },
+    {
+      "id": "KW144",
+      "keyword": "本人拒否率（FRR）",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q144"
+      ]
+    },
+    {
+      "id": "KW145",
+      "keyword": "他人受入率（FAR）",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q145"
+      ]
+    },
+    {
+      "id": "KW146",
+      "keyword": "トラストアンカー",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q146"
+      ]
+    },
+    {
+      "id": "KW147",
+      "keyword": "中間CA証明書",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 45,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q147"
+      ]
+    },
+    {
+      "id": "KW148",
+      "keyword": "サイバーセキュリティフレームワーク（CSF）",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 47,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q148"
+      ]
+    },
+    {
+      "id": "KW149",
+      "keyword": "3-2-1ルール",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 48,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q149"
+      ]
+    },
+    {
+      "id": "KW150",
+      "keyword": "WORM",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 48,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q150"
+      ]
+    },
+    {
+      "id": "KW151",
+      "keyword": "マルウェア検出手法",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 48,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q151"
+      ]
+    },
+    {
+      "id": "KW152",
+      "keyword": "データマスキング",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 49,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q152"
+      ]
+    },
+    {
+      "id": "KW153",
+      "keyword": "AI for Security",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 49,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q153"
+      ]
+    },
+    {
+      "id": "KW154",
+      "keyword": "Security for AI",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 49,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q154"
+      ]
+    },
+    {
+      "id": "KW155",
+      "keyword": "SECURITY ACTION",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 47,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q155"
+      ]
+    },
+    {
+      "id": "KW156",
+      "keyword": "ISAC",
+      "version": "9.0",
+      "field": "セキュリティ",
+      "subField": "脅威・認証・管理策",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 47,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q156"
+      ]
+    },
+    {
+      "id": "KW157",
+      "keyword": "トレーサビリティマトリックス",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 54,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q157"
+      ]
+    },
+    {
+      "id": "KW158",
+      "keyword": "ドメインモデル",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 57,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q158"
+      ]
+    },
+    {
+      "id": "KW159",
+      "keyword": "ドメインロジック",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 57,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q159"
+      ]
+    },
+    {
+      "id": "KW160",
+      "keyword": "ユビキタス言語",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 57,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q160"
+      ]
+    },
+    {
+      "id": "KW161",
+      "keyword": "自動インデント",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 60,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q161"
+      ]
+    },
+    {
+      "id": "KW162",
+      "keyword": "ブレークポイント",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 60,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q162"
+      ]
+    },
+    {
+      "id": "KW163",
+      "keyword": "サイクロマティック複雑度",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 60,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q163"
+      ]
+    },
+    {
+      "id": "KW164",
+      "keyword": "トレーサー",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 60,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q164"
+      ]
+    },
+    {
+      "id": "KW165",
+      "keyword": "モブプログラミング",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 64,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q165"
+      ]
+    },
+    {
+      "id": "KW166",
+      "keyword": "継続的デリバリ",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 65,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q166"
+      ]
+    },
+    {
+      "id": "KW167",
+      "keyword": "ステージング環境",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 66,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q167"
+      ]
+    },
+    {
+      "id": "KW168",
+      "keyword": "リポジトリ",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 66,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q168"
+      ]
+    },
+    {
+      "id": "KW169",
+      "keyword": "テーラリング",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 75,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q169"
+      ]
+    },
+    {
+      "id": "KW170",
+      "keyword": "SLO",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 75,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q170"
+      ]
+    },
+    {
+      "id": "KW171",
+      "keyword": "SLI",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 75,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q171"
+      ]
+    },
+    {
+      "id": "KW172",
+      "keyword": "RLO",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 75,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q172"
+      ]
+    },
+    {
+      "id": "KW173",
+      "keyword": "AIOps",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 77,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q173"
+      ]
+    },
+    {
+      "id": "KW174",
+      "keyword": "Fit to Standard",
+      "version": "9.0",
+      "field": "開発技術・サービスマネジメント",
+      "subField": "設計・開発・運用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 88,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q174"
+      ]
+    },
+    {
+      "id": "KW175",
+      "keyword": "CDO",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 87,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q175"
+      ]
+    },
+    {
+      "id": "KW176",
+      "keyword": "クラウドネイティブ",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 87,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q176"
+      ]
+    },
+    {
+      "id": "KW177",
+      "keyword": "クラウド・バイ・デフォルト",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 87,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q177"
+      ]
+    },
+    {
+      "id": "KW178",
+      "keyword": "デジタルリテラシー",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 87,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q178"
+      ]
+    },
+    {
+      "id": "KW179",
+      "keyword": "メディアリテラシー",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 87,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q179"
+      ]
+    },
+    {
+      "id": "KW180",
+      "keyword": "セキュリティ意識",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 87,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q180"
+      ]
+    },
+    {
+      "id": "KW181",
+      "keyword": "ダイナミックケイパビリティ",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 89,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q181"
+      ]
+    },
+    {
+      "id": "KW182",
+      "keyword": "SDGs",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 89,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q182"
+      ]
+    },
+    {
+      "id": "KW183",
+      "keyword": "サーキュラーエコノミー",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 89,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q183"
+      ]
+    },
+    {
+      "id": "KW184",
+      "keyword": "エコシステム",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 89,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q184"
+      ]
+    },
+    {
+      "id": "KW185",
+      "keyword": "ESG",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 89,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q185"
+      ]
+    },
+    {
+      "id": "KW186",
+      "keyword": "VRIO",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 90,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q186"
+      ]
+    },
+    {
+      "id": "KW187",
+      "keyword": "STP",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 90,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q187"
+      ]
+    },
+    {
+      "id": "KW188",
+      "keyword": "コンジョイント分析",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 90,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q188"
+      ]
+    },
+    {
+      "id": "KW189",
+      "keyword": "仮説マップ",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 91,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q189"
+      ]
+    },
+    {
+      "id": "KW190",
+      "keyword": "バリュープロポジション",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q190"
+      ]
+    },
+    {
+      "id": "KW191",
+      "keyword": "ブランドアイデンティティ",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q191"
+      ]
+    },
+    {
+      "id": "KW192",
+      "keyword": "ペルソナ",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q192"
+      ]
+    },
+    {
+      "id": "KW193",
+      "keyword": "プロダクトビジョン",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q193"
+      ]
+    },
+    {
+      "id": "KW194",
+      "keyword": "ライフサイクルエクステンション",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q194"
+      ]
+    },
+    {
+      "id": "KW195",
+      "keyword": "ダイナミックプライシング",
+      "version": "9.0",
+      "field": "経営戦略・技術戦略",
+      "subField": "経営・組織・デジタル戦略",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 93,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q195"
+      ]
+    },
+    {
+      "id": "KW196",
+      "keyword": "eKYC",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 99,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q196"
+      ]
+    },
+    {
+      "id": "KW197",
+      "keyword": "AML・CFT",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 99,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q197"
+      ]
+    },
+    {
+      "id": "KW198",
+      "keyword": "エッジAI",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 100,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q198"
+      ]
+    },
+    {
+      "id": "KW199",
+      "keyword": "スーパーシティ",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 101,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q199"
+      ]
+    },
+    {
+      "id": "KW200",
+      "keyword": "スマート農業",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 101,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q200"
+      ]
+    },
+    {
+      "id": "KW201",
+      "keyword": "自動運転レベル",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 102,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q201"
+      ]
+    },
+    {
+      "id": "KW202",
+      "keyword": "カーボンフットプリント",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 104,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q202"
+      ]
+    },
+    {
+      "id": "KW203",
+      "keyword": "データドリブン",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 105,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q203"
+      ]
+    },
+    {
+      "id": "KW204",
+      "keyword": "GX",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 105,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q204"
+      ]
+    },
+    {
+      "id": "KW205",
+      "keyword": "仮名加工情報",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 111,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q205"
+      ]
+    },
+    {
+      "id": "KW206",
+      "keyword": "データ同化",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q206"
+      ]
+    },
+    {
+      "id": "KW207",
+      "keyword": "エンティティ解決",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q207"
+      ]
+    },
+    {
+      "id": "KW208",
+      "keyword": "外れ値処理",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q208"
+      ]
+    },
+    {
+      "id": "KW209",
+      "keyword": "欠損値処理",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q209"
+      ]
+    },
+    {
+      "id": "KW210",
+      "keyword": "標準化",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q210"
+      ]
+    },
+    {
+      "id": "KW211",
+      "keyword": "季節調整",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q211"
+      ]
+    },
+    {
+      "id": "KW212",
+      "keyword": "移動平均",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 108,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q212"
+      ]
+    },
+    {
+      "id": "KW213",
+      "keyword": "リフト値",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 109,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q213"
+      ]
+    },
+    {
+      "id": "KW214",
+      "keyword": "ヒートマップ",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 109,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q214"
+      ]
+    },
+    {
+      "id": "KW215",
+      "keyword": "モザイク図",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 109,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q215"
+      ]
+    },
+    {
+      "id": "KW216",
+      "keyword": "クロス集計表",
+      "version": "9.0",
+      "field": "経営戦略・データサイエンス",
+      "subField": "産業・データ活用",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 109,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q216"
+      ]
+    },
+    {
+      "id": "KW217",
+      "keyword": "フリーランス・事業者間取引適正化等法",
+      "version": "9.0",
+      "field": "法務・倫理",
+      "subField": "法令・情報倫理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 110,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q217"
+      ]
+    },
+    {
+      "id": "KW218",
+      "keyword": "特定デジタルプラットフォームの透明性及び公正性の向上に関する法律",
+      "version": "9.0",
+      "field": "法務・倫理",
+      "subField": "法令・情報倫理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 111,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q218"
+      ]
+    },
+    {
+      "id": "KW219",
+      "keyword": "ビジネスと人権",
+      "version": "9.0",
+      "field": "法務・倫理",
+      "subField": "法令・情報倫理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 112,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q219"
+      ]
+    },
+    {
+      "id": "KW220",
+      "keyword": "NDA",
+      "version": "9.0",
+      "field": "法務・倫理",
+      "subField": "法令・情報倫理",
+      "changeType": "追加",
+      "source": "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
+      "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf",
+      "sourcePage": 111,
+      "sourceType": "IPA",
+      "verified": true,
+      "questionIds": [
+        "Q220"
+      ]
+    }
+  ]
+}
