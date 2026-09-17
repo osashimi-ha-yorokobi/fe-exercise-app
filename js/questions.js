@@ -3,6 +3,7 @@
 
   const SOURCE_90 = "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf";
   const SOURCE_92 = "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kpe-att/syllabus_fe_ver9_2.pdf";
+  const content = window.FE_QUESTION_CONTENT;
 
   const termDefinitions = {
     "箱ひげ図": "最小値、四分位数、中央値、最大値などを用いて、分布の広がりや外れ値を表す図です。",
@@ -214,7 +215,7 @@
     "コンプライアンス": "法令や社会規範、社内規程などを守ることです。",
     "アクセシビリティ": "年齢や障害などにかかわらず情報やサービスを利用できる度合いです。",
     "技術者倫理": "専門技術を社会へ適用する技術者が守るべき行動規範や責任の考え方です。",
-    "中小受託取引適正化法": "Ver.9.2で「下請法」に代えて追加された、中小受託取引の公正化を図る法律のシラバス上の用語です。",
+    "中小受託取引適正化法": "中小受託取引における取引条件の明示や代金の支払などを定め、公正な取引を確保するための法律です。",
     "情報流通プラットフォーム対処法": "大規模プラットフォーム事業者に、権利侵害情報への対応の迅速化や運用状況の透明化を求める法律です。",
     "個人情報保護法": "個人情報の適正な取扱いに関する基本ルールを定める法律です。",
     "不正競争防止法": "営業秘密の不正取得など不正競争を防止する法律です。"
@@ -300,11 +301,37 @@
       field,
       subField,
       changeType,
-      question: questionText || `次の記述が示す用語はどれか。\n${formalDefinition}`,
+      definition: formalDefinition,
+      question: content.buildQuestion({
+        keyword,
+        definition: formalDefinition,
+        field,
+        questionText
+      }),
       choices,
       answer,
-      explanation: `${keyword}は、${formalDefinition} シラバスの「${subField}」に記載された用語である。`,
-      wrongExplanations: choices.map((choice, choiceIndex) => `${labels[choiceIndex]}：${termDefinitions[choice].replaceAll("です。", "である。")}`),
+      explanation: content.buildExplanation({
+        keyword,
+        definition: formalDefinition,
+        field,
+        question: content.buildQuestion({
+          keyword,
+          definition: formalDefinition,
+          field,
+          questionText
+        })
+      }),
+      wrongExplanations: choices.map((choice, choiceIndex) => `${labels[choiceIndex]}：${content.buildOptionExplanation({
+        keyword: choice,
+        definition: termDefinitions[choice],
+        field,
+        question: content.buildQuestion({
+          keyword,
+          definition: formalDefinition,
+          field,
+          questionText
+        })
+      })}`),
       source: version === "9.2" ? "IPA 基本情報技術者試験シラバス Ver.9.2" : "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",
       sourceUrl: source,
       sourcePage: page,

@@ -4,6 +4,7 @@
   const SOURCE_90 = "https://www.ipa.go.jp/shiken/syllabus/nq6ept00000014dv-att/syllabus_fe_ver9_0_henkou.pdf";
   const SOURCE_92 = "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kpe-att/syllabus_fe_ver9_2.pdf";
   const labels = ["ア", "イ", "ウ", "エ"];
+  const content = window.FE_QUESTION_CONTENT;
   const records = [];
 
   const addGroup = (group, field, subField, items, version = "9.0", changeType = "追加", sourcePage = null) => {
@@ -38,10 +39,10 @@
 
   addGroup("NETWORK", "ネットワーク", "通信プロトコル・インタフェース", [
     ["HTTP/2", "ストリームの多重化やヘッダー圧縮などにより、Web通信の効率を高めたHTTPのバージョンである。", 39],
-    ["HTTP/3", "QUICをトランスポートとして用い、接続確立やパケット損失時の遅延を改善したHTTPのバージョンである。", 39],
+    ["HTTP/3", "WebブラウザとWebサーバの通信に、QUICというトランスポートプロトコルを組み合わせたHTTPのバージョンである。接続確立を速くし、パケット損失時に別のストリームまで待たせにくい。", 39],
     ["10GBASE-T", "ツイストペアケーブルで10ギガビット毎秒のイーサネット通信を行う規格である。", 39],
     ["Wi-Fi 6E", "Wi-Fi 6の機能を6GHz帯にも拡張して利用する無線LAN規格である。", 39],
-    ["ip", "Linuxなどで、IPアドレスや経路、インタフェースを表示・設定するネットワーク管理コマンドである。", 40],
+    ["ip", "Linuxのネットワーク設定を、アドレス、リンク、経路などの対象別サブコマンドで確認・変更するコマンド群である。", 40],
     ["ss", "ソケットの状態や接続情報を表示するためのネットワーク管理コマンドである。", 40],
     ["dig", "DNSサーバへ問い合わせ、名前解決の結果や応答内容を確認するコマンドである。", 40],
     ["traceroute", "送信先までの経路上にあるルータと各区間の応答時間を調べるコマンドである。", 40],
@@ -77,7 +78,7 @@
   ]);
 
   addGroup("UI", "UX・UI", "ユーザインタフェース・情報デザイン", [
-    ["NUI", "音声、ジェスチャ、視線など、自然な行為を入力として利用するユーザインタフェースである。", 29],
+    ["NUI", "発話や視線、身体動作などをセンサーで検出し、画面や機器への入力に変換するユーザインタフェース方式である。", 29],
     ["ジェスチャーインタフェース", "手や身体の動きを検出し、画面操作などの入力として利用するインタフェースである。", 29],
     ["マルチタッチ", "画面上の複数の接触点を同時に検出して操作に利用する方式である。", 29],
     ["トグル", "二つの状態を切り替えるためのユーザインタフェース部品である。", 30],
@@ -227,11 +228,39 @@
       field: record.field,
       subField: record.subField,
       changeType: record.changeType,
-      question: "次の記述が示す用語はどれか。\n" + record.definition,
+      definition: content.formalize(record.definition),
+      question: content.buildQuestion({
+        keyword: record.keyword,
+        definition: record.definition,
+        field: record.field,
+        group: record.group
+      }),
       choices,
       answer,
-      explanation: record.keyword + "は、" + record.definition + " IPAシラバスの「" + record.subField + "」に記載された用語である。",
-      wrongExplanations: choices.map((choice, choiceIndex) => labels[choiceIndex] + "：" + definitions[choice]),
+      explanation: content.buildExplanation({
+        keyword: record.keyword,
+        definition: record.definition,
+        field: record.field,
+        group: record.group,
+        question: content.buildQuestion({
+          keyword: record.keyword,
+          definition: record.definition,
+          field: record.field,
+          group: record.group
+        })
+      }),
+      wrongExplanations: choices.map((choice, choiceIndex) => `${labels[choiceIndex]}：${content.buildOptionExplanation({
+        keyword: choice,
+        definition: definitions[choice],
+        field: record.field,
+        group: record.group,
+        question: content.buildQuestion({
+          keyword: record.keyword,
+          definition: record.definition,
+          field: record.field,
+          group: record.group
+        })
+      })}`),
       source: record.version === "9.2"
         ? "IPA 基本情報技術者試験シラバス Ver.9.2"
         : "IPA 基本情報技術者試験シラバス Ver.9.0（変更箇所表示版）",

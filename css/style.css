@@ -258,7 +258,7 @@ button { cursor: pointer; }
 .feedback-title.wrong { color: var(--red); }
 .feedback-title.wrong i { background: var(--red); }
 .explanation-heading { margin: 0 0 10px; color: var(--ink); font-size: .94rem; letter-spacing: .04em; }
-.explanation-main { margin: 0 0 18px; padding: 16px 18px; color: #26334d; background: #f5f7fb; border-left: 4px solid var(--blue); border-radius: 4px 8px 8px 4px; }
+.explanation-main { margin: 0 0 18px; padding: 16px 18px; color: #26334d; background: #f5f7fb; border-left: 4px solid var(--blue); border-radius: 4px 8px 8px 4px; white-space: pre-line; line-height: 1.8; }
 .option-notes-heading { margin: 0 0 9px; color: var(--ink-2); font-size: .84rem; }
 .option-notes { display: grid; gap: 7px; }
 .option-note { display: grid; grid-template-columns: 28px 1fr; gap: 8px; color: #56627a; font-size: .84rem; }

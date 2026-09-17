@@ -71,7 +71,7 @@
 
   const definitionFor = (keyword) => {
     const question = questionByKeyword.get(keyword.id);
-    return keyword.definition || question?.explanation || `${keyword.keyword}は、基本情報技術者試験シラバスの「${keyword.subField}」に追加・変更された用語です。`;
+    return keyword.definition || question?.definition || `${keyword.keyword}は、${keyword.subField}に関する用語です。`;
   };
 
   const cardHtml = (keyword) => {
