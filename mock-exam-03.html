@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基本情報技術者試験の現行範囲に対応した全80問のオリジナルCBT模擬試験">
+  <title>オリジナル模擬試験 第3回 | FE UPDATE</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/mock-exam.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="mark">FE</span><span>FE UPDATE</span></a>
+    <span class="header-tag">オリジナル模擬試験 第3回</span>
+  </header>
+  <main>
+    <section id="welcome" class="welcome panel">
+      <p class="eyebrow">CBT PRACTICE TEST</p>
+      <h1>基本情報技術者試験<br>模擬試験 第3回</h1>
+      <p class="lead">現行シラバス Ver.9.2 の範囲から出題する全問新作の模試です。AI・データ活用、セキュリティなど近年追加された分野も多く扱います。問題文、解答群、擬似言語は本試験の記述様式に合わせています。</p>
+      <div class="specs">
+        <div><strong>科目A</strong><span>60問 / 90分 / 四肢択一</span></div>
+        <div><strong>科目B</strong><span>20問 / 100分 / 全問必須</span></div>
+        <div><strong>科目ごとに受験</strong><span>個別に開始・提出・採点</span></div>
+      </div>
+      <p class="note">番号からの問題移動、見直しマーク、未解答の確認に対応します。正解・解説は各科目の終了後に表示します。途中で画面を閉じても、この端末で再開できます。時間は画面を閉じている間も進みます。</p>
+      <div id="saved-session" class="saved-session" hidden>
+        <p>保存された受験記録</p>
+        <div id="saved-list" class="saved-list"></div>
+      </div>
+      <div class="actions">
+        <button type="button" data-start="a" class="primary">科目Aを開始</button>
+        <button type="button" data-start="b" class="secondary">科目Bを開始</button>
+      </div>
+      <div class="practice-entry">
+        <h2>全3回から、時間制限なしで一問ずつ練習</h2>
+        <p>全240問からランダム出題します。回答後すぐに分野・解法と各選択肢の解説を確認できます。</p>
+        <div class="practice-options"><label><input id="practice-no-calculation" type="checkbox"> 計算問題を除く</label><label><input id="practice-bookmark-filter" type="checkbox"> チェックした問題だけ（<span id="practice-bookmark-count">0</span>問）</label></div>
+        <p id="practice-warning" class="practice-warning" role="status" hidden></p>
+        <div class="actions"><button type="button" data-practice-start="all" class="primary">全科目を練習</button><button type="button" data-practice-start="a" class="secondary">科目Aだけ</button><button type="button" data-practice-start="b" class="secondary">科目Bだけ</button></div>
+      </div>
+      <p class="set-switch"><a href="mock-exams.html">模試の一覧</a>　｜　別のセット：<a href="mock-exam.html">第1回</a>　<a href="mock-exam-02.html">第2回</a>　<a href="mock-exam-03.html">第3回</a></p>
+      <p class="source-note">本模試は非公式の練習画面です。<a href="https://www.ipa.go.jp/shiken/kubun/fe.html" target="_blank" rel="noopener">IPA 試験情報</a>、<a href="https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2026r08.html" target="_blank" rel="noopener">FE公開問題</a>、<a href="https://www.ipa.go.jp/shiken/kubun/sg/outline.html" target="_blank" rel="noopener">SG科目Bの出題内容</a>、<a href="https://www.prometric-jp.com/examinee/procedure/" target="_blank" rel="noopener">CBT操作体験版</a>を参考にしています。実際の試験画面とは細部が異なる場合があります。</p>
+    </section>
+    <section id="exam" class="exam" hidden>
+      <div class="exam-top">
+        <div><p class="eyebrow" id="subject-name"></p><h1 id="exam-title"></h1><button type="button" id="leave-exam" class="text-button">開始画面へ戻る</button></div>
+        <div class="timer" role="timer"><span>残り時間</span><strong id="time-left">--:--:--</strong></div>
+      </div>
+      <div class="progress"><span id="progress-label"></span><div class="progress-track"><div id="progress-fill"></div></div></div>
+      <div class="exam-grid">
+        <aside class="nav panel" aria-label="問題番号">
+          <button type="button" id="close-mobile-nav" class="mobile-nav-close" aria-label="問題一覧を閉じる">閉じる ×</button>
+          <p>問題一覧 <small>番号を押すとその問題へ移動</small></p>
+          <div class="status-legend"><span><i class="legend-answered"></i>解答済み</span><span><i class="legend-flagged"></i>見直し</span></div>
+          <div class="nav-filters" aria-label="問題の絞り込み">
+            <button type="button" data-filter="all" class="active">すべて</button>
+            <button type="button" data-filter="unanswered">未解答</button>
+            <button type="button" data-filter="flagged">見直し</button>
+          </div>
+          <div id="question-nav" class="question-nav"></div>
+          <p id="nav-empty" class="nav-empty" hidden>該当する問題はありません。</p>
+          <button type="button" id="submit" class="submit">この科目を終了する</button>
+        </aside>
+        <article class="question panel">
+          <div class="question-heading">
+            <p class="question-number" id="question-number"></p>
+            <button type="button" id="flag" class="flag-button" aria-pressed="false">⚑ 後で見直す</button>
+          </div>
+          <h2 id="question-text"></h2>
+          <div id="question-intro" class="question-intro" hidden></div>
+          <pre id="question-material" class="material" hidden></pre>
+          <h2 id="question-final" hidden></h2>
+          <p id="program-caption" class="program-caption" hidden>〔プログラム〕</p>
+          <pre id="question-code" class="code" hidden></pre>
+          <div id="question-diagram" hidden></div>
+          <p class="choice-caption">解答群</p>
+          <div id="choices" class="choices"></div>
+          <button type="button" id="clear-answer" class="clear-answer">解答を取り消す</button>
+          <div class="question-footer">
+            <button type="button" id="prev" class="secondary">前の問題</button>
+            <button type="button" id="next" class="primary">次の問題</button>
+          </div>
+        </article>
+      </div>
+      <button type="button" id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-label="問題一覧を閉じる" hidden></button>
+      <div class="mobile-toolbar" aria-label="スマートフォン用の受験操作">
+        <button type="button" id="mobile-prev" class="secondary" aria-label="前の問題">前へ</button>
+        <button type="button" id="mobile-nav-toggle" class="secondary" aria-controls="question-nav" aria-expanded="false">問題一覧 <span id="mobile-position"></span></button>
+        <button type="button" id="mobile-next" class="secondary" aria-label="次の問題">次へ</button>
+        <span id="mobile-time-left" class="mobile-time" aria-hidden="true">--:--:--</span>
+      </div>
+    </section>
+    <section id="result" class="result panel" hidden>
+      <p class="eyebrow">RESULT & EXPLANATIONS</p>
+      <h1 id="result-title">採点結果</h1>
+      <div class="score-grid" id="score"></div>
+      <p id="result-note"></p>
+      <div class="actions">
+        <button type="button" id="return-welcome" class="secondary">開始画面へ戻る</button>
+        <button type="button" id="restart" class="primary">もう一度受験する</button>
+      </div>
+      <h2>解答・解説</h2>
+      <div id="review-list" class="review-list"></div>
+    </section>
+    <section id="practice" class="practice" hidden>
+      <div class="practice-top"><div><p class="eyebrow">RANDOM PRACTICE · NO TIMER</p><h1 id="practice-title"></h1><button type="button" id="practice-leave" class="text-button">開始画面へ戻る</button></div><p id="practice-stats" aria-live="polite"></p></div>
+      <article id="practice-card" class="question panel practice-card">
+        <div class="practice-question-head"><div><p id="practice-number" class="question-number"></p><p id="practice-source" class="practice-source"></p></div><button type="button" id="practice-check" class="flag-button" aria-pressed="false">✓ 後で確認</button></div>
+        <h2 id="practice-question"></h2>
+        <div id="practice-intro" class="question-intro" hidden></div>
+        <pre id="practice-material" class="material" hidden></pre>
+        <h2 id="practice-final" hidden></h2>
+        <p id="practice-program-caption" class="program-caption" hidden>〔プログラム〕</p>
+        <pre id="practice-code" class="code" hidden></pre>
+        <div id="practice-diagram" hidden></div>
+        <p class="choice-caption">解答群・選ぶと直ちに採点</p>
+        <div id="practice-choices" class="choices"></div>
+        <div id="practice-feedback" class="explanation practice-feedback" tabindex="-1" aria-live="polite" hidden><h3 id="practice-feedback-title"></h3><div id="practice-context" class="explanation-context"></div><ul id="practice-reasons" class="option-reasons"></ul></div>
+        <button type="button" id="practice-next" class="primary practice-next" hidden>次のランダム問題へ</button>
+      </article>
+      <section id="practice-complete" class="panel practice-complete" hidden><h2>この範囲を一周しました</h2><p id="practice-complete-score"></p><div class="actions"><button type="button" id="practice-restart" class="primary">もう一周する</button><button type="button" id="practice-review-checks" class="secondary">チェックした問題を復習</button><button type="button" id="practice-complete-leave" class="secondary">開始画面へ戻る</button></div></section>
+    </section>
+  </main>
+  <dialog id="finish-dialog" class="finish-dialog" aria-labelledby="finish-title">
+    <h2 id="finish-title">科目を終了しますか</h2>
+    <p id="finish-message"></p>
+    <div class="finish-stats">
+      <div><span>解答済み</span><strong id="finish-answered"></strong></div>
+      <div><span>未解答</span><strong id="finish-unanswered"></strong></div>
+      <div><span>見直し</span><strong id="finish-flagged"></strong></div>
+    </div>
+    <p class="note">終了すると、この科目の解答は変更できません。</p>
+    <div class="actions">
+      <button type="button" id="cancel-finish" class="secondary">問題へ戻る</button>
+      <button type="button" id="confirm-finish" class="primary">科目を終了する</button>
+    </div>
+  </dialog>
+  <script src="js/mock-exam-set-common.js"></script>
+  <script src="js/mock-exam-set-3-a.js"></script>
+  <script src="js/mock-exam-set-3-recent.js"></script>
+  <script src="js/mock-exam-set-3-b.js"></script>
+  <script src="js/mock-exam-enrichment.js"></script>
+  <script src="js/mock-exam-presenter.js"></script>
+  <script src="js/mock-practice-pool.js"></script>
+  <script src="js/mock-exam-state.js"></script>
+  <script src="js/mock-exam.js"></script>
+  <script src="js/mock-practice-state.js"></script>
+  <script src="js/mock-practice.js"></script>
+</body>
+</html>
+
+
+
