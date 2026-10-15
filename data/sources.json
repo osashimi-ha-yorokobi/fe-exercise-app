@@ -1,0 +1,202 @@
+{
+  "checked": "2026-10-15",
+  "publisher": "独立行政法人情報処理推進機構（IPA）",
+  "documents": [
+    {
+      "type": "シラバス",
+      "title": "基本情報技術者試験 シラバス Ver.9.2",
+      "file": "syllabus_fe_ver9_2.pdf",
+      "url": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kpe-att/syllabus_fe_ver9_2.pdf",
+      "sha256": "affe22cc678c29d3294ab65c169f09939026dcf0ab1d69e3fd5f46d2415527b4"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2025年6月8日 修了試験問題",
+      "file": "tokurei_Mondai_20250608_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/gmcbt800000077l9-att/tokurei_Mondai_20250608_FE.pdf",
+      "sha256": "980ff011d95b1defdf25a930bef722bda6ef64ef301e349962fe47d7419037e6"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2018年6月10日 修了試験問題",
+      "file": "tokurei_Mondai_20180610_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/ug65p90000001bq0-att/tokurei_Mondai_20180610_FE.pdf",
+      "sha256": "5290b16afea3e98a4f782a23e96871f9378a710cef497d8dddeb50b291cc388f"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2020年1月26日 修了試験問題",
+      "file": "tokurei_Mondai_20200126_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/ug65p90000001bq0-att/tokurei_Mondai_20200126_FE.pdf",
+      "sha256": "c61175e211b48242165454cfacae7965d26f05fa9864dd53f33daf95326ea054"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2020年7月26日 修了試験問題",
+      "file": "tokurei_Mondai_20200726_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/ug65p90000001bq0-att/tokurei_Mondai_20200726_FE.pdf",
+      "sha256": "99b7268c65517eb8c97958913c38f8b1dfaf72307142ca833ef1a60a02378862"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2020年12月13日 修了試験問題",
+      "file": "tokurei_Mondai_20201213_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/ug65p90000001bq0-att/tokurei_Mondai_20201213_FE.pdf",
+      "sha256": "584b5fd03f06b92932200e22f22a6f01fcf778bd3bd17e37e7e6889b39a7945e"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2023年1月22日 修了試験問題",
+      "file": "tokurei_Mondai_20230122_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/ug65p90000001bq0-att/tokurei_Mondai_20230122_FE.pdf",
+      "sha256": "989479e10b3a8b2ac7c35349d8942646de33c27acaa446f62bc9599d9a1f7a37"
+    },
+    {
+      "type": "修了試験問題",
+      "title": "2013年6月23日 修了試験問題",
+      "file": "tokurei_Mondai_20130623_FE.pdf",
+      "url": "https://www.ipa.go.jp/shiken/about/ug65p90000001fci-att/tokurei_Mondai_20130623_FE.pdf",
+      "sha256": "9c9f515466e674b2595f3db1fe294bc6fe980834f4ce46a925cc0f6b26fab495"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2019年度春期 基本情報技術者試験 午前問題",
+      "file": "2019h31h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000ddiw-att/2019h31h_fe_am_qs.pdf",
+      "sha256": "55210d293f5fd96673cc1131acea3f8237209b4599d95d48bad02964abe62eb6"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2019年度秋期 基本情報技術者試験 午前問題",
+      "file": "2019r01a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000dict-att/2019r01a_fe_am_qs.pdf",
+      "sha256": "4cd404654bb4f465befc78a3ac44c79bcd0f019b12b68f93a38d9836710c7cb0"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2018年度秋期 基本情報技術者試験 午前問題",
+      "file": "2018h30a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f01f-att/2018h30a_fe_am_qs.pdf",
+      "sha256": "15c0f1776ba5c22802089c4a74e2ba5484ff2c7f0015212929b0218cc7bbc62e"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2018年度春期 基本情報技術者試験 午前問題",
+      "file": "2018h30h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fabr-att/2018h30h_fe_am_qs.pdf",
+      "sha256": "75ed3191ffee7083b776c29cdcb12b0a9f27196edaa32fed8642ff157d34af23"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2017年度秋期 基本情報技術者試験 午前問題",
+      "file": "2017h29a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fqpm-att/2017h29a_fe_am_qs.pdf",
+      "sha256": "03c224fe68475103a0437cd11716db473a4e0a1bad2181b0262e6f0115d4cacd"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2017年度春期 基本情報技術者試験 午前問題",
+      "file": "2017h29h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000fzx1-att/2017h29h_fe_am_qs.pdf",
+      "sha256": "31e5bc9c556b3da1e38ad8defe3bd34791b345550c899510cb245c1e0b5a5156"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2016年度秋期 基本情報技術者試験 午前問題",
+      "file": "2016h28a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000g6fw-att/2016h28a_fe_am_qs.pdf",
+      "sha256": "e288f1f0d8f8287702bbbba0b00643b0c24bfdb92660172806bbe137e93df7e5"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2016年度春期 基本情報技術者試験 午前問題",
+      "file": "2016h28h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gn5o-att/2016h28h_fe_am_qs.pdf",
+      "sha256": "d68dd03ec4beccc2a80c482ada27c67e4370c2bdacd600d9d3fc10b18ea6ef34"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2015年度秋期 基本情報技術者試験 午前問題",
+      "file": "2015h27a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000gxj0-att/2015h27a_fe_am_qs.pdf",
+      "sha256": "d9e1e4ae74f5d1736ab67339637c6ce32a3f50ec7cced76b532489a48e5a0df5"
+    },
+    {
+      "type": "公開科目A問題",
+      "title": "2024年度 基本情報技術者試験 公開科目A問題",
+      "file": "2024r06_fe_kamoku_a_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/eid2eo0000007g1d-att/2024r06_fe_kamoku_a_qs.pdf",
+      "sha256": "c8a462741a1111950f7376e3ebd9bd0b2eff75d32fa9cfa3e39e97b7bf979789"
+    },
+    {
+      "type": "公開科目A問題",
+      "title": "2026年度 基本情報技術者試験 公開科目A問題",
+      "file": "2026r08_fe_kamoku_a_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/rcu1hd0000012qj6-att/2026r08_fe_kamoku_a_qs.pdf",
+      "sha256": "7fb3984bb494cad928232823e224b7e58f3eaef59ea523deaa4bae2085c8fba3"
+    },
+    {
+      "type": "公開科目A問題",
+      "title": "2023年度 基本情報技術者試験 公開科目A問題",
+      "file": "2023r05_fe_kamoku_a_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/t6hhco0000003zx0-att/2023r05_fe_kamoku_a_qs.pdf",
+      "sha256": "a381b2d4e1d1297b24adde48ca29dc9b5e9da533b831963cbf0756191f400181"
+    },
+    {
+      "type": "公開科目A問題",
+      "title": "2025年度 基本情報技術者試験 公開科目A問題",
+      "file": "2025r07_fe_kamoku_a_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/tbl5kb0000005r9r-att/2025r07_fe_kamoku_a_qs.pdf",
+      "sha256": "3c33fb495bfea51851d2202fca17adb325ce9cb2c216464a5f931725618dfadc"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2015年度春期 基本情報技術者試験 午前問題",
+      "file": "2015h27h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p90000000f52-att/2015h27h_fe_am_qs.pdf",
+      "sha256": "64a598d846041dbcf90b4646aef1407ac31173dc2f60c91ce5393e9019834f54"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2014年度秋期 基本情報技術者試験 午前問題",
+      "file": "2014h26a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p90000000ye5-att/2014h26a_fe_am_qs.pdf",
+      "sha256": "6ac3641c17dba91814f5064a6adbb0d4d3116f28fbe55bf6dd160b7dd43bd4ae"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2014年度春期 基本情報技術者試験 午前問題",
+      "file": "2014h26h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p90000001dzu-att/2014h26h_fe_am_qs.pdf",
+      "sha256": "fa3a494cc2c38efb57ed678eb5524729d3428dc80dec6993dcdb561533c58abd"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2013年度秋期 基本情報技術者試験 午前問題",
+      "file": "2013h25a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p900000027za-att/2013h25a_fe_am_qs.pdf",
+      "sha256": "83102f43611ea194ca17d7876a272073fb7000a35ba1a4ef24ca4954e73cc641"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2013年度春期 基本情報技術者試験 午前問題",
+      "file": "2013h25h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p90000002e6g-att/2013h25h_fe_am_qs.pdf",
+      "sha256": "39c169249a825961c710a248b5bc8e30c474679fed5f93516e610a308a13d9bc"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2012年度秋期 基本情報技術者試験 午前問題",
+      "file": "2012h24a_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p90000002h5m-att/2012h24a_fe_am_qs.pdf",
+      "sha256": "d6384768e2e84d3154ec4e6bf3bd477e683d67b20a360709d409079e93c56aea"
+    },
+    {
+      "type": "旧午前問題",
+      "title": "2012年度春期 基本情報技術者試験 午前問題",
+      "file": "2012h24h_fe_am_qs.pdf",
+      "url": "https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p900000038er-att/2012h24h_fe_am_qs.pdf",
+      "sha256": "40dbcf86d8c2b789e1f68833beb072eedd3dea64853571fca815eac274e28768"
+    }
+  ]
+}

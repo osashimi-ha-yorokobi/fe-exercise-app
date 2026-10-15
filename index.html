@@ -2,8 +2,21 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <meta name="description" content="基本情報技術者試験の用語をジャンル別に確認できるスマホ用単語帳" />
+    <title>FE ことばノート</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./data/terms.js" defer></script>
+    <script src="./data/descriptions.js" defer></script>
+    <script src="./js/app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="app-shell">
+      <header class="app-header" id="app-header"></header>
+      <main id="app-main" tabindex="-1"></main>
+      <nav class="bottom-nav" id="bottom-nav" aria-label="メインメニュー"></nav>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+  </body>
 </html>
