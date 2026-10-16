@@ -23,13 +23,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-853384ef0ba02d03",
-              "name": "仮数部",
-              "reading": "かすうぶ",
-              "english": "Mantissa",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-d9fc3c57174e8e6b",
               "name": "桁落ち",
               "reading": "けたおち",
@@ -41,13 +34,6 @@
               "name": "固定小数点数",
               "reading": "こていしょうすうてんすう",
               "english": "Fixed Point Number",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a0112cb5a6552ae0",
-              "name": "指数部",
-              "reading": "しすうぶ",
-              "english": "Exponent Part",
               "addedInVersion": ""
             },
             {
@@ -69,20 +55,6 @@
               "name": "排他的論理和",
               "reading": "はいたてきろんりわ",
               "english": "Exclusive OR",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-361e74907105b69b",
-              "name": "BCD",
-              "reading": "びーしーでぃー",
-              "english": "Binary-Coded Decimal",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d1368c93ce46380e",
-              "name": "否定",
-              "reading": "ひてい",
-              "english": "Negation",
               "addedInVersion": ""
             },
             {
@@ -126,27 +98,6 @@
           "name": "応用数学",
           "terms": [
             {
-              "id": "t-c801d5f8c209bc67",
-              "name": "因数分解",
-              "reading": "いんすうぶんかい",
-              "english": "Factorization",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-3aafe4959aa1f7f2",
-              "name": "回帰分析",
-              "reading": "かいきぶんせき",
-              "english": "Regression Analysis",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-9d9d89ecbc758855",
-              "name": "階乗",
-              "reading": "かいじょう",
-              "english": "Factorial",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-fdd491a93788a494",
               "name": "仮説検定",
               "reading": "かせつけんてい",
@@ -182,32 +133,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-1e9cbe9be0ce5da3",
-              "name": "サービス時間",
-              "reading": "さーびすじかん",
-              "english": "Service Time",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a28d5e0432384fb3",
-              "name": "最頻値",
-              "reading": "さいひんち",
-              "english": "Mode",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-b69ba2f6a5bef5c6",
               "name": "最尤推定",
               "reading": "さいゆうすいてい",
               "english": "Maximum Likelihood Estimation",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-f42a69b9bb0b2b27",
-              "name": "指数分布",
-              "reading": "しすうぶんぷ",
-              "english": "Exponential Distribution",
-              "addedInVersion": ""
             },
             {
               "id": "t-4b07ca8ba8ecf9a0",
@@ -245,13 +175,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-fb8f42b3be092268",
-              "name": "相関分析",
-              "reading": "そうかんぶんせき",
-              "english": "Correlation Analysis",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-c75a8f67b05fe4dd",
               "name": "第1種の誤り",
               "reading": "だいいちしゅのあやまり",
@@ -264,13 +187,6 @@
               "reading": "だいにしゅのあやまり",
               "english": "Type II Error",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-e43d4b77e88f05dc",
-              "name": "中央値",
-              "reading": "ちゅうおうち",
-              "english": "Median",
-              "addedInVersion": ""
             },
             {
               "id": "t-6fd432f2a494d749",
@@ -298,13 +214,6 @@
               "name": "平均サービス率",
               "reading": "へいきんさーびすりつ",
               "english": "Average Service Rate",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1f95d1af06952902",
-              "name": "平均値",
-              "reading": "へいきんち",
-              "english": "Average",
               "addedInVersion": ""
             },
             {
@@ -343,24 +252,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-2f3b815e75960b41",
-              "name": "待ち時間",
-              "reading": "まちじかん",
-              "english": "Wait Time",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-082cecec84ccfa0f",
               "name": "丸め誤差",
               "reading": "まるめごさ",
               "english": "Rounding Error",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-6199c81ff5c19ae8",
-              "name": "無向グラフ",
-              "reading": "むこうぐらふ",
-              "english": "Undirected Graph",
               "addedInVersion": ""
             },
             {
@@ -395,13 +290,6 @@
               "reading": "あーるおーしーきょくせん",
               "english": "Receiver Operating Characteristic Curve",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-ecf9156f97242a2e",
-              "name": "ASCIIコード",
-              "reading": "あすきーこーど",
-              "english": "ASCII Code",
-              "addedInVersion": ""
             },
             {
               "id": "t-9b33a525f97ceff6",
@@ -451,13 +339,6 @@
               "reading": "きばんもでる",
               "english": "Foundation Model",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-491354aa14ad8f1a",
-              "name": "逆ポーランド表記法",
-              "reading": "ぎゃくぽーらんどひょうきほう",
-              "english": "Reverse Polish Notation",
-              "addedInVersion": ""
             },
             {
               "id": "t-71e425a20cbdcd8f",
@@ -516,13 +397,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-646a981b9e4b3b68",
-              "name": "時間計算量",
-              "reading": "じかんけいさんりょう",
-              "english": "Time Complexity",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-88c794704878013f",
               "name": "自己教師あり学習",
               "reading": "じこきょうしありがくしゅう",
@@ -579,32 +453,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-7af1a250400d146b",
-              "name": "通信路符号化",
-              "reading": "つうしんろふごうか",
-              "english": "Channel Coding",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-14eea00a60de02ca",
               "name": "敵対的生成ネットワーク",
               "reading": "てきたいてきせいせいねっとわーく",
               "english": "Generative Adversarial Network",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-8d8a778ab0cbf20a",
-              "name": "テストデータ",
-              "reading": "",
-              "english": "Test Data",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a7dc49999c0b4090",
-              "name": "手続型言語",
-              "reading": "てつづきがたげんご",
-              "english": "Procedural Language",
-              "addedInVersion": ""
             },
             {
               "id": "t-ee1b990553c9a8a9",
@@ -628,13 +481,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-f1bcde4cbe2e5630",
-              "name": "汎化",
-              "reading": "はんか",
-              "english": "Generalization",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-003fbe689c8a4038",
               "name": "ファインチューニング",
               "reading": "",
@@ -654,13 +500,6 @@
               "reading": "ほーるどあうとけんしょう",
               "english": "Holdout Validation",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-dd0695e1f68f6d58",
-              "name": "目的プログラム",
-              "reading": "もくてきぷろぐらむ",
-              "english": "Object Code",
-              "addedInVersion": ""
             },
             {
               "id": "t-b364fff23fff8f51",
@@ -689,13 +528,6 @@
               "reading": "",
               "english": "Recurrent Neural Network",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-07e0c47f73065a80",
-              "name": "ロジスティック回帰",
-              "reading": "ろじすてぃっくかいき",
-              "english": "Logistic Regression",
-              "addedInVersion": ""
             }
           ]
         },
@@ -918,13 +750,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-88676979aa6e69d6",
-              "name": "探索木",
-              "reading": "たんさくぎ",
-              "english": "Search Tree",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-0f4c7cdbdb94ae0f",
               "name": "単方向リスト",
               "reading": "たんほうこうりすと",
@@ -979,13 +804,6 @@
               "reading": "らいふぉ",
               "english": "Last In First Out",
               "addedInVersion": ""
-            },
-            {
-              "id": "t-03af7bd69de65154",
-              "name": "リスト",
-              "reading": "",
-              "english": "List",
-              "addedInVersion": ""
             }
           ]
         },
@@ -1012,13 +830,6 @@
               "reading": "だいくすとらほう",
               "english": "Dijkstra's Algorithm",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-f99f7a45ff37fd2f",
-              "name": "流れ図",
-              "reading": "ながれず",
-              "english": "Flowchart",
-              "addedInVersion": ""
             },
             {
               "id": "t-22bfb0f693b5bc72",
@@ -1094,66 +905,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-30bf916a57d28ebc",
-              "name": "オブジェクト指向プログラミング",
-              "reading": "おぶじぇくとしこうぷろぐらみんぐ",
-              "english": "Object-Oriented Programming",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-41b4f20a971bd97f",
-              "name": "局所変数",
-              "reading": "きょくしょへんすう",
-              "english": "Local Variable",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f80ea864c9e56f18",
-              "name": "コーディング標準",
-              "reading": "こーでぃんぐひょうじゅん",
-              "english": "Coding Standard",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-50ad2c756cd314d5",
-              "name": "実数型",
-              "reading": "じっすうがた",
-              "english": "Real Number",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-07d2431aa22e126a",
-              "name": "整数型",
-              "reading": "せいすうがた",
-              "english": "Integer Type",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-2bc1ef3e24d66d01",
-              "name": "代入",
-              "reading": "だいにゅう",
-              "english": "Assignment",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1c6feb9c63a6ff58",
-              "name": "引数",
-              "reading": "ひきすう",
-              "english": "Argument",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-bebd626144f9fab6",
               "name": "ビット演算",
               "reading": "びっとえんざん",
               "english": "Bitwise Operation",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-bdcd188f798d8269",
-              "name": "プログラミング",
-              "reading": "",
-              "english": "Programming",
               "addedInVersion": ""
             },
             {
@@ -1162,47 +917,12 @@
               "reading": "ふろんとえんどふれーむわーく",
               "english": "Front-End Framework",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-711ba0db11fd5b0e",
-              "name": "文字列型",
-              "reading": "もじれつがた",
-              "english": "String Type",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5f18904cf03b3882",
-              "name": "論理演算",
-              "reading": "ろんりえんざん",
-              "english": "Logical Operation",
-              "addedInVersion": ""
             }
           ]
         },
         {
           "name": "プログラム言語",
           "terms": [
-            {
-              "id": "t-98a515b6a702f89d",
-              "name": "R",
-              "reading": "あーる",
-              "english": "R",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-37ddfc3386bf50ad",
-              "name": "C",
-              "reading": "しー",
-              "english": "C Programming Language",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5181feafe9fe5217",
-              "name": "Java",
-              "reading": "じゃば",
-              "english": "Java",
-              "addedInVersion": ""
-            },
             {
               "id": "t-369e62b1e376fe3e",
               "name": "JavaScript",
@@ -1216,40 +936,12 @@
               "reading": "じゅりあ",
               "english": "Julia",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-94cd928fce18b4ac",
-              "name": "Perl",
-              "reading": "ぱーる",
-              "english": "Perl",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-54e1dc56e785ab6a",
-              "name": "PHP",
-              "reading": "ぴーえいちぴー",
-              "english": "Hypertext Preprocessor",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a3fd745951e353fa",
-              "name": "Ruby",
-              "reading": "るびー",
-              "english": "Ruby",
-              "addedInVersion": ""
             }
           ]
         },
         {
           "name": "その他の言語",
           "terms": [
-            {
-              "id": "t-99ecaf23492f2970",
-              "name": "アクティビティ図",
-              "reading": "あくてぃびてぃず",
-              "english": "Activity Diagram",
-              "addedInVersion": ""
-            },
             {
               "id": "t-86ceee6069789c6f",
               "name": "HTML",
@@ -1276,20 +968,6 @@
               "name": "XML",
               "reading": "えっくすえむえる",
               "english": "eXtensible Markup Language",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f04e3aa95f20739e",
-              "name": "コミュニケーション図",
-              "reading": "こみゅにけーしょんず",
-              "english": "Communication Diagram",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-3a0ec156019734c5",
-              "name": "コンポーネント図",
-              "reading": "こんぽーねんとず",
-              "english": "Component Diagram",
               "addedInVersion": ""
             },
             {
@@ -1360,13 +1038,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-d3b883e13b7e7ecc",
-              "name": "インデックスレジスタ",
-              "reading": "",
-              "english": "Index Register",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-81109de71dd9aa6b",
               "name": "OR回路",
               "reading": "おあかいろ",
@@ -1378,20 +1049,6 @@
               "name": "外部割込み",
               "reading": "がいぶわりこみ",
               "english": "External Interrupt",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e18e8b4298815ab7",
-              "name": "記憶装置",
-              "reading": "きおくそうち",
-              "english": "Storage Device",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-028628fc27c65040",
-              "name": "組合せ回路",
-              "reading": "くみあわせかいろ",
-              "english": "Combination Circuit",
               "addedInVersion": ""
             },
             {
@@ -1430,32 +1087,11 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-9565ecf1d68b2aea",
-              "name": "順序回路",
-              "reading": "じゅんじょかいろ",
-              "english": "Sequential Circuit",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-bcd08673246b53b3",
               "name": "シングルボードコンピュータ",
               "reading": "",
               "english": "Single Board Computer",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-bc08eabec64d9f64",
-              "name": "制御装置",
-              "reading": "せいぎょそうち",
-              "english": "Control Unit",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-ed407ce060d1388b",
-              "name": "デコーダ",
-              "reading": "",
-              "english": "Decoder",
-              "addedInVersion": ""
             },
             {
               "id": "t-46327cbf334f8131",
@@ -1469,13 +1105,6 @@
               "name": "NAND回路",
               "reading": "なんどかいろ",
               "english": "NAND Circuit",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-73960c76423c559a",
-              "name": "入出力命令",
-              "reading": "にゅうしゅつりょくめいれい",
-              "english": "Input/Output Instruction",
               "addedInVersion": ""
             },
             {
@@ -1493,31 +1122,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-fa3cf8c461031a82",
-              "name": "汎用レジスタ",
-              "reading": "はんようれじすた",
-              "english": "General-Purpose Register",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-84243f1176ddc00b",
               "name": "プログラムカウンタ",
               "reading": "ぷろぐらむかうんた",
               "english": "Program Counter",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-099d5c5ae0e5de33",
-              "name": "分岐命令",
-              "reading": "ぶんきめいれい",
-              "english": "Branch Instruction",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-97e19b5d67f380de",
-              "name": "マルチコアプロセッサ",
-              "reading": "",
-              "english": "Multi-core Processor",
               "addedInVersion": ""
             },
             {
@@ -1554,13 +1162,6 @@
           "name": "メモリ",
           "terms": [
             {
-              "id": "t-cb1fc30ab9fecd47",
-              "name": "EEPROM",
-              "reading": "いーいーぴーろむ",
-              "english": "Electrically Erasable Programmable ROM",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-de5948f62a645bcf",
               "name": "ウェアレベリング",
               "reading": "",
@@ -1582,24 +1183,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-5c66da6195aba3bc",
-              "name": "SDRAM",
-              "reading": "えすでぃーらむ",
-              "english": "Synchronous DRAM",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-163efe709049e9b1",
               "name": "キャッシュメモリ",
               "reading": "",
               "english": "Cache Memory",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-8643f38c655f4bd1",
-              "name": "CD",
-              "reading": "しーでぃー",
-              "english": "Compact Disc",
               "addedInVersion": ""
             },
             {
@@ -1617,24 +1204,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-861cd7b0a7f47a18",
-              "name": "DVD",
-              "reading": "でぃーぶいでぃー",
-              "english": "Digital Versatile Disc",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-749a8a977dde5f19",
               "name": "DRAM",
               "reading": "でぃーらむ",
               "english": "Dynamic Random Access Memory",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-3ef6eeeef0183179",
-              "name": "ディスクキャッシュ",
-              "reading": "",
-              "english": "Disk Cache",
               "addedInVersion": ""
             },
             {
@@ -1656,13 +1229,6 @@
               "name": "バッファ",
               "reading": "ばっふぁ",
               "english": "Buffer",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d9f4c230547081f3",
-              "name": "バンク",
-              "reading": "ばんく",
-              "english": "Memory Bank",
               "addedInVersion": ""
             },
             {
@@ -1698,25 +1264,6 @@
               "name": "ROM",
               "reading": "ろむ",
               "english": "Read-Only Memory",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
-          "name": "バス",
-          "terms": [
-            {
-              "id": "t-ec1494db524d7662",
-              "name": "データバス",
-              "reading": "",
-              "english": "Data Bus",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e3e81e4978e8ba12",
-              "name": "バス",
-              "reading": "",
-              "english": "Bus",
               "addedInVersion": ""
             }
           ]
@@ -1786,38 +1333,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-af304899c6a8067d",
-              "name": "液晶ディスプレイ",
-              "reading": "えきしょうでぃすぷれい",
-              "english": "Liquid Crystal Display",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a345c70d6482de82",
-              "name": "OMR",
-              "reading": "おーえむあーる",
-              "english": "Optical Mark Recognition",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-5d4a52adb8c11ecb",
               "name": "GPS",
               "reading": "じーぴーえす",
               "english": "Global Positioning System",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f9c7505ef2a557ca",
-              "name": "シリンダ",
-              "reading": "",
-              "english": "Cylinder",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e56fdc4479328ed4",
-              "name": "トラック",
-              "reading": "",
-              "english": "Track",
               "addedInVersion": ""
             },
             {
@@ -1881,13 +1400,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-97ad974ea7c9ec2e",
-              "name": "仮想化",
-              "reading": "かそうか",
-              "english": "Virtualization",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-ac28973ed230d775",
               "name": "クライアント",
               "reading": "",
@@ -1899,13 +1411,6 @@
               "name": "クラウドコンピューティング",
               "reading": "",
               "english": "Cloud Computing",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0deb585f4b7109a7",
-              "name": "クラスタ",
-              "reading": "",
-              "english": "Cluster",
               "addedInVersion": ""
             },
             {
@@ -1937,31 +1442,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-05916f4faed49922",
-              "name": "デュアルシステム",
-              "reading": "",
-              "english": "Dual System",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-ded39e8ca557bf85",
-              "name": "トランザクション処理",
-              "reading": "とらんざくしょんしょり",
-              "english": "Transaction Processing",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4cc5bcb6b2e099e8",
               "name": "PaaS",
               "reading": "ぱーす",
               "english": "Platform as a Service",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-93502aad1acf32eb",
-              "name": "パリティ",
-              "reading": "",
-              "english": "Parity",
               "addedInVersion": ""
             },
             {
@@ -1986,13 +1470,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-e86322774ec6fdab",
-              "name": "フォールト",
-              "reading": "",
-              "english": "Fault Tolerance Design",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-22d4e814b4b2d93d",
               "name": "フォールトトレラントシステム",
               "reading": "",
@@ -2007,38 +1484,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-1a3ebd5a042b96d4",
-              "name": "並列処理",
-              "reading": "へいれつしょり",
-              "english": "Parallel Processing",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0e28bc8ddb481492",
-              "name": "ホットサイト",
-              "reading": "",
-              "english": "Hot Site",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-59f17b28f98ccc59",
-              "name": "マルチプロセッサシステム",
-              "reading": "",
-              "english": "Multiprocessor System",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4ad18873dab06a3b",
               "name": "ミラーリング",
               "reading": "",
               "english": "Mirroring",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1e2f1c88e189d89a",
-              "name": "リアルタイム処理",
-              "reading": "りあるたいむしょり",
-              "english": "Real-Time Processing",
               "addedInVersion": ""
             },
             {
@@ -2056,13 +1505,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-06012dcfc17e920e",
-              "name": "RAID3",
-              "reading": "れいどすりー",
-              "english": "Redundant Array of Independent Disks Level 3",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-3d569d0e48f155ef",
               "name": "RAID0",
               "reading": "れいどぜろ",
@@ -2070,24 +1512,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-dfe0561edd2fc381",
-              "name": "RAID2",
-              "reading": "れいどつー",
-              "english": "Redundant Array of Independent Disks Level 2",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-67baa4eaf59c9b16",
               "name": "RAID5",
               "reading": "れいどふぁいぶ",
               "english": "Redundant Array of Independent Disks Level 5",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f99dc0d128778fd3",
-              "name": "RAID4",
-              "reading": "れいどふぉー",
-              "english": "Redundant Array of Independent Disks Level 4",
               "addedInVersion": ""
             },
             {
@@ -2117,24 +1545,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-3d15c474bb1f67af",
-              "name": "オーバーヘッド",
-              "reading": "おーばーへっど",
-              "english": "Overhead",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-b77ae4e88d4e63e7",
               "name": "稼働率",
               "reading": "かどうりつ",
               "english": "Availability Rate",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-23d036d85f69cb33",
-              "name": "スケールアウト",
-              "reading": "",
-              "english": "Scale Out",
               "addedInVersion": ""
             },
             {
@@ -2149,27 +1563,6 @@
               "name": "ターンアラウンドタイム",
               "reading": "",
               "english": "Turnaround Time",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c3a93116cd38a06d",
-              "name": "TCO",
-              "reading": "てぃーしーおー",
-              "english": "Total Cost of Ownership",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-09668ae1dfe19262",
-              "name": "バスタブ曲線",
-              "reading": "ばすたぶきょくせん",
-              "english": "Bathtub Curve",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-ef64fbbf7844b167",
-              "name": "ランニングコスト",
-              "reading": "",
-              "english": "Running Cost",
               "addedInVersion": ""
             },
             {
@@ -2198,13 +1591,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-7778d1f6b6a421c9",
-              "name": "運用管理",
-              "reading": "うんようかんり",
-              "english": "Operations Management",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-8fa1264a1b4c6f04",
               "name": "LRU",
               "reading": "えるあーるゆー",
@@ -2223,27 +1609,6 @@
               "name": "OS",
               "reading": "おーえす",
               "english": "Operating System",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d5661356680d627c",
-              "name": "OSI基本参照モデル",
-              "reading": "おーえすあいきほんさんしょうもでる",
-              "english": "OSI Reference Model",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5c746e4b092ee9ca",
-              "name": "オーバーレイ方式",
-              "reading": "おーばーれいほうしき",
-              "english": "Overlay Method",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-112522aee1b873e2",
-              "name": "カーネルモード",
-              "reading": "",
-              "english": "Kernel Mode",
               "addedInVersion": ""
             },
             {
@@ -2279,13 +1644,6 @@
               "name": "コンパクション",
               "reading": "",
               "english": "Compaction",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-dd11d0b7407d5131",
-              "name": "再構成",
-              "reading": "さいこうせい",
-              "english": "Reconfiguration",
               "addedInVersion": ""
             },
             {
@@ -2345,59 +1703,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-fc517d466f5ef366",
-              "name": "セグメント方式",
-              "reading": "せぐめんとほうしき",
-              "english": "Segment Method",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4d019d802f6d7cca",
-              "name": "タイムクウォンタム",
-              "reading": "",
-              "english": "Time Quantum",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-9f524f0c7d6caefa",
-              "name": "多重プログラミング",
-              "reading": "たじゅうぷろぐらみんぐ",
-              "english": "Multiprogramming",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-da9f04c438cb9dfb",
-              "name": "チャネル",
-              "reading": "",
-              "english": "Channel",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-9da4b0e9e3591163",
               "name": "ディスパッチ",
               "reading": "",
               "english": "Dispatch",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-60485e2db3d13e23",
-              "name": "動的アドレス変換",
-              "reading": "どうてきあどれすへんかん",
-              "english": "Dynamic Address Translation",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a6d2e3858123742e",
-              "name": "ノンプリエンプティブ方式",
-              "reading": "のんぷりえんぷてぃぶほうしき",
-              "english": "Non-preemptive Scheduling",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d9df8d5ee9ff5c41",
-              "name": "ハードウェア障害",
-              "reading": "はーどうぇあしょうがい",
-              "english": "Hardware Failure",
               "addedInVersion": ""
             },
             {
@@ -2408,24 +1717,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-074ef2550edb2e74",
-              "name": "ブートストラップ",
-              "reading": "",
-              "english": "Bootstrap",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-d736e38458c53245",
               "name": "フラグメンテーション",
               "reading": "ふらぐめんてーしょん",
               "english": "Fragmentation",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7973cfedd97b81a0",
-              "name": "プリエンプティブ方式",
-              "reading": "ぷりえんぷてぃぶほうしき",
-              "english": "Preemptive Scheduling",
               "addedInVersion": ""
             },
             {
@@ -2450,13 +1745,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-325d7bb365c61655",
-              "name": "ページリプレースメント",
-              "reading": "",
-              "english": "Page Replacement",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-51baf47ce6e5838c",
               "name": "ページング",
               "reading": "ぺーじんぐ",
@@ -2471,46 +1759,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-4bab8fa894ab0848",
-              "name": "ミドルウェア",
-              "reading": "",
-              "english": "Middleware",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d00e836215779f56",
-              "name": "メモリマップ",
-              "reading": "めもりまっぷ",
-              "english": "Memory Map",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-0f749b26a001ef65",
               "name": "モバイル端末用OS",
               "reading": "もばいるたんまつようおーえす",
               "english": "Mobile Operating System",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-940b5057d3156418",
-              "name": "ユーザーモード",
-              "reading": "",
-              "english": "User Mode",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c1ecf727f0c14ba0",
-              "name": "優先順",
-              "reading": "ゆうせんじゅん",
-              "english": "Priority Scheduling",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b11a299b3df2bdcd",
-              "name": "UNIX",
-              "reading": "ゆにっくす",
-              "english": "UNIX",
-              "addedInVersion": ""
             },
             {
               "id": "t-bd21ca4d9ad10ea1",
@@ -2524,34 +1777,6 @@
               "name": "リアルタイムOS",
               "reading": "りあるたいむおーえす",
               "english": "Real-Time Operating System",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-cab3e225ad63a5a4",
-              "name": "リスタート",
-              "reading": "",
-              "english": "Restart",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-47383a34e2b95e7d",
-              "name": "ロールアウト",
-              "reading": "",
-              "english": "Rollout",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0248b91f78e735a2",
-              "name": "ロールイン",
-              "reading": "",
-              "english": "Roll-In",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-05741e31a6046e3b",
-              "name": "割込み",
-              "reading": "わりこみ",
-              "english": "Interrupt",
               "addedInVersion": ""
             }
           ]
@@ -2593,27 +1818,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-1c6a0a58921e78a1",
-              "name": "コンポーネント",
-              "reading": "",
-              "english": "Component",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-47716a9d1f9f64e9",
-              "name": "シェル",
-              "reading": "",
-              "english": "Shell",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-82f516e52f78873b",
-              "name": "Java Beans",
-              "reading": "じゃばびーんず",
-              "english": "Java Beans",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-6134423d33b05063",
               "name": "DBMS",
               "reading": "でぃーびーえむえす",
@@ -2626,31 +1830,10 @@
           "name": "ファイルシステム",
           "terms": [
             {
-              "id": "t-f1c4a7bbaa3770c0",
-              "name": "カレントディレクトリ",
-              "reading": "",
-              "english": "Current Directory",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-840c1356518d5634",
               "name": "差分バックアップ",
               "reading": "さぶんばっくあっぷ",
               "english": "Differential Backup",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f2e8ebabce2ec091",
-              "name": "参照情報",
-              "reading": "さんしょうじょうほう",
-              "english": "Reference Information",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-73390daf12d24e4b",
-              "name": "絶対パス",
-              "reading": "ぜったいぱす",
-              "english": "Absolute Path",
               "addedInVersion": ""
             },
             {
@@ -2661,31 +1844,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-ea644e0045edb238",
-              "name": "直接アクセス",
-              "reading": "ちょくせつあくせす",
-              "english": "Direct Access",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-3da19834dd05b1a1",
               "name": "フルバックアップ",
               "reading": "",
               "english": "Full Backup",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-853db1a2b058579a",
-              "name": "ボリューム",
-              "reading": "",
-              "english": "Volume",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-2cf40152bf92d0c9",
-              "name": "ルートディレクトリ",
-              "reading": "",
-              "english": "Root Directory",
               "addedInVersion": ""
             }
           ]
@@ -2694,31 +1856,10 @@
           "name": "開発ツール",
           "terms": [
             {
-              "id": "t-0074dba27f7a3825",
-              "name": "IDE",
-              "reading": "あいでぃーいー",
-              "english": "Integrated Development Environment",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-248fc6996cabf741",
-              "name": "アサーションチェッカ",
-              "reading": "",
-              "english": "Assertion Checker",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-cbe604009b8635bd",
               "name": "インタプリタ",
               "reading": "いんたぷりた",
               "english": "Interpreter",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-9bc9a610745bdfc4",
-              "name": "原始プログラム",
-              "reading": "げんしぷろぐらむ",
-              "english": "Source Program",
               "addedInVersion": ""
             },
             {
@@ -2729,32 +1870,11 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-7f60f355e35bee74",
-              "name": "スナップショット",
-              "reading": "",
-              "english": "Snapshot",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d1fe28ae5c050bc3",
-              "name": "テストツール",
-              "reading": "てすとつーる",
-              "english": "Test Tool",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-aab18943bfcba96e",
               "name": "ノーコードツール",
               "reading": "",
               "english": "No-Code Tool",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-4f448f18fccf37dd",
-              "name": "目的プログラム",
-              "reading": "もくてきぷろぐらむ",
-              "english": "Objective Program",
-              "addedInVersion": ""
             },
             {
               "id": "t-01029595152fd81e",
@@ -2776,13 +1896,6 @@
               "reading": "",
               "english": "Loader",
               "addedInVersion": ""
-            },
-            {
-              "id": "t-147c4f174679a144",
-              "name": "ロードモジュール",
-              "reading": "",
-              "english": "Load Module",
-              "addedInVersion": ""
             }
           ]
         },
@@ -2794,34 +1907,6 @@
               "name": "OSS",
               "reading": "おーぷんそーすそふとうぇあ",
               "english": "Open Source Software",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c4816429cbacd55d",
-              "name": "コピーレフト",
-              "reading": "",
-              "english": "Copyleft",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f1b8b517e1628441",
-              "name": "GPL",
-              "reading": "じーぴーえる",
-              "english": "GNU General Public License",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0ea4380d92c27921",
-              "name": "デュアルライセンス",
-              "reading": "",
-              "english": "Dual License",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a91749094d499320",
-              "name": "Linux",
-              "reading": "りなっくす",
-              "english": "Linux",
               "addedInVersion": ""
             }
           ]
@@ -2836,38 +1921,10 @@
           "name": "ハードウェア",
           "terms": [
             {
-              "id": "t-6e9266ed0361145e",
-              "name": "IC",
-              "reading": "あいしー",
-              "english": "Integrated Circuit",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-21fe347501fb172c",
-              "name": "LED",
-              "reading": "えるいーでぃ",
-              "english": "Light Emitting Diode",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e6a08e5243c1d612",
-              "name": "LSI",
-              "reading": "えるえすあい",
-              "english": "Large-Scale Integration",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-8e5e3d2efb96d17c",
               "name": "真理値表",
               "reading": "しんりちひょう",
               "english": "Truth Table",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-cd5dabb4b8cbc833",
-              "name": "正論理",
-              "reading": "せいろんり",
-              "english": "Positive Logic",
               "addedInVersion": ""
             },
             {
@@ -2878,31 +1935,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-0b2d9ff6af4ece5c",
-              "name": "トランジスタ",
-              "reading": "",
-              "english": "Transistor",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-aefbb4a584e1a9d2",
-              "name": "フィードバック制御",
-              "reading": "ふぃーどばっくせいぎょ",
-              "english": "Feedback Control",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-134385118bab75f2",
               "name": "フリップフロップ",
               "reading": "",
               "english": "Flip-Flop",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e695fb8908ce4dad",
-              "name": "論理式",
-              "reading": "ろんりしき",
-              "english": "Logical Expression",
               "addedInVersion": ""
             }
           ]
@@ -2945,13 +1981,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-73a2f8497c7f5d62",
-              "name": "自然言語インタフェース",
-              "reading": "しぜんげんごいんたふぇーす",
-              "english": "Natural Language Interface",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4cc5542b83456e1c",
               "name": "ツールチップ",
               "reading": "",
@@ -2964,20 +1993,6 @@
               "reading": "",
               "english": "Toggle Button",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-106cc171721b398f",
-              "name": "ナビゲーション",
-              "reading": "",
-              "english": "Navigation",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-9f48882874e3b684",
-              "name": "ヒューマンインタフェース",
-              "reading": "",
-              "english": "Human Interface",
-              "addedInVersion": ""
             },
             {
               "id": "t-81b956781ff6f7e9",
@@ -3034,13 +2049,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-2bbaacdc471aa11f",
-              "name": "フォーマットチェック",
-              "reading": "",
-              "english": "Format Check",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-ce3d71266f89dbcb",
               "name": "ムードボード",
               "reading": "",
@@ -3094,31 +2102,10 @@
           "name": "マルチメディア技術",
           "terms": [
             {
-              "id": "t-05eec759611b6a94",
-              "name": "圧縮率",
-              "reading": "あっしゅくりつ",
-              "english": "Compression Ratio",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4e0866f1b7b88d0b",
               "name": "Webコンテンツ",
               "reading": "うぇぶこんてんつ",
               "english": "Web Content",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-6ba5617808c6e996",
-              "name": "H.264",
-              "reading": "えいちにーろくよん",
-              "english": "H.264",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-049efdb7cd62a411",
-              "name": "MPEG",
-              "reading": "えむぺぐ",
-              "english": "Moving Picture Experts Group",
               "addedInVersion": ""
             },
             {
@@ -3136,31 +2123,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-e559ec8843ee500e",
-              "name": "JPEG",
-              "reading": "じぇいぺぐ",
-              "english": "Joint Photographic Experts Group",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-836eef4ddb365f87",
-              "name": "ZIP",
-              "reading": "じっぷ",
-              "english": "ZIP",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-3b89b305ff31987a",
               "name": "ストリーミング",
               "reading": "",
               "english": "Streaming",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-96942e4f6057bb9b",
-              "name": "PNG",
-              "reading": "ぴんぐ",
-              "english": "Portable Network Graphics",
               "addedInVersion": ""
             },
             {
@@ -3183,25 +2149,11 @@
           "name": "マルチメディア応用",
           "terms": [
             {
-              "id": "t-67bc626bae05c97b",
-              "name": "AR",
-              "reading": "えーあーる",
-              "english": "Augmented Reality",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e0d37a2596aa3504",
               "name": "コントラスト",
               "reading": "",
               "english": "Contrast",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-26193fbdb21454d3",
-              "name": "CG",
-              "reading": "しーじー",
-              "english": "Computer Graphics",
-              "addedInVersion": ""
             },
             {
               "id": "t-515fa7898b8a73a0",
@@ -3237,13 +2189,6 @@
               "reading": "",
               "english": "Metaverse",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-75ef690a23822af5",
-              "name": "モーションキャプチャ",
-              "reading": "",
-              "english": "Motion Capture",
-              "addedInVersion": ""
             }
           ]
         }
@@ -5889,20 +4834,6 @@
           "name": "システム要件定義・ソフトウェア要件定義",
           "terms": [
             {
-              "id": "t-079e9e833e93a18c",
-              "name": "IoT",
-              "reading": "あいおーてぃー",
-              "english": "Internet of Things",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1465e82866162cae",
-              "name": "アクティビティ",
-              "reading": "",
-              "english": "Activity",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-72db67bb1487435e",
               "name": "E-R図",
               "reading": "いーあーるず",
@@ -5910,45 +4841,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-ef72383d6f8fba47",
-              "name": "インタフェースファイル",
-              "reading": "",
-              "english": "Interface File",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-89b3e79a3fd1e208",
-              "name": "運用要件",
-              "reading": "うんようようけん",
-              "english": "Operational Requirements",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-348b5801ae761e0f",
               "name": "機能要件",
               "reading": "きのうようけん",
               "english": "Functional Requirements",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b7d519c3d494d6a3",
-              "name": "決定表",
-              "reading": "けっていひょう",
-              "english": "Decision Table",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1ead01c90d9cf764",
-              "name": "シーケンス図",
-              "reading": "しーけんすず",
-              "english": "Sequence Diagram",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7aa83150c1b9bcf8",
-              "name": "GUI",
-              "reading": "じーゆーあい",
-              "english": "Graphical User Interface",
               "addedInVersion": ""
             },
             {
@@ -5973,13 +4869,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-987a5ac7109016c1",
-              "name": "テスト要件",
-              "reading": "てすとようけん",
-              "english": "Test Requirements",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e01a8b2fb6359103",
               "name": "トレーサビリティマトリクス",
               "reading": "",
@@ -5991,34 +4880,6 @@
               "name": "非機能要件",
               "reading": "ひきのうようけん",
               "english": "Non-Functional Requirements",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-866a3e66cc337a25",
-              "name": "品質特性",
-              "reading": "ひんしつとくせい",
-              "english": "Quality Attribute",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-26c84d6c09f5ddcf",
-              "name": "品質要件",
-              "reading": "ひんしつようけん",
-              "english": "Quality Requirements",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1bf6edcd65307407",
-              "name": "プロダクトバックログ",
-              "reading": "",
-              "english": "Product Backlog",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e83b48fea1a02efd",
-              "name": "プロトタイプ",
-              "reading": "",
-              "english": "Prototype",
               "addedInVersion": ""
             },
             {
@@ -6034,26 +4895,12 @@
               "reading": "",
               "english": "Use Case",
               "addedInVersion": ""
-            },
-            {
-              "id": "t-cd6c60fc1c07d5c8",
-              "name": "ユースケース図",
-              "reading": "ゆーすけーすず",
-              "english": "Use Case Diagram",
-              "addedInVersion": ""
             }
           ]
         },
         {
           "name": "設計",
           "terms": [
-            {
-              "id": "t-ef6cca7fd2c15edb",
-              "name": "アーキテクチャ",
-              "reading": "",
-              "english": "Architecture",
-              "addedInVersion": ""
-            },
             {
               "id": "t-3ff736ba84933b2b",
               "name": "RDB",
@@ -6062,46 +4909,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-fc65f3c0b9f564d9",
-              "name": "移植性",
-              "reading": "いしょくせい",
-              "english": "Portability",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-550bd1d231f70fdc",
-              "name": "インスタンス",
-              "reading": "",
-              "english": "Instance",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5b3e4caeec0fb732",
-              "name": "インスペクション",
-              "reading": "",
-              "english": "Inspection",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-d2155db0315c7ac3",
               "name": "インメモリデータベース",
               "reading": "",
               "english": "In-Memory Database",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-878906b8d0489f37",
-              "name": "ウォークスルー",
-              "reading": "",
-              "english": "Walkthrough",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0204f44dd082efe3",
-              "name": "運用性",
-              "reading": "うんようせい",
-              "english": "Maintainability",
-              "addedInVersion": ""
             },
             {
               "id": "t-7ded68b30638c2a0",
@@ -6146,32 +4958,11 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-47713d991950b148",
-              "name": "構造化",
-              "reading": "こうぞうか",
-              "english": "Structured",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-505ffa3ef399217d",
               "name": "サーバレスアーキテクチャ",
               "reading": "",
               "english": "Serverless Architecture",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-0a12b905c4090115",
-              "name": "再利用",
-              "reading": "さいりよう",
-              "english": "Reuse",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0b6abe50aab53f23",
-              "name": "使用性",
-              "reading": "しようせい",
-              "english": "Usability",
-              "addedInVersion": ""
             },
             {
               "id": "t-f6af1623b0dadf02",
@@ -6202,38 +4993,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-cd65539e26647108",
-              "name": "ソフトウェアユニット",
-              "reading": "",
-              "english": "Software Unit",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-0e5027ecc3677899",
               "name": "多相性",
               "reading": "たそうせい",
               "english": "Polymorphism",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-8379a937a58b40e3",
-              "name": "チェックリスト",
-              "reading": "",
-              "english": "Checklist",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-df079e145e04c19a",
-              "name": "データフロー",
-              "reading": "でーたふろー",
-              "english": "Data Flow",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-23f0d73b839f0300",
-              "name": "テスト要件",
-              "reading": "てすとようけん",
-              "english": "Test Requirement",
               "addedInVersion": ""
             },
             {
@@ -6258,20 +5021,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-f410d3b21bb9c892",
-              "name": "パッケージ",
-              "reading": "",
-              "english": "Package",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d238afaa67ffbb88",
-              "name": "品質特性",
-              "reading": "ひんしつとくせい",
-              "english": "Quality Attributes",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-dff823ad1766273b",
               "name": "ホワイトボックステスト",
               "reading": "",
@@ -6284,13 +5033,6 @@
               "reading": "",
               "english": "Microservices Architecture",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-f30e05bbbfbb3876",
-              "name": "メソッド",
-              "reading": "",
-              "english": "Method",
-              "addedInVersion": ""
             },
             {
               "id": "t-3143422d4c74a27a",
@@ -6312,39 +5054,11 @@
           "name": "実装・構築",
           "terms": [
             {
-              "id": "t-a85c0d3c74d23c82",
-              "name": "アサーション",
-              "reading": "",
-              "english": "Assertion",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-02b05d5fbca86778",
-              "name": "アルゴリズム",
-              "reading": "",
-              "english": "Algorithm",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-3bc51e7328d14bb0",
               "name": "オートインデント",
               "reading": "",
               "english": "Auto Indent",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-e9316b59f85bc983",
-              "name": "欠陥",
-              "reading": "けっかん",
-              "english": "Defect",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5709e654606d26b5",
-              "name": "コーディング",
-              "reading": "",
-              "english": "Coding",
-              "addedInVersion": ""
             },
             {
               "id": "t-e463868eae954e10",
@@ -6368,38 +5082,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-2d5fa3190aff4630",
-              "name": "静的解析",
-              "reading": "せいてきかいせき",
-              "english": "Static Analysis",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4863b667669926e8",
-              "name": "データ処理",
-              "reading": "でーたしょり",
-              "english": "Data Processing",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-77a3ef27993e42c9",
               "name": "データベース",
               "reading": "",
               "english": "Database",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-bdff00448b911d06",
-              "name": "テストケース",
-              "reading": "",
-              "english": "Test Case",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-1780e4908b3046b2",
-              "name": "デバッガ",
-              "reading": "",
-              "english": "Debugger",
               "addedInVersion": ""
             },
             {
@@ -6417,25 +5103,11 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-cbeb1e1c2877038f",
-              "name": "複数条件網羅",
-              "reading": "ふくすうじょうけんもうら",
-              "english": "Multiple Condition Coverage",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-6d3a79bc414bc1b1",
               "name": "ブレークポイント",
               "reading": "",
               "english": "Breakpoint",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-ed5eac734ff01af8",
-              "name": "プログラム言語",
-              "reading": "ぷろぐらむげんご",
-              "english": "Programming Language",
-              "addedInVersion": ""
             },
             {
               "id": "t-bbc369ae8e91a70a",
@@ -6457,27 +5129,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-9fc25a333d0e7ac3",
-              "name": "システム要件",
-              "reading": "しすてむようけん",
-              "english": "System Requirements",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7407cae42c160bae",
-              "name": "性能テスト",
-              "reading": "せいのうてすと",
-              "english": "Performance Testing",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d5ab7680909055d5",
-              "name": "ソフトウェア要件",
-              "reading": "そふとうぇあようけん",
-              "english": "Software Requirements",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e4c126fef4273ac6",
               "name": "ブラックボックステスト",
               "reading": "ぶらっくぼっくすてすと",
@@ -6489,13 +5140,6 @@
         {
           "name": "導入・受入れ支援",
           "terms": [
-            {
-              "id": "t-1fff0000d2d8e88e",
-              "name": "仮想環境",
-              "reading": "かそうかんきょう",
-              "english": "Virtual Environment",
-              "addedInVersion": ""
-            },
             {
               "id": "t-e9280eb15ffd54a3",
               "name": "適用する妥当性確認テストの技法",
@@ -6516,39 +5160,11 @@
           "name": "保守・廃棄",
           "terms": [
             {
-              "id": "t-74fe7aeb39bf47a0",
-              "name": "遠隔保守",
-              "reading": "えんかくほしゅ",
-              "english": "Remote Maintenance",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-a1407cc197527b91",
               "name": "改良保守",
               "reading": "かいりょうほしゅ",
               "english": "Corrective Maintenance",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-1c94905368b34073",
-              "name": "予防保守",
-              "reading": "よぼうほしゅ",
-              "english": "Preventive Maintenance",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a7823d03d5c1701f",
-              "name": "リバースエンジニアリング",
-              "reading": "",
-              "english": "Reverse Engineering",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-09adbd361148db82",
-              "name": "リファクタリング",
-              "reading": "",
-              "english": "Refactoring",
-              "addedInVersion": ""
             }
           ]
         }
@@ -6590,13 +5206,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-481b14e4e3a12866",
-              "name": "カスタマイズ",
-              "reading": "",
-              "english": "Customize",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-c6ba2b576e49917b",
               "name": "継続的デプロイ",
               "reading": "けいぞくてきでぷろい",
@@ -6618,13 +5227,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-3be7767d6b1281d0",
-              "name": "JIS X 0160",
-              "reading": "じすえっくす0160",
-              "english": "JIS X 0160",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-2bcfe39d30cf8d33",
               "name": "スクラム",
               "reading": "",
@@ -6639,25 +5241,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-606689211bd29806",
-              "name": "スプリント",
-              "reading": "",
-              "english": "Sprint",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e704996101d5d731",
               "name": "ソースコードの共同所有",
               "reading": "そーすこーどのきょうどうしょゆう",
               "english": "Source Code Ownership",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-064d717f0774d3a5",
-              "name": "テスト駆動開発",
-              "reading": "てすとくどうかいはつ",
-              "english": "Test-Driven Development",
-              "addedInVersion": ""
             },
             {
               "id": "t-5022dc5ab61df1f7",
@@ -6672,27 +5260,6 @@
               "reading": "でぶせくおぷす",
               "english": "DevSecOps",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-5847798cbf67cc00",
-              "name": "標準化",
-              "reading": "ひょうじゅんか",
-              "english": "Standardization",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-3a98a535e7ad6f5e",
-              "name": "ペアプログラミング",
-              "reading": "",
-              "english": "Pair Programming",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0f79b38432b3fe4f",
-              "name": "モジュールの独立性",
-              "reading": "もじゅーるのどくりつせい",
-              "english": "Module Independence",
-              "addedInVersion": ""
             },
             {
               "id": "t-ffba1be6bd3301ae",
@@ -6714,13 +5281,6 @@
               "reading": "",
               "english": "Refactoring",
               "addedInVersion": ""
-            },
-            {
-              "id": "t-0e16f84cfae1a327",
-              "name": "ロジックマッシュアップ",
-              "reading": "",
-              "english": "Logic Mashup",
-              "addedInVersion": ""
             }
           ]
         },
@@ -6737,54 +5297,14 @@
           ]
         },
         {
-          "name": "知的財産適用管理",
-          "terms": [
-            {
-              "id": "t-901dc8e263fdf0df",
-              "name": "特許権",
-              "reading": "とっきょけん",
-              "english": "Patent Right",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
           "name": "開発環境管理",
           "terms": [
-            {
-              "id": "t-b55b3a7cd675930d",
-              "name": "構成品目",
-              "reading": "こうせいひんもく",
-              "english": "Component Items",
-              "addedInVersion": ""
-            },
             {
               "id": "t-23145833b2e918b2",
               "name": "ステージング環境",
               "reading": "すてーじんぐかんきょう",
               "english": "Staging Environment",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-c9265527301b433a",
-              "name": "ソフトウェアライセンス",
-              "reading": "",
-              "english": "Software License",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7309ae1e24315445",
-              "name": "バージョン管理",
-              "reading": "ばーじょんかんり",
-              "english": "Version Control",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7fc0207882717069",
-              "name": "不正コピー",
-              "reading": "ふせいこぴー",
-              "english": "Unauthorized Copying",
-              "addedInVersion": ""
             }
           ]
         },
@@ -6815,79 +5335,6 @@
               "reading": "",
               "english": "Tailoring",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-f1cf2c6d9f64a667",
-              "name": "PMBOK",
-              "reading": "ぴんぼっく",
-              "english": "Project Management Body of Knowledge",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-6c9d5d1e3a0a918c",
-              "name": "プロジェクト",
-              "reading": "",
-              "english": "Project",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4231008ad0b4b043",
-              "name": "プロジェクトチーム",
-              "reading": "",
-              "english": "Project Team",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b89e4613ca0d0dc2",
-              "name": "プロジェクトマネージャ",
-              "reading": "",
-              "english": "Project Manager",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-bcc30d0ce488b23a",
-              "name": "プロジェクトマネジメント",
-              "reading": "",
-              "english": "Project Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b73dae88e9c695e2",
-              "name": "リスク管理",
-              "reading": "りすくかんり",
-              "english": "Risk Management",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
-          "name": "プロジェクトの統合",
-          "terms": [
-            {
-              "id": "t-c6e4360ad3fb5f7f",
-              "name": "プロジェクト憲章",
-              "reading": "ぷろじぇくとけんしょう",
-              "english": "Project Charter",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c377fb3b5926405a",
-              "name": "プロジェクト憲章の作成",
-              "reading": "ぷろじぇくとけんしょうのさくせい",
-              "english": "Project Charter Creation",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
-          "name": "プロジェクトのステークホルダ",
-          "terms": [
-            {
-              "id": "t-294bb082ca3915e5",
-              "name": "ステークホルダの特定",
-              "reading": "すてーくほるだのとくてい",
-              "english": "Stakeholder Identification",
-              "addedInVersion": ""
             }
           ]
         },
@@ -6895,31 +5342,10 @@
           "name": "プロジェクトのスコープ",
           "terms": [
             {
-              "id": "t-8d948f37f1ae6506",
-              "name": "スコープ",
-              "reading": "",
-              "english": "Scope",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e3779a5033eb0ba8",
-              "name": "スコープの定義",
-              "reading": "すこーぷのていぎ",
-              "english": "Scope Definition",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-1f74ba1fcca8024c",
               "name": "WBS",
               "reading": "だぶるびーえす",
               "english": "Work Breakdown Structure",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d154dca3370ac144",
-              "name": "ワークパッケージ",
-              "reading": "",
-              "english": "Work Package",
               "addedInVersion": ""
             }
           ]
@@ -6954,27 +5380,6 @@
               "reading": "ぱーと",
               "english": "Program Evaluation and Review Technique",
               "addedInVersion": ""
-            },
-            {
-              "id": "t-5a00e14383f8c851",
-              "name": "ファストトラッキング",
-              "reading": "",
-              "english": "Fast Tracking",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-15e78c4cbd9e1020",
-              "name": "ラグ",
-              "reading": "",
-              "english": "Lag",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c8651a3628be8c95",
-              "name": "リード",
-              "reading": "",
-              "english": "Lead",
-              "addedInVersion": ""
             }
           ]
         },
@@ -6991,27 +5396,8 @@
           ]
         },
         {
-          "name": "プロジェクトのリスク",
-          "terms": [
-            {
-              "id": "t-36b5d6752ff036f5",
-              "name": "リスクへの対応",
-              "reading": "りすくへのたいおう",
-              "english": "Risk Response",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
           "name": "プロジェクトのコミュニケーション",
           "terms": [
-            {
-              "id": "t-ca2249340a25473d",
-              "name": "テレビ会議",
-              "reading": "てれびかいぎ",
-              "english": "Video Conferencing",
-              "addedInVersion": ""
-            },
             {
               "id": "t-bd7cdfbb8994d5d9",
               "name": "電子メール",
@@ -7043,62 +5429,6 @@
               "reading": "えすえるおー",
               "english": "Service Level Objective",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-209a7b544bcf489d",
-              "name": "応答時間",
-              "reading": "おうとうじかん",
-              "english": "Response Time",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-808ae0e81081fbf7",
-              "name": "サービス可用性",
-              "reading": "さーびすかようせい",
-              "english": "Service Availability",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5cebf985b3edc122",
-              "name": "サービスコンポーネント",
-              "reading": "",
-              "english": "Service Component",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-abff5ed4962c9d43",
-              "name": "サービス提供者",
-              "reading": "さーびすていきょうしゃ",
-              "english": "Service Provider",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-91f6f3e58f4fab74",
-              "name": "サービスの要求事項",
-              "reading": "さーびすのようきゅうじこう",
-              "english": "Service Requirements",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a1ec20e2fc00847c",
-              "name": "サービス品質",
-              "reading": "さーびすひんしつ",
-              "english": "Service Quality",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-2dcb12c16abceb08",
-              "name": "サービスマネジメント",
-              "reading": "",
-              "english": "Service Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a28de29516945971",
-              "name": "サービスマネジメントシステム",
-              "reading": "",
-              "english": "Service Management System",
-              "addedInVersion": ""
             }
           ]
         },
@@ -7127,111 +5457,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-1b2cfff0d6ec07b6",
-              "name": "移行計画",
-              "reading": "いこうけいかく",
-              "english": "Migration Plan",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a448e20316ac0e78",
-              "name": "インシデント",
-              "reading": "",
-              "english": "Incident",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-8e5bb2b3d046102d",
-              "name": "運用テスト",
-              "reading": "うんようてすと",
-              "english": "Operational Test",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b3c245b4533bf79a",
-              "name": "回避策",
-              "reading": "かいひさく",
-              "english": "Mitigation Measures",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a039835fa8d95fc9",
-              "name": "既知の誤り",
-              "reading": "きちのあやまり",
-              "english": "Known Error",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c097c599e53881ba",
-              "name": "キャパシティ",
-              "reading": "",
-              "english": "Capacity",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-cfbfe65b2c99c969",
-              "name": "キャパシティ管理",
-              "reading": "きゃぱしてぃかんり",
-              "english": "Capacity Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b2924cd8fef5600e",
-              "name": "構成管理",
-              "reading": "こうせいかんり",
-              "english": "Configuration Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5a09b7cf86827f66",
-              "name": "構成品目",
-              "reading": "こうせいひんもく",
-              "english": "Configuration Item",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-33365158056f0f1f",
-              "name": "顧客関係",
-              "reading": "こきゃくかんけい",
-              "english": "Customer Relationship",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a7d86c9408f88d68",
-              "name": "サービスカタログ",
-              "reading": "",
-              "english": "Service Catalog",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-146b29cc21f64c62",
-              "name": "サービスの設計及び移行",
-              "reading": "さーびすのせっけいおよびいこう",
-              "english": "Service Design and Transition",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4cf4beb036750e6a",
-              "name": "サービス要求",
-              "reading": "さーびすようきゅう",
-              "english": "Service Request",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-72c347678ca0f000",
-              "name": "サービス要求管理",
-              "reading": "さーびすようきゅうかんり",
-              "english": "Service Request Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-daab6d78a66422dc",
-              "name": "サービスレベル管理",
-              "reading": "さーびすれべるかんり",
-              "english": "Service Level Management",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-9d380aadea8a6042",
               "name": "サービスレベル指標",
               "reading": "さーびすれべるしひょう",
@@ -7246,92 +5471,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-ec7f3663b5452b60",
-              "name": "資産管理",
-              "reading": "しさんかんり",
-              "english": "IT Asset Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a80a9166271179be",
-              "name": "JIS Q 9001",
-              "reading": "じすきゅー9001",
-              "english": "JIS Q 9001",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b566b078fecb3ada",
-              "name": "総所有費用",
-              "reading": "そうしょゆうひよう",
-              "english": "Total Cost of Ownership",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-6bc96ee7c769e8c5",
-              "name": "展開",
-              "reading": "てんかい",
-              "english": "Deployment",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7c64f78c4a9bf74a",
-              "name": "パフォーマンス",
-              "reading": "",
-              "english": "Performance",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f53420dc736c3e41",
-              "name": "PDCA",
-              "reading": "ぴーでぃーしーえー",
-              "english": "Plan-Do-Check-Act",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-136ca8a551f1b388",
-              "name": "ホットスタンバイ",
-              "reading": "",
-              "english": "Hot Standby",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-05366272551c46a6",
-              "name": "マネジメントシステム",
-              "reading": "",
-              "english": "Management System",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-962c023f8e1e3293",
               "name": "問題管理",
               "reading": "もんだいかんり",
               "english": "Problem Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4f8699f597b005dd",
-              "name": "力量",
-              "reading": "りきりょう",
-              "english": "Capability",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-eb120fab3d11d9f7",
-              "name": "リリース",
-              "reading": "",
-              "english": "Release",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
-          "name": "パフォーマンス評価及び改善",
-          "terms": [
-            {
-              "id": "t-db9da8a54c54010e",
-              "name": "KPI",
-              "reading": "けーぴーあい",
-              "english": "Key Performance Indicator",
               "addedInVersion": ""
             }
           ]
@@ -7345,20 +5488,6 @@
               "reading": "えーあいおぷす",
               "english": "AIOps",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-e98e20f7afad8cad",
-              "name": "応対マニュアル",
-              "reading": "おうたいまにゅある",
-              "english": "Response Manual",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-dd6fdfbdd499567c",
-              "name": "コールセンター",
-              "reading": "",
-              "english": "Call Center",
-              "addedInVersion": ""
             },
             {
               "id": "t-56670f1bd95c3457",
@@ -7382,18 +5511,6 @@
               "addedInVersion": ""
             }
           ]
-        },
-        {
-          "name": "ファシリティマネジメント",
-          "terms": [
-            {
-              "id": "t-9bf29350b621620c",
-              "name": "空調設備",
-              "reading": "くうちょうせつび",
-              "english": "Air Conditioning Equipment",
-              "addedInVersion": ""
-            }
-          ]
         }
       ]
     },
@@ -7404,13 +5521,6 @@
         {
           "name": "システム監査",
           "terms": [
-            {
-              "id": "t-48bf7cc7beefbd45",
-              "name": "外部監査",
-              "reading": "がいぶかんさ",
-              "english": "External Audit",
-              "addedInVersion": ""
-            },
             {
               "id": "t-f86fce0e611d78a6",
               "name": "監査人の倫理",
@@ -7426,25 +5536,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-333fe61eef861b07",
-              "name": "業務監査",
-              "reading": "ぎょうむかんさ",
-              "english": "Business Audit",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-d1b1561dcc9cc068",
               "name": "クラウド情報セキュリティ管理基準",
               "reading": "くらうどじょうほうせきゅりてぃかんりきじゅん",
               "english": "Cloud Information Security Management Standard",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-dbe53337acb84606",
-              "name": "JIS Q 15001",
-              "reading": "じすきゅー15001",
-              "english": "JIS Q 15001",
-              "addedInVersion": ""
             },
             {
               "id": "t-162a04feb24548f8",
@@ -7475,36 +5571,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-88fe633f9d0f11c7",
-              "name": "著作権法",
-              "reading": "ちょさくけんほう",
-              "english": "Copyright Law",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-bfe3abc72f5573f7",
-              "name": "内部監査",
-              "reading": "ないぶかんさ",
-              "english": "Internal Audit",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-36f795b82747a748",
               "name": "不正競争防止法",
               "reading": "ふせいきょうそうぼうしほう",
               "english": "Unfair Competition Prevention Act",
-              "addedInVersion": ""
-            }
-          ]
-        },
-        {
-          "name": "内部統制",
-          "terms": [
-            {
-              "id": "t-1812758b15c86ecd",
-              "name": "CIO",
-              "reading": "しーあいおー",
-              "english": "Chief Information Officer",
               "addedInVersion": ""
             }
           ]
@@ -7519,20 +5589,6 @@
           "name": "情報システム戦略",
           "terms": [
             {
-              "id": "t-4adf6cbdb0a9a9f2",
-              "name": "ITガバナンス",
-              "reading": "あいてぃーがばなんす",
-              "english": "IT Governance",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-de7ebec14eb04e62",
-              "name": "ITIL",
-              "reading": "あいてぃる",
-              "english": "Information Technology Infrastructure Library",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-81348ce1febf07bc",
               "name": "ERP",
               "reading": "いーあーるぴー",
@@ -7540,31 +5596,10 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-8db63bcdaf6da185",
-              "name": "SOA",
-              "reading": "えすおーえー",
-              "english": "Service-Oriented Architecture",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-76128f8873978949",
               "name": "SCM",
               "reading": "えすしーえむ",
               "english": "Supply Chain Management",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-3d859ff4dd2e4c32",
-              "name": "管理プロセス",
-              "reading": "かんりぷろせす",
-              "english": "Management Process",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-6b32b1263f01807c",
-              "name": "業務モデル",
-              "reading": "ぎょうむもでる",
-              "english": "Business Model",
               "addedInVersion": ""
             },
             {
@@ -7580,27 +5615,6 @@
               "reading": "しーでぃーおー",
               "english": "Chief Data Officer",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-b737c773e788d6f4",
-              "name": "システム管理基準",
-              "reading": "しすてむかんりきじゅん",
-              "english": "System Management Standards",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-ec3075cb21319637",
-              "name": "情報システム部門",
-              "reading": "じょうほうしすてむぶもん",
-              "english": "Information Systems Department",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-ff28aa91cb154b53",
-              "name": "ビジネスモデル",
-              "reading": "",
-              "english": "Business Model",
-              "addedInVersion": ""
             }
           ]
         },
@@ -7608,45 +5622,17 @@
           "name": "業務プロセス",
           "terms": [
             {
-              "id": "t-30c50037e947e96d",
-              "name": "RPA",
-              "reading": "あーるぴーえー",
-              "english": "Robotic Process Automation",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-aa93c0fe28795633",
-              "name": "BPO",
-              "reading": "びーぴーおー",
-              "english": "Business Process Outsourcing",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-0287d56d827ce7b2",
               "name": "プロセスの可視化／標準化／自動化",
               "reading": "ぷろせすのかしか／ひょうじゅんか／じどうか",
               "english": "Process Visualization / Standardization / Automation",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-7853bb0d680e0a02",
-              "name": "ワークフローシステム",
-              "reading": "",
-              "english": "Workflow System",
-              "addedInVersion": ""
             }
           ]
         },
         {
           "name": "ソリューションビジネス",
           "terms": [
-            {
-              "id": "t-8a36a016cab86c69",
-              "name": "アウトソーシングサービス",
-              "reading": "",
-              "english": "Outsourcing Service",
-              "addedInVersion": ""
-            },
             {
               "id": "t-8b77a3f1e17fe5a6",
               "name": "ASP",
@@ -7716,13 +5702,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-340c823305b5cfeb",
-              "name": "チャットボット",
-              "reading": "",
-              "english": "Chatbot",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-8461dfdf6548c481",
               "name": "データの消去",
               "reading": "でーたのしょうきょ",
@@ -7744,13 +5723,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-4db0cd98359e4399",
-              "name": "利用者マニュアル",
-              "reading": "りようしゃまにゅある",
-              "english": "User Documentation",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-b38168d562e202bb",
               "name": "ログ分析",
               "reading": "ろぐぶんせき",
@@ -7768,13 +5740,6 @@
         {
           "name": "システム化計画",
           "terms": [
-            {
-              "id": "t-335b053f91f858bd",
-              "name": "ITポートフォリオ",
-              "reading": "あいてぃーぽーとふぉりお",
-              "english": "IT Portfolio",
-              "addedInVersion": ""
-            },
             {
               "id": "t-b3239bfee01c66b9",
               "name": "Fit to Standard",
@@ -7800,13 +5765,6 @@
               "reading": "",
               "english": "Interview",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-87bdb1509b418388",
-              "name": "ステークホルダ",
-              "reading": "",
-              "english": "Stakeholder",
-              "addedInVersion": ""
             }
           ]
         },
@@ -7826,27 +5784,6 @@
               "reading": "あーるえふぴー",
               "english": "Request For Proposal",
               "addedInVersion": ""
-            },
-            {
-              "id": "t-87825b043f175d27",
-              "name": "請負契約",
-              "reading": "うけおいけいやく",
-              "english": "Contract of Work",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-26aac9dd6d79adc4",
-              "name": "準委任契約",
-              "reading": "じゅんいにんけいやく",
-              "english": "Quasi-Delegation Contract",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4de945e8178ad0ad",
-              "name": "ライセンス契約",
-              "reading": "らいせんすけいやく",
-              "english": "License Agreement",
-              "addedInVersion": ""
             }
           ]
         }
@@ -7860,32 +5797,11 @@
           "name": "経営戦略手法",
           "terms": [
             {
-              "id": "t-57906ea12e99fcb7",
-              "name": "アウトソーシング",
-              "reading": "",
-              "english": "Outsourcing",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-82f296c4f019efc3",
-              "name": "アライアンス",
-              "reading": "",
-              "english": "Alliance",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-b252e874da6541bc",
               "name": "ESG投資",
               "reading": "いーえすじーとうし",
               "english": "ESG Investment",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-3098e2210b11660f",
-              "name": "イノベーション",
-              "reading": "",
-              "english": "Innovation",
-              "addedInVersion": ""
             },
             {
               "id": "t-104b2dd4db506982",
@@ -7902,27 +5818,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-0969a263cc944c57",
-              "name": "基本戦略",
-              "reading": "きほんせんりゃく",
-              "english": "Generic Strategy",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-763f62e0a3c730aa",
-              "name": "競争優位",
-              "reading": "きょうそうゆうい",
-              "english": "Competitive Advantage",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-8cd0947e144526a8",
-              "name": "クラウドファンディング",
-              "reading": "",
-              "english": "Crowdfunding",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-15993b517a16b024",
               "name": "コアコンピタンス",
               "reading": "",
@@ -7937,31 +5832,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-94062234a08d87ac",
-              "name": "差別化戦略",
-              "reading": "さべつかせんりゃく",
-              "english": "Differentiation Strategy",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0dd500739179ff85",
-              "name": "シナジー効果",
-              "reading": "しなじーこうか",
-              "english": "Synergy Effect",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-b8a411c7e059609a",
               "name": "SWOT分析",
               "reading": "すおっとぶんせき",
               "english": "SWOT Analysis",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5661e084496be131",
-              "name": "成長マトリクス",
-              "reading": "せいちょうまとりくす",
-              "english": "Growth Matrix",
               "addedInVersion": ""
             },
             {
@@ -7972,25 +5846,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-cab688919e185313",
-              "name": "多角化",
-              "reading": "たかくか",
-              "english": "Diversification",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-f0a5be4c6a236196",
               "name": "同質化戦略",
               "reading": "どうしつかせんりゃく",
               "english": "Homogenization Strategy",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-20bcb47dbf7e0f9a",
-              "name": "バリューチェーン分析",
-              "reading": "ばりゅーちぇーんぶんせき",
-              "english": "Value Chain Analysis",
-              "addedInVersion": ""
             },
             {
               "id": "t-ad8bc13daaaf1d4a",
@@ -8005,13 +5865,6 @@
               "reading": "ぶりおぶんせき",
               "english": "VRIO Analysis",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-63d4dd35e635bda5",
-              "name": "ベストプラクティス",
-              "reading": "",
-              "english": "Best Practice",
-              "addedInVersion": ""
             }
           ]
         },
@@ -8068,13 +5921,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-e5a23983ffde082a",
-              "name": "オムニチャネル",
-              "reading": "",
-              "english": "Omni-Channel",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e7ccc1bfa956d318",
               "name": "カスタマージャーニーマップ",
               "reading": "",
@@ -8087,27 +5933,6 @@
               "reading": "",
               "english": "Cross-Media Marketing",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-533db4045dbc500c",
-              "name": "顧客ロイヤルティ",
-              "reading": "こきゃくろいやるてぃ",
-              "english": "Customer Loyalty",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-7ac5d298e85358c2",
-              "name": "コストプラス法",
-              "reading": "こすとぷらすほう",
-              "english": "Cost-Plus Pricing",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e9abeb7503831db5",
-              "name": "コモディティ化",
-              "reading": "こもでぃてぃか",
-              "english": "Commoditization",
-              "addedInVersion": ""
             },
             {
               "id": "t-d59d94e636d2446f",
@@ -8138,13 +5963,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-941dcbb328ccabe8",
-              "name": "サンプリング",
-              "reading": "",
-              "english": "Sampling",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e96c3463af467564",
               "name": "CVR",
               "reading": "しーぶいあーる",
@@ -8157,34 +5975,6 @@
               "reading": "じおたーげてぃんぐこうこく",
               "english": "Geo-Targeting Advertising",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-d15bca2da6aa7010",
-              "name": "衰退期",
-              "reading": "すいたいき",
-              "english": "Decline Stage",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-c2298bcdb78a5b2a",
-              "name": "成熟期",
-              "reading": "せいじゅくき",
-              "english": "Maturity Stage",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4c0b5207f01c56d8",
-              "name": "成長期",
-              "reading": "せいちょうき",
-              "english": "Growth Stage",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-93fdc36a19a3c933",
-              "name": "製品ライン",
-              "reading": "せいひんらいん",
-              "english": "Product Line",
-              "addedInVersion": ""
             },
             {
               "id": "t-4aecc8c3ea8ae403",
@@ -8201,13 +5991,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-dfabf0672212148f",
-              "name": "導入期",
-              "reading": "どうにゅうき",
-              "english": "Introduction Stage",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-76b781e43e0cc883",
               "name": "バナー広告",
               "reading": "ばなーこうこく",
@@ -8220,13 +6003,6 @@
               "reading": "",
               "english": "Value Proposition",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-ff9b5a74e2554e53",
-              "name": "販売促進",
-              "reading": "はんばいそくしん",
-              "english": "Sales Promotion",
-              "addedInVersion": ""
             },
             {
               "id": "t-9d613a335f1a2f48",
@@ -8271,25 +6047,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-61a01a46dcd86007",
-              "name": "マーケティングミックス",
-              "reading": "",
-              "english": "Marketing Mix",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-1facbb4b6c6ed160",
               "name": "ライフサイクルエクステンション",
               "reading": "",
               "english": "Life Cycle Extension",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-54552115f1e6de57",
-              "name": "リテンション率",
-              "reading": "りてんしょんりつ",
-              "english": "Retention Rate",
-              "addedInVersion": ""
             }
           ]
         },
@@ -8302,18 +6064,6 @@
               "reading": "えむぶいぶい",
               "english": "Mission, Vision, Values",
               "addedInVersion": "9.0"
-            }
-          ]
-        },
-        {
-          "name": "経営管理システム",
-          "terms": [
-            {
-              "id": "t-e70e981f0e20870e",
-              "name": "KM",
-              "reading": "なれっじまねじめんと",
-              "english": "Knowledge Management",
-              "addedInVersion": ""
             }
           ]
         }
@@ -8334,13 +6084,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-95f6b36a2ff12572",
-              "name": "コア技術",
-              "reading": "こあぎじゅつ",
-              "english": "Core Technology",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-ddd9bd21b17fca8d",
               "name": "ハッカソン",
               "reading": "",
@@ -8353,25 +6096,6 @@
               "reading": "ぺるそなほう",
               "english": "Persona Method",
               "addedInVersion": "9.0"
-            }
-          ]
-        },
-        {
-          "name": "技術開発計画",
-          "terms": [
-            {
-              "id": "t-1984b4d673388c3e",
-              "name": "経営資源の最適配分",
-              "reading": "けいえいしげんのさいてきはいぶん",
-              "english": "Optimal Allocation of Management Resources",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-595247aa68067932",
-              "name": "コンカレントエンジニアリング",
-              "reading": "",
-              "english": "Concurrent Engineering",
-              "addedInVersion": ""
             }
           ]
         }
@@ -8397,20 +6121,6 @@
               "reading": "",
               "english": "Algorithmic Bias",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-b400dd70e7444d4a",
-              "name": "ERP",
-              "reading": "いーあーるぴー",
-              "english": "Enterprise Resource Planning",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-3013e461a1c65fb0",
-              "name": "EMS",
-              "reading": "いーえむえす",
-              "english": "Energy Management System",
-              "addedInVersion": ""
             },
             {
               "id": "t-504ea429c47aeba2",
@@ -8476,20 +6186,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-116061b2f8d11f83",
-              "name": "XBRL",
-              "reading": "えっくすびーあーるえる",
-              "english": "eXtensible Business Reporting Language",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-439b13e20ea6e9ee",
-              "name": "在庫管理",
-              "reading": "ざいこかんり",
-              "english": "Inventory Management",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-7874048adc94b1f5",
               "name": "サイバーフィジカルシステム",
               "reading": "",
@@ -8532,20 +6228,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-5fc087f36bb7a16a",
-              "name": "スマートグリッド",
-              "reading": "",
-              "english": "Smart Grid",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-be0badd83f3bcaff",
-              "name": "生産管理システム",
-              "reading": "せいさんかんりしすてむ",
-              "english": "Production Management System",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-e79e402b8bf92169",
               "name": "生成AI",
               "reading": "せいせいえーあい",
@@ -8574,20 +6256,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-28717408597859a1",
-              "name": "電子自治体",
-              "reading": "でんしじちたい",
-              "english": "Electronic Government",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-03e0522f2fa198af",
-              "name": "電子政府",
-              "reading": "でんしせいふ",
-              "english": "Electronic Government",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4b45875b940b171d",
               "name": "特化型AI",
               "reading": "とっかがたえーあい",
@@ -8607,13 +6275,6 @@
               "reading": "はるしねーしょん",
               "english": "Hallucination",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-678a37ba769f22e1",
-              "name": "販売管理",
-              "reading": "はんばいかんり",
-              "english": "Sales Management",
-              "addedInVersion": ""
             },
             {
               "id": "t-4844819d33b7ebb1",
@@ -8663,53 +6324,6 @@
               "reading": "らんだむせい",
               "english": "Randomness",
               "addedInVersion": "9.0"
-            }
-          ]
-        },
-        {
-          "name": "エンジニアリングシステム",
-          "terms": [
-            {
-              "id": "t-f196191cd3b8020d",
-              "name": "NC",
-              "reading": "えぬしー",
-              "english": "Numerical Control",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d986929cebf3b201",
-              "name": "MRP",
-              "reading": "えむあーるぴー",
-              "english": "Material Requirements Planning",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-9b954289064724c4",
-              "name": "CAD",
-              "reading": "しーえーでぃー",
-              "english": "Computer-Aided Design",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e02ad90f58bccc85",
-              "name": "自動倉庫",
-              "reading": "じどうそうこ",
-              "english": "Automated Warehouse",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-94283fa6a4b156f9",
-              "name": "生産方式",
-              "reading": "せいさんほうしき",
-              "english": "Production Method",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d2dd2a12798729fc",
-              "name": "PDM",
-              "reading": "ぴーでぃーえむ",
-              "english": "Product Data Management",
-              "addedInVersion": ""
             }
           ]
         },
@@ -8801,20 +6415,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-06b54442b1392573",
-              "name": "シェアリングエコノミー",
-              "reading": "",
-              "english": "Sharing Economy",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-a4840e025cbf4974",
-              "name": "情報表現規約",
-              "reading": "じょうほうひょうげんきやく",
-              "english": "Information Representation Standard",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-b8799560ef840461",
               "name": "中央銀行発行デジタル通貨",
               "reading": "ちゅうおうぎんこうはっこうでじたるつうか",
@@ -8827,13 +6427,6 @@
               "reading": "でぃーとぅーしー",
               "english": "Direct to Consumer",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-e39be8fec2d6b5b9",
-              "name": "電子入札",
-              "reading": "でんしにゅうさつ",
-              "english": "Electronic Bidding",
-              "addedInVersion": ""
             },
             {
               "id": "t-5bd5fecf60628a6c",
@@ -8895,13 +6488,6 @@
               "reading": "ぶいあーるごーぐる",
               "english": "VR Goggles",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-df6a5f8e67a91b51",
-              "name": "HEMS",
-              "reading": "へむす",
-              "english": "Home Energy Management System",
-              "addedInVersion": ""
             }
           ]
         },
@@ -8983,13 +6569,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-e3ebc628a8cd5158",
-              "name": "HRテック",
-              "reading": "えいちあーるてっく",
-              "english": "HR Technology",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-ojt-subject-a-20261014",
               "name": "OJT",
               "reading": "おーじぇいてぃー",
@@ -9030,20 +6609,6 @@
               "reading": "",
               "english": "Green Transformation",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-3573c31e9caf3e23",
-              "name": "コーチング",
-              "reading": "",
-              "english": "Coaching",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d2220e1cffde41a4",
-              "name": "コーポレートアイデンティティ",
-              "reading": "",
-              "english": "Corporate Identity",
-              "addedInVersion": ""
             },
             {
               "id": "t-a85c98d2c822b8b9",
@@ -9088,13 +6653,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-38e5bbfba11c292d",
-              "name": "事業部制組織",
-              "reading": "じぎょうぶせいそしき",
-              "english": "Divisional Organization",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-253d11c6b310c26b",
               "name": "垂直思考",
               "reading": "すいちょくしこう",
@@ -9130,53 +6688,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-70523ee55ecc5607",
-              "name": "テレワーク",
-              "reading": "",
-              "english": "Telework",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4b780947b02f7dc3",
               "name": "統合報告書",
               "reading": "とうごうほうこくしょ",
               "english": "Integrated Report",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-54446f1fb27f5b10",
-              "name": "BCP",
-              "reading": "びーしーぴー",
-              "english": "Business Continuity Plan",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5b9a49ae9f9bc63a",
-              "name": "プロジェクト組織",
-              "reading": "ぷろじぇくとそしき",
-              "english": "Project Organization",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-870080af782d8a02",
-              "name": "マトリックス組織",
-              "reading": "まとりっくすそしき",
-              "english": "Matrix Organization",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4ad64abebd34ef4f",
-              "name": "メンタリング",
-              "reading": "",
-              "english": "Mentoring",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-0923bd9b1746d75c",
-              "name": "ラインアンドスタッフ組織",
-              "reading": "らいんあんどすたっふそしき",
-              "english": "Line and Staff Organization",
-              "addedInVersion": ""
             },
             {
               "id": "t-300c0ec6655c1bca",
@@ -9186,32 +6702,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-902c86734e669497",
-              "name": "リテンション",
-              "reading": "",
-              "english": "Retention",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4dcc6640ec7f773a",
               "name": "ワークエンゲージメント",
               "reading": "",
               "english": "Work Engagement",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-835ff7bfa4d10a8a",
-              "name": "ワークシェアリング",
-              "reading": "",
-              "english": "Work Sharing",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-d918486e5507cb2d",
-              "name": "ワークライフバランス",
-              "reading": "",
-              "english": "Work-Life Balance",
-              "addedInVersion": ""
             }
           ]
         },
@@ -9231,13 +6726,6 @@
               "reading": "",
               "english": "Annotation",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-4874fa0f35de5590",
-              "name": "アローダイアグラム",
-              "reading": "",
-              "english": "Arrow Diagram",
-              "addedInVersion": ""
             },
             {
               "id": "t-479119f284708c0a",
@@ -9282,13 +6770,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-46fd652bb319c1da",
-              "name": "管理図",
-              "reading": "かんりず",
-              "english": "Control Chart",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-d17e0e2c108dac24",
               "name": "機械の稼働ログデータ",
               "reading": "きかいのかどうろぐでーた",
@@ -9308,13 +6789,6 @@
               "reading": "きょうききーわーど",
               "english": "Co-occurring Keywords",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-9343f0bfac84f1a7",
-              "name": "クリティカルパス",
-              "reading": "",
-              "english": "Critical Path",
-              "addedInVersion": ""
             },
             {
               "id": "t-ac885ed45ddc1f97",
@@ -9343,13 +6817,6 @@
               "reading": "",
               "english": "Concept Map",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-b91cf4befe61db59",
-              "name": "最適化",
-              "reading": "さいてきか",
-              "english": "Optimization",
-              "addedInVersion": ""
             },
             {
               "id": "t-ba85da7b7573b19c",
@@ -9387,13 +6854,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-f11080f907ee3610",
-              "name": "時系列分析",
-              "reading": "じけいれつぶんせき",
-              "english": "Time Series Analysis",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-6a784d431a57c91d",
               "name": "実験データ",
               "reading": "じっけんでーた",
@@ -9406,13 +6866,6 @@
               "reading": "しつてきでーた",
               "english": "Qualitative Data",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-1c1067081f24c7ae",
-              "name": "シミュレーション",
-              "reading": "",
-              "english": "Simulation",
-              "addedInVersion": ""
             },
             {
               "id": "t-3da06ec0c06b7573",
@@ -9436,13 +6889,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-706c788e58cbeb96",
-              "name": "親和図法",
-              "reading": "しんわずほう",
-              "english": "Affinity Diagram",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-da33b999ab89bcc0",
               "name": "スクレイピング",
               "reading": "",
@@ -9455,13 +6901,6 @@
               "reading": "せいどとかたより",
               "english": "Precision and Bias",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-1c60524d86ed94e3",
-              "name": "線形計画法",
-              "reading": "せんけいけいかくほう",
-              "english": "Linear Programming",
-              "addedInVersion": ""
             },
             {
               "id": "t-a0d01e180cf9569b",
@@ -9548,13 +6987,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-1bd5f9eacbb3400f",
-              "name": "デルファイ法",
-              "reading": "でるふぁいほう",
-              "english": "Delphi Method",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-0a95b9447a7de785",
               "name": "デンドログラム",
               "reading": "",
@@ -9567,13 +6999,6 @@
               "reading": "とうけいてきばいあす",
               "english": "Statistical Bias",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-211985a9bfd8d87f",
-              "name": "特性要因図",
-              "reading": "とくせいよういんず",
-              "english": "Cause and Effect Diagram",
-              "addedInVersion": ""
             },
             {
               "id": "t-533af6341d96f39f",
@@ -9632,20 +7057,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-db9275be583d4801",
-              "name": "パレート図",
-              "reading": "ぱれーとず",
-              "english": "Pareto Chart",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-168107b9bff3a0e1",
-              "name": "BI",
-              "reading": "びーあい",
-              "english": "Business Intelligence",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-4bfbaab44d503b6e",
               "name": "ヒートマップ",
               "reading": "",
@@ -9667,25 +7078,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-e3d98abcac7dc9ae",
-              "name": "品質特性",
-              "reading": "ひんしつとくせい",
-              "english": "Quality Characteristic",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-445b1a17957fb45f",
               "name": "複合グラフ",
               "reading": "ふくごうぐらふ",
               "english": "Combination Chart",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-b8eb395c8ebfcae0",
-              "name": "ブレーンストーミング",
-              "reading": "",
-              "english": "Brainstorming",
-              "addedInVersion": ""
             },
             {
               "id": "t-529e0d36ed7e2dac",
@@ -9723,20 +7120,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-a356271acc43798d",
-              "name": "モデル化",
-              "reading": "もでるか",
-              "english": "Modeling",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-f9d6e22fa7572f7e",
-              "name": "モンテカルロ法",
-              "reading": "もんてかるろほう",
-              "english": "Monte Carlo Method",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-637cf1df1fe3e9c4",
               "name": "リフト値",
               "reading": "りふとち",
@@ -9749,13 +7132,6 @@
               "reading": "りょうてきでーた",
               "english": "Quantitative Data",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-30cee4618aec4118",
-              "name": "連関図法",
-              "reading": "れんかんずほう",
-              "english": "Relationship Diagram Method",
-              "addedInVersion": ""
             },
             {
               "id": "t-f9a198d80f80b3df",
@@ -9791,20 +7167,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-22daebf720b047da",
-              "name": "財務諸表",
-              "reading": "ざいむしょひょう",
-              "english": "Financial Statements",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-70b9f4ee0f5dc61d",
-              "name": "先入先出法",
-              "reading": "さきいれさきだしほう",
-              "english": "First In First Out",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-f98c34080544e048",
               "name": "損益計算書",
               "reading": "そんえきけいさんしょ",
@@ -9816,20 +7178,6 @@
               "name": "損益分岐点",
               "reading": "そんえきぶんきてん",
               "english": "Break-even Point",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-74635005d7a7d7ae",
-              "name": "貸借対照表",
-              "reading": "たいしゃくたいしょうひょう",
-              "english": "Balance Sheet",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-8aa54b7d73d61ccb",
-              "name": "販売費及び一般管理費",
-              "reading": "はんばいひおよびいっぱんかんりひ",
-              "english": "Selling, General and Administrative Expenses",
               "addedInVersion": ""
             },
             {
@@ -9851,38 +7199,10 @@
           "name": "知的財産権",
           "terms": [
             {
-              "id": "t-ad4e137b84509ceb",
-              "name": "意匠権",
-              "reading": "いしょうけん",
-              "english": "Design Rights",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-7a916003b418df25",
               "name": "営業秘密",
               "reading": "えいぎょうひみつ",
               "english": "Trade Secret",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4464af9cf375f536",
-              "name": "産業財産権",
-              "reading": "さんぎょうざいさんけん",
-              "english": "Industrial Property Rights",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-4a3aeac014cec309",
-              "name": "実用新案権",
-              "reading": "じつようしんあんけん",
-              "english": "Utility Model Right",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-b1c2926e353a480c",
-              "name": "商標権",
-              "reading": "しょうひょうけん",
-              "english": "Trademark Rights",
               "addedInVersion": ""
             },
             {
@@ -9897,13 +7217,6 @@
               "name": "著作権",
               "reading": "ちょさくけん",
               "english": "Copyright",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-5d628c8bb8fdc867",
-              "name": "著作者人格権",
-              "reading": "ちょさくしゃじんかくけん",
-              "english": "Moral Rights of Authors",
               "addedInVersion": ""
             },
             {
@@ -9925,20 +7238,6 @@
         {
           "name": "セキュリティ関連法規",
           "terms": [
-            {
-              "id": "t-c2d0ff28e345fac7",
-              "name": "オプトアウト",
-              "reading": "",
-              "english": "Opt-out",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-37a50aaf0e5901db",
-              "name": "オプトイン",
-              "reading": "",
-              "english": "Opt-in",
-              "addedInVersion": ""
-            },
             {
               "id": "t-fc0b737adef16d89",
               "name": "仮名加工情報",
@@ -9994,13 +7293,6 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-2716978674c483da",
-              "name": "偽装請負",
-              "reading": "ぎそううけおい",
-              "english": "Disguised Dispatch",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-93d6f92556181341",
               "name": "高年齢者雇用安定法",
               "reading": "こうねんれいしゃこようあんていほう",
@@ -10008,38 +7300,10 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-2d2a1c9c331b7b1b",
-              "name": "雇用契約",
-              "reading": "こようけいやく",
-              "english": "Employment Contract",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-bdfd52e10c9f040b",
-              "name": "裁量労働制",
-              "reading": "さいりょうろうどうせい",
-              "english": "Discretionary Labor System",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-6e94dfa24ddec41e",
-              "name": "シュリンクラップ契約",
-              "reading": "しゅりんくらっぷけいやく",
-              "english": "Shrink-Wrap License",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-736c188b06b0f040",
               "name": "準委任契約",
               "reading": "じゅんいにんけいやく",
               "english": "Quasi-Mandate Contract",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-e67ba7febb8e4ecf",
-              "name": "成果物の完成責任",
-              "reading": "せいかぶつのかんせいせきにん",
-              "english": "Completion Responsibility",
               "addedInVersion": ""
             },
             {
@@ -10057,20 +7321,6 @@
               "addedInVersion": "9.2"
             },
             {
-              "id": "t-7a3d2b615f38ab18",
-              "name": "電子消費者契約法",
-              "reading": "でんししょうひしゃけいやくほう",
-              "english": "Electronic Consumer Contract Act",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-9e1cdafde85532a3",
-              "name": "特定商取引法",
-              "reading": "とくていしょうとりひきほう",
-              "english": "Specified Commercial Transactions Act",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-dd2a60f904b5c3e4",
               "name": "特定デジタルプラットフォームの透明性及び公正性の向上に関する法律",
               "reading": "とくていでじたるぷらっとふぉーむのとうめいせいおよびこうせいせいのこうじょうにかんするほうりつ",
@@ -10078,25 +7328,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-41a7ca9a13316bf3",
-              "name": "フリーソフトウェア",
-              "reading": "",
-              "english": "Free Software",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-572531b254231de6",
               "name": "フリーランス・事業者間取引適正化等法",
               "reading": "ふりーらんす・じぎょうしゃかんとりひきてきせいかとうほう",
               "english": "Freelance and Business Transaction Fairness Act",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-900da085fbb232dd",
-              "name": "ボリュームライセンス契約",
-              "reading": "ぼりゅーむらいせんすけいやく",
-              "english": "Volume License Agreement",
-              "addedInVersion": ""
             },
             {
               "id": "t-73b0713a0ca29c25",
@@ -10125,25 +7361,11 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-81eaec464103da60",
-              "name": "監査役",
-              "reading": "かんさやく",
-              "english": "Auditor",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-8a5f1af99d82f273",
               "name": "官民データ",
               "reading": "かんみんでーた",
               "english": "Public-Private Data",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-0f7d60092ede2c1e",
-              "name": "企業倫理",
-              "reading": "きぎょうりんり",
-              "english": "Corporate Ethics",
-              "addedInVersion": ""
             },
             {
               "id": "t-0a868ab7415a28e6",
@@ -10165,13 +7387,6 @@
               "reading": "こがたむじんきとうひこうきんしほう",
               "english": "Small Unmanned Aircraft Flight Prohibition Act",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-eead9120ec505cbb",
-              "name": "CSR",
-              "reading": "しーえすあーる",
-              "english": "Corporate Social Responsibility",
-              "addedInVersion": ""
             },
             {
               "id": "t-d16cb9578ec98196",
@@ -10258,13 +7473,6 @@
               "addedInVersion": "9.0"
             },
             {
-              "id": "t-68777a48bd9b0414",
-              "name": "内部統制",
-              "reading": "ないぶとうせい",
-              "english": "Internal Control",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-0ddace3fc66bd2ae",
               "name": "ネチケット",
               "reading": "",
@@ -10347,24 +7555,10 @@
           "name": "標準化関連",
           "terms": [
             {
-              "id": "t-a4cbe738aa3c14c4",
-              "name": "IEC",
-              "reading": "あいいーしー",
-              "english": "International Electrotechnical Commission",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-98c892d3836ae5aa",
               "name": "IETF",
               "reading": "あいいーてぃーえふ",
               "english": "Internet Engineering Task Force",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-ba40a464aa7aef21",
-              "name": "ISO",
-              "reading": "あいえすおー",
-              "english": "International Organization for Standardization",
               "addedInVersion": ""
             },
             {
@@ -10375,39 +7569,11 @@
               "addedInVersion": ""
             },
             {
-              "id": "t-0ff82f8cf2d2f310",
-              "name": "ANSI",
-              "reading": "あんし",
-              "english": "American National Standards Institute",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-bfbe052a4c62415a",
-              "name": "JIS",
-              "reading": "じす",
-              "english": "Japanese Industrial Standards",
-              "addedInVersion": ""
-            },
-            {
-              "id": "t-34b912c181a56546",
-              "name": "JIS Q 14001",
-              "reading": "じすきゅー14001",
-              "english": "JIS Q 14001",
-              "addedInVersion": ""
-            },
-            {
               "id": "t-05c87754b9a9e04a",
               "name": "フォーラム標準",
               "reading": "ふぉーらむひょうじゅん",
               "english": "Forum Standard",
               "addedInVersion": "9.0"
-            },
-            {
-              "id": "t-430d4168f67b8e69",
-              "name": "文字コード",
-              "reading": "もじこーど",
-              "english": "Character Encoding",
-              "addedInVersion": ""
             }
           ]
         }

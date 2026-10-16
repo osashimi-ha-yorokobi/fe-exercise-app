@@ -1,14 +1,10 @@
 {
   "date": "2026-10-15",
   "syllabus": "9.2",
-  "total": 1397,
-  "syllabus_occurrences": 1360,
-  "exam_only_occurrences": 33,
+  "total": 1000,
+  "syllabus_occurrences": 977,
+  "exam_only_occurrences": 20,
   "supplements": [
-    {
-      "name": "指数部",
-      "note": "浮動小数点数の指数の理解と計算を補う。シラバスの表記は「指数」。"
-    },
     {
       "name": "HTTP/3",
       "note": "HTTPの世代・通信方式の比較を補う。HTTP/3自体のシラバス明記・出題は未確認。"
@@ -26,5 +22,10 @@
   "added_since_9_0": 448,
   "classification_changes": 10,
   "ordering": "IPA中分類・小分類の順、学習用グループ、読みの五十音順",
-  "csv_sha256": "d75cda77bebde23bc21740cdda35f9283d02551f732c58b267ebc01ca67b97e5"
+  "csv_sha256": "c1a8b7ddcf2a6c1a0cf0a4fb86258fb5d2efbef4606500bf4801783df7a31441",
+  "selection": {
+    "date": "2026-10-15",
+    "before": 1397,
+    "removed": 397
+  }
 }

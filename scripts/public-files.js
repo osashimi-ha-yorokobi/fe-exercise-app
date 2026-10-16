@@ -6,5 +6,6 @@ module.exports = [
   'data/vocabulary.csv', 'data/terms.json', 'data/terms.js',
   'data/descriptions.js', 'data/sources.json',
   'reports/exam-vocabulary-evidence.csv',
-  'reports/ipa-vocabulary-evidence.csv', 'reports/ipa-rebuild-summary.json'
+  'reports/ipa-vocabulary-evidence.csv', 'reports/ipa-rebuild-summary.json',
+  'reports/selection-1000.csv', 'reports/selection-1000-summary.json'
 ];

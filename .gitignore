@@ -19,6 +19,8 @@
 !/reports/ipa-vocabulary-evidence.csv
 !/reports/ipa-rebuild-summary.json
 !/reports/exam-vocabulary-evidence.csv
+!/reports/selection-1000.csv
+!/reports/selection-1000-summary.json
 /public-site/
 /docs/
 /mobile-*-test.png

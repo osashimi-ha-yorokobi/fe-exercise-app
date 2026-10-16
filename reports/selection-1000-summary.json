@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-15",
+  "before": 1397,
+  "after": 1000,
+  "removed": 397,
+  "protected": 983,
+  "added_since_9_0": 448,
+  "protected_categories": [
+    "ネットワーク",
+    "セキュリティ",
+    "データベース"
+  ],
+  "ranking_note": "公開問題本文・選択肢の表記一致は参考指標。未出題や実際の出題頻度とは断定しない。",
+  "categories": [
+    {
+      "category": "基礎理論",
+      "before": 118,
+      "after": 94
+    },
+    {
+      "category": "アルゴリズムとプログラミング",
+      "before": 63,
+      "after": 41
+    },
+    {
+      "category": "コンピュータ構成要素",
+      "before": 66,
+      "after": 44
+    },
+    {
+      "category": "システム構成要素",
+      "before": 47,
+      "after": 29
+    },
+    {
+      "category": "ソフトウェア",
+      "before": 87,
+      "after": 43
+    },
+    {
+      "category": "ハードウェア",
+      "before": 10,
+      "after": 3
+    },
+    {
+      "category": "ユーザーインタフェース",
+      "before": 23,
+      "after": 19
+    },
+    {
+      "category": "情報メディア",
+      "before": 21,
+      "after": 12
+    },
+    {
+      "category": "データベース",
+      "before": 77,
+      "after": 77
+    },
+    {
+      "category": "ネットワーク",
+      "before": 110,
+      "after": 110
+    },
+    {
+      "category": "セキュリティ",
+      "before": 175,
+      "after": 175
+    },
+    {
+      "category": "システム開発技術",
+      "before": 91,
+      "after": 44
+    },
+    {
+      "category": "ソフトウェア開発管理技術",
+      "before": 31,
+      "after": 18
+    },
+    {
+      "category": "プロジェクトマネジメント",
+      "before": 25,
+      "after": 8
+    },
+    {
+      "category": "サービスマネジメント",
+      "before": 49,
+      "after": 12
+    },
+    {
+      "category": "システム監査",
+      "before": 14,
+      "after": 8
+    },
+    {
+      "category": "システム戦略",
+      "before": 32,
+      "after": 18
+    },
+    {
+      "category": "システム企画",
+      "before": 10,
+      "after": 5
+    },
+    {
+      "category": "経営戦略マネジメント",
+      "before": 63,
+      "after": 37
+    },
+    {
+      "category": "技術戦略マネジメント",
+      "before": 6,
+      "after": 3
+    },
+    {
+      "category": "ビジネスインダストリ",
+      "before": 78,
+      "after": 59
+    },
+    {
+      "category": "企業活動",
+      "before": 124,
+      "after": 90
+    },
+    {
+      "category": "法務",
+      "before": 77,
+      "after": 51
+    }
+  ],
+  "backup": "backups/vocabulary-before-1000-bf3702e76d40.csv",
+  "before_sha256": "bf3702e76d40353b62250aa65fd64835d71a785932bf2e8d6e9a5ced61006863"
+}

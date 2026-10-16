@@ -20,7 +20,15 @@ async function run() {
  const originals=readCSV(path.join(root,'backups',beforeFiles[0]));
  const originalById=new Map(originals.map(t=>[t.id,t]));
  const currentById=new Map(rows.map(row=>[row.id,row]));
- for(const original of originals)assert.equal(currentById.get(original.id)?.description,original.description);
+ const reviewPath=path.join(root,'reports/all-description-review.csv');
+ const reviewedById=fs.existsSync(reviewPath)?new Map(readCSV(reviewPath).map(row=>[row.id,row.after])):new Map();
+ const selectionPath=path.join(root,'reports/selection-1000.csv');
+ const authorizedRemovals=fs.existsSync(selectionPath)?new Set(readCSV(selectionPath).filter(row=>row.decision==='remove').map(row=>row.id)):new Set();
+ for(const original of originals) {
+  if(authorizedRemovals.has(original.id)) { assert.ok(!currentById.has(original.id)); continue; }
+  assert.ok(currentById.has(original.id),`${original.name}: existing ID must remain`);
+  assert.equal(currentById.get(original.id).description,reviewedById.get(original.id)||original.description);
+ }
  for(const row of rows)assert.ok(row.description.trim(),`${row.name}: explanation required`);
  assert.equal(rows.length,summary.total);
  const serverPort=await new Promise(resolve=>{const probe=net.createServer();probe.listen(0,'127.0.0.1',()=>{const port=probe.address().port;probe.close(()=>resolve(port));});});

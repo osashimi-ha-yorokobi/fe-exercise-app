@@ -15,10 +15,11 @@ const html = `<!doctype html>
 <a class="back" href="./index.html">‹ 単語帳に戻る</a><h1>参照資料・収録方針</h1>
 <section class="panel"><h2>この単語帳について</h2><p>出典：独立行政法人情報処理推進機構（IPA）の基本情報技術者試験シラバスVer.9.2、および下記の公開問題。</p><p>公式資料で扱う概念を基準に、科目Aの学習向けに用語を選定・分類しています。説明・例・比較は、この単語帳で独自に作成したものです。分類はIPAの中分類・小分類を基準にし、処理の流れには学習用のグループを追加しています。</p><p class="note">IPAが制作・監修したアプリではありません。</p></section>
 <section class="panel"><h2>用語を残す基準</h2><ul><li>現行シラバスで扱う用語・概念。Ver.9.0以降の追加語も含めます。</li><li>公開科目A・旧午前・修了試験の本文や選択肢で表記を確認できる用語。</li><li>計算、仕組み、規格の違いを理解するための補足語。</li></ul><p>補足語の${supplementNames}は関連するシラバス項目を根拠に収録しています。HTTP/3とCTR自体の出題実績は今回の照合では確認できていません。</p><p class="note">2026年10月15日の再照合：${summary.total.toLocaleString('ja-JP')}件中、シラバス表記一致${summary.syllabus_occurrences.toLocaleString('ja-JP')}件、公開問題のみで表記一致${summary.exam_only_occurrences}件、学習補足${summary.supplements.length}件。表記の一致は、その語自体を問う問題の出題を意味するとは限りません。</p><a class="download" href="./reports/exam-vocabulary-evidence.csv" download>用語ごとの収録根拠をCSVで見る</a></section>
-<section><h2>確認したIPA資料</h2><p>問題の照合期間は2012〜2026年度です。旧午前16冊、公開科目A4冊、修了試験7冊を確認しました。CBTの未公開問題は確認できません。画像PDFのOCRには読み取り漏れがあるため、表記が見つからないだけで未出題とは判断しません。</p><p class="note">根拠CSVのページ番号はPDFの先頭から数えたページです。CSVを自分で編集した後の用語は、再照合するまでこの一覧に反映されない場合があります。</p>${lists}</section>
+${summary.selection ? `<section class="panel"><h2>1,000件への絞り込み</h2><p>1,397件から397件を削減しました。ネットワーク・セキュリティ・データベース、プロトコルとVer.9.0以降の追加語を保護し、汎用語や細かな手順、他ジャンルとの重複などの優先度を下げています。</p><p>削除対象にも出題表記が確認できる語は含まれます。未出題と判断した一覧ではありません。</p><a class="download" href="./reports/selection-1000.csv" download>残した用語・削除した用語と理由を見る</a></section>` : ""}<section><h2>確認したIPA資料</h2><p>問題の照合期間は2012〜2026年度です。旧午前16冊、公開科目A4冊、修了試験7冊を確認しました。CBTの未公開問題は確認できません。画像PDFのOCRには読み取り漏れがあるため、表記が見つからないだけで未出題とは判断しません。</p><p class="note">根拠CSVのページ番号はPDFの先頭から数えたページです。CSVを自分で編集した後の用語は、再照合するまでこの一覧に反映されない場合があります。</p>${lists}</section>
 <section class="panel"><h2>資料の利用条件</h2><p><a href="https://www.ipa.go.jp/siteinfo.html" target="_blank" rel="noopener">IPA ウェブサイトのご利用について ↗</a><br><a href="https://www.ipa.go.jp/shiken/faq.html" target="_blank" rel="noopener">IPA 試験に関するよくある質問 ↗</a></p></section>
 <a class="back" href="./database.html">単語データを見る →</a>
 </main></body></html>\n`;
 fs.writeFileSync(path.join(root,'sources.html'),html,'utf8');
 console.log(`Built source credits for ${sources.documents.length} official documents.`);
+
 

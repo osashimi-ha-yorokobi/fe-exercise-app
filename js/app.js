@@ -9,11 +9,13 @@
   const toastEl = document.getElementById('toast');
 
   const state = {
-    data: null, baseData: null, entries: [], byId: new Map(), editingCustomId: null,
+    data: null, baseData: null, entries: [], byId: new Map(),
     screen: 'genres', selectedCategories: [], newSyllabusOnly: false, detail: null,
     detailOrigin: 'list', detailScroll: 0,
     studyDeck: [], studyIndex: 0, flipped: false, shuffled: false, studyOrigin: 'genres',
     query: '', section: 'all', filter: 'all', checkedScope: 'all', shown: PAGE_SIZE,
+    searchQuery: '', searchScope: 'all', searchCheckedOnly: false, searchNewOnly: false, searchShown: PAGE_SIZE,
+    checkedQuery: '', checkedShown: PAGE_SIZE,
     store: loadStore(), toastTimer: null
   };
 
@@ -41,12 +43,12 @@
   const profile = () => state.store.profiles.find(p => p.id === state.store.activeProfileId);
   const isChecked = id => Boolean(profile().flags[id]);
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
-  const normalize = value => String(value).normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/\s+/g, '');
+  const normalize = value => String(value).normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60)).replace(/\s+/g, '');
   const formatDate = value => { try { return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(value)); } catch { return ''; } };
   const matchesSyllabus = term => !state.newSyllabusOnly || Boolean(term.addedInVersion);
   const countCategory = category => category.sections.reduce((sum, section) => sum + section.terms.filter(matchesSyllabus).length, 0);
   const checkedCategory = category => category.sections.reduce((sum, section) => sum + section.terms.filter(term => matchesSyllabus(term) && isChecked(term.id)).length, 0);
-  const checkedCount = () => Object.values(profile().flags).filter(Boolean).length;
+  const checkedCount = () => state.entries.filter(entry => isChecked(entry.id)).length;
   const selectedCategories = () => state.data.categories.filter(c => state.selectedCategories.includes(c.id));
   const selectedEntries = () => state.entries.filter(e => state.selectedCategories.includes(e.categoryId) && matchesSyllabus(e));
   const addedLabel = entry => entry.addedInVersion ? `<span class="added-tag">Ver.${escapeHTML(entry.addedInVersion)}追加</span>` : '';
@@ -127,21 +129,13 @@
 
   function refreshEntries() {
     const data = JSON.parse(JSON.stringify(state.baseData));
-    for (const term of profile().customTerms || []) {
-      if (!term || typeof term.id !== 'string' || !term.id.startsWith('custom-') || typeof term.name !== 'string' || !term.name.trim()) continue;
-      const category = data.categories.find(item => item.id === Number(term.categoryId));
-      if (!category) continue;
-      let section = category.sections.find(item => item.name === '自分で追加した用語');
-      if (!section) { section = { name: '自分で追加した用語', terms: [] }; category.sections.push(section); }
-      section.terms.push({ id: term.id, name: term.name, reading: '', english: '', addedInVersion: '', description: String(term.description || ''), custom: true });
-    }
     state.data = data;
     state.entries = [];
     state.byId = new Map();
     for (const category of data.categories) {
       for (const section of category.sections) {
         for (const term of section.terms) {
-          const entry = { id: term.id, name: term.name, reading: term.reading || '', english: term.english || '', description: term.custom ? term.description : window.FE_DESCRIPTIONS?.[term.id] || '', custom: Boolean(term.custom), addedInVersion: term.addedInVersion || '', categoryId: category.id, categoryName: category.name, sectionName: section.name };
+          const entry = { id: term.id, name: term.name, reading: term.reading || '', english: term.english || '', description: window.FE_DESCRIPTIONS?.[term.id] || '', addedInVersion: term.addedInVersion || '', categoryId: category.id, categoryName: category.name, sectionName: section.name };
           state.entries.push(entry);
           state.byId.set(term.id, entry);
         }
@@ -157,21 +151,22 @@
     const focusedView = state.screen === 'detail' || state.screen === 'study';
     nav.hidden = focusedView;
     if (focusedView) { nav.innerHTML = ''; return; }
-    const items = [ ['genres', '▦', 'ジャンル'], ['checked', '☑', 'チェック済み'], ['records', '◷', '記録'] ];
-    nav.innerHTML = items.map(([id, icon, label]) => `<button class="nav-button ${state.screen === id || (state.screen === 'list' && id === 'genres') ? 'active' : ''}" type="button" data-action="nav" data-screen="${id}" ${state.screen === id ? 'aria-current="page"' : ''}><span class="nav-icon" aria-hidden="true">${icon}</span><span>${label}</span></button>`).join('');
+    const items = [ ['genres', '▦', 'ジャンル'], ['search', '⌕', '検索'], ['checked', '☑', 'チェック済み'], ['records', '◷', '記録'] ];
+    nav.innerHTML = items.map(([id, icon, label]) => { const active = state.screen === id || (state.screen === 'list' && id === 'genres'); return `<button class="nav-button ${active ? 'active' : ''}" type="button" data-action="nav" data-screen="${id}" ${active ? 'aria-current="page"' : ''}><span class="nav-icon" aria-hidden="true">${icon}${id === 'checked' && checkedCount() ? `<span class="nav-count">${checkedCount()}</span>` : ''}</span><span>${label}</span></button>`; }).join('');
   }
 
   function render() {
     renderHeader();
     renderNav();
     main.classList.toggle('genre-mode', state.screen === 'genres');
+    main.classList.toggle('deck-mode', state.screen === 'search' || state.screen === 'checked');
     if (!state.data) return;
     if (state.screen === 'genres') renderGenres();
     if (state.screen === 'list') renderList();
+    if (state.screen === 'search') renderSearch();
     if (state.screen === 'detail') renderDetail();
     if (state.screen === 'checked') renderChecked();
     if (state.screen === 'records') renderRecords();
-    if (state.screen === 'custom') renderCustomTerms();
     if (state.screen === 'study') renderStudy();
   }
 
@@ -190,11 +185,12 @@
       ['ストラテジ系', state.data.categories.filter(c => c.id >= 17)]
     ];
     main.innerHTML = `
-      <div class="page-head"><p class="eyebrow">FE VOCABULARY</p><h1>単語帳をつくる</h1><p>見るジャンルを選んでください。複数選べます。</p></div>
-      <button class="outline-button custom-entry-button" type="button" data-action="custom-terms">＋ 用語を追加・編集する</button>
-      <div class="syllabus-picker"><button class="syllabus-toggle ${state.newSyllabusOnly ? 'active' : ''}" type="button" data-action="toggle-new-syllabus" aria-pressed="${state.newSyllabusOnly}"><span>新シラバスのみ</span><span class="syllabus-switch" aria-hidden="true">${state.newSyllabusOnly ? 'ON' : 'OFF'}</span></button><p>${state.newSyllabusOnly ? '下で選んだジャンルの追加語だけを表示します。' : 'ONにすると、選んだジャンルを追加語だけに絞れます。'}<br>対象：Ver.9.0以降の追加語（全${addedCount}語）</p></div>
-      <div class="genre-selection-tools"><span>ジャンルを選択（複数可）</span><div><button type="button" data-action="select-all-categories">すべて選択</button><button type="button" data-action="clear-categories" ${state.selectedCategories.length ? '' : 'disabled'}>選択解除</button></div></div>
-      <p class="genre-selection-summary" role="status">${state.selectedCategories.length ? `選択中：${escapeHTML(selectedCategories().slice(0, 2).map(category => category.name).join('・'))}${state.selectedCategories.length > 2 ? ` ほか${state.selectedCategories.length - 2}ジャンル` : ''}` : 'ジャンルは未選択です。見たいジャンルを選んでください。'}</p>
+      <div class="page-head"><h1>単語帳をつくる</h1><p>ジャンルを選んで、そのまま学習。</p></div>
+      <form id="home-search-form" class="home-search"><label for="home-search">キーワードで用語を探す</label><div><input id="home-search" type="search" placeholder="用語・読み・意味" autocomplete="off" enterkeyhint="search"><button type="submit" aria-label="全用語を検索する">検索</button></div></form>
+      ${checkedCount() ? `<button class="review-shortcut" type="button" data-action="nav" data-screen="checked"><span>☑ チェック済みの${checkedCount()}語を復習</span><span aria-hidden="true">→</span></button>` : ''}
+      <div class="syllabus-picker"><button class="syllabus-toggle ${state.newSyllabusOnly ? 'active' : ''}" type="button" data-action="toggle-new-syllabus" aria-pressed="${state.newSyllabusOnly}"><span>新シラバスのみ</span><span class="syllabus-switch" aria-hidden="true">${state.newSyllabusOnly ? 'ON' : 'OFF'}</span></button><p>Ver.9.0以降の追加語・全${addedCount}語</p></div>
+      <div class="genre-selection-tools"><span>ジャンル（複数選択）</span><div><button type="button" data-action="select-all-categories">全選択</button><button type="button" data-action="clear-categories" ${state.selectedCategories.length ? '' : 'disabled'}>解除</button></div></div>
+      <p class="genre-selection-summary" role="status">${state.selectedCategories.length ? `選択中：${escapeHTML(selectedCategories().slice(0, 2).map(category => category.name).join('・'))}${state.selectedCategories.length > 2 ? ` ほか${state.selectedCategories.length - 2}ジャンル` : ''}` : '見たいジャンルを選んでください。'}</p>
       ${groups.map(([title, categories]) => `<section><div class="section-title"><h2>${title}</h2><span>${categories.length}ジャンル</span></div><ul class="genre-list">${categories.map(c => { const selected = state.selectedCategories.includes(c.id); const count = countCategory(c); return `<li class="genre-item"><button class="genre-button ${selected ? 'selected' : ''}" type="button" data-action="toggle-category" data-id="${c.id}" aria-pressed="${selected}" ${count ? '' : 'disabled'}><span class="genre-number">${String(c.id).padStart(2, '0')}</span><span class="genre-main"><span class="genre-name">${escapeHTML(c.name)}</span><span class="genre-count">${count ? `${count}語` : '追加語なし'}${checkedCategory(c) ? ` · ${checkedCategory(c)}件チェック` : ''}</span></span><span class="genre-choice" aria-hidden="true">${selected ? '✓' : ''}</span></button></li>`; }).join('')}</ul></section>`).join('')}
       <p class="footer-note">IPAのシラバスVer.9.2と公開問題を基準に用語を選んでいます。説明・例はこの単語帳で独自に作成しています。<br><a href="./sources.html">参照資料・収録方針を見る →</a></p>
       <div class="selection-bar"><p>${selectedCount ? `${state.selectedCategories.length}ジャンル · ${selectedCount}語を選択中${state.newSyllabusOnly ? '（追加語のみ）' : ''}` : 'ジャンルを選んでください'}</p><div class="selection-actions"><button class="shuffle-picker ${state.shuffled ? 'active' : ''}" type="button" data-action="shuffle-study" aria-pressed="${state.shuffled}" aria-label="シャッフルして表示">⇄ シャッフル <span>${state.shuffled ? 'ON' : 'OFF'}</span></button><button class="primary-button" type="button" data-action="start-study" ${selectedCount ? '' : 'disabled'}>単語帳を開く →</button></div></div>`;
@@ -215,24 +211,65 @@
     renderListResults();
   }
 
-  function termRow(entry) {
+  function termRow(entry, preview = false) {
     const checked = isChecked(entry.id);
-    return `<li class="word-item"><button class="word-open" type="button" data-action="open-term" data-key="${escapeHTML(entry.id)}"><span class="word-name">${escapeHTML(entry.name)}</span>${addedLabel(entry)}<span class="word-sub">${escapeHTML([entry.reading, state.selectedCategories.length > 1 ? entry.categoryName : entry.sectionName].filter(Boolean).join(' · '))}</span></button><button class="check-button ${checked ? 'checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-label="${escapeHTML(entry.name)}を${checked ? 'チェックから外す' : '分からないとしてチェックする'}" aria-pressed="${checked}"><span class="check-symbol" aria-hidden="true">${checked ? '✓' : ''}</span><span>${checked ? 'チェック済み' : '分からない'}</span></button></li>`;
+    const full = state.byId.get(entry.id) || entry;
+    const context = preview || state.screen === 'checked' ? full.categoryName : state.selectedCategories.length > 1 ? entry.categoryName : entry.sectionName;
+    const snippet = preview ? `<span class="word-preview">${escapeHTML((full.description || '意味はまだ入力されていません。').replace(/\s+/g, ' ').slice(0, 120))}</span>` : '';
+    return `<li class="word-item"><button class="word-open" type="button" data-action="open-term" data-key="${escapeHTML(entry.id)}"><span class="word-name">${escapeHTML(entry.name)}</span>${addedLabel(entry)}<span class="word-sub">${escapeHTML([entry.reading, context].filter(Boolean).join(' · '))}</span>${snippet}</button><button class="check-button ${checked ? 'checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-label="${escapeHTML(entry.name)}を${checked ? 'チェックから外す' : '分からないとしてチェックする'}" aria-pressed="${checked}"><span class="check-symbol" aria-hidden="true">${checked ? '✓' : ''}</span><span>${checked ? 'チェック済み' : '分からない'}</span></button></li>`;
+  }
+
+  const keywordTokens = query => String(query).normalize('NFKC').trim().split(/\s+/).filter(Boolean).map(normalize);
+  function keywordMatches(entry, query) {
+    const text = [entry.name, entry.reading, entry.english, entry.description, entry.categoryName].map(value => normalize(value || ''));
+    return keywordTokens(query).every(token => text.some(value => value.includes(token)));
+  }
+
+  function searchEntries() {
+    const tokens = keywordTokens(state.searchQuery);
+    const entries = state.entries.filter(entry => (state.searchScope === 'all' || entry.categoryId === Number(state.searchScope)) && (!state.searchCheckedOnly || isChecked(entry.id)) && (!state.searchNewOnly || entry.addedInVersion) && keywordMatches(entry, state.searchQuery));
+    const relevance = entry => tokens.reduce((score, token) => score + (normalize(entry.name) === token ? 100 : normalize(entry.english) === token ? 90 : normalize(entry.name).startsWith(token) ? 70 : normalize(entry.name).includes(token) ? 50 : normalize(entry.reading).includes(token) ? 40 : 10), 0);
+    return tokens.length ? entries.sort((a, b) => relevance(b) - relevance(a)) : entries;
+  }
+
+  function checkedEntries() {
+    return state.entries.filter(entry => isChecked(entry.id) && (state.checkedScope === 'all' || entry.categoryId === Number(state.checkedScope)) && keywordMatches(entry, state.checkedQuery));
+  }
+
+  function searchBox(id, value, placeholder, action) {
+    return `<div class="keyword-box"><span aria-hidden="true">⌕</span><input id="${id}" type="search" value="${escapeHTML(value)}" placeholder="${escapeHTML(placeholder)}" aria-label="${escapeHTML(placeholder)}" autocomplete="off" enterkeyhint="search"><button class="clear-keyword" type="button" data-action="${action}" aria-label="検索語を消す" ${value ? '' : 'hidden'}>×</button></div>`;
+  }
+
+  function deckActions(count, action, checked = false) {
+    return `<p class="deck-selection-note" role="status">${checked ? 'チェック済み' : '検索結果'} ${count}語で単語帳を作成</p><div class="selection-actions"><button class="shuffle-picker ${state.shuffled ? 'active' : ''}" type="button" data-action="shuffle-study" aria-pressed="${state.shuffled}">⇄ シャッフル <span>${state.shuffled ? 'ON' : 'OFF'}</span></button><button class="primary-button ${checked ? 'checked-study-button' : ''}" type="button" data-action="${action}" ${count ? '' : 'disabled'}>${checked ? 'チェック済みで復習' : '検索結果で単語帳'} →</button></div>`;
+  }
+
+  function renderSearch() {
+    main.innerHTML = `<div class="page-head compact-page-head"><h1>用語を検索</h1><p>用語名・読み・英語・説明から探せます。</p></div><section class="search-controls">${searchBox('global-search', state.searchQuery, '例：RFID、暗号化、でぃーらむ', 'clear-search')}<div class="filters"><select class="filter-select" id="search-scope" aria-label="検索するジャンル"><option value="all">すべてのジャンル</option>${state.data.categories.map(category => `<option value="${category.id}" ${String(state.searchScope) === String(category.id) ? 'selected' : ''}>${escapeHTML(category.name)}</option>`).join('')}</select></div><div class="search-chips"><button class="filter-chip ${state.searchCheckedOnly ? 'active' : ''}" type="button" data-action="search-checked-only" aria-pressed="${state.searchCheckedOnly}">☑ チェック済みのみ</button><button class="filter-chip ${state.searchNewOnly ? 'active' : ''}" type="button" data-action="search-new-only" aria-pressed="${state.searchNewOnly}">新シラバスのみ</button></div></section><div id="search-results"></div><div class="selection-bar" id="search-deck-actions"></div>`;
+    renderSearchResults();
+  }
+
+  function renderSearchResults() {
+    const entries = searchEntries();
+    const visible = entries.slice(0, state.searchShown);
+    document.getElementById('search-results').innerHTML = `<p class="result-count" role="status">${entries.length}語${entries.length > visible.length ? ` · ${visible.length}語を表示` : ''}</p>${entries.length ? `<ul class="word-list">${visible.map(entry => termRow(entry, true)).join('')}</ul>${entries.length > visible.length ? '<button class="more-button" type="button" data-action="more-search">もっと見る</button>' : ''}` : '<div class="empty"><strong>用語が見つかりませんでした</strong><p>短いキーワードにするか、ジャンルや絞り込みを変更してください。</p><button class="outline-button" type="button" data-action="reset-search">絞り込みを解除</button></div>'}`;
+    document.getElementById('search-deck-actions').innerHTML = deckActions(entries.length, 'study-search');
+    const clear = main.querySelector('[data-action=clear-search]');
+    if (clear) clear.hidden = !state.searchQuery;
   }
 
   function renderListResults() {
     const container = document.getElementById('results');
     if (!container) return;
     const categories = selectedCategories();
-    const query = normalize(state.query);
-    const groups = categories.flatMap(category => category.sections.map((section, index) => ({ category, section, terms: section.terms.filter(term => matchesSyllabus(term) && (state.section === 'all' || state.section === `${category.id}:${index}`) && (state.filter !== 'checked' || isChecked(term.id)) && (!query || [term.name, term.reading, term.english].some(value => normalize(value || '').includes(query)))).map(term => ({ ...term, categoryName: category.name, sectionName: section.name })) }))).filter(group => group.terms.length);
+    const groups = categories.flatMap(category => category.sections.map((section, index) => ({ category, section, terms: section.terms.filter(term => matchesSyllabus(term) && (state.section === 'all' || state.section === `${category.id}:${index}`) && (state.filter !== 'checked' || isChecked(term.id)) && keywordMatches(state.byId.get(term.id) || term, state.query)).map(term => ({ ...term, categoryName: category.name, sectionName: section.name })) }))).filter(group => group.terms.length);
     const total = groups.reduce((sum, g) => sum + g.terms.length, 0);
     let remaining = state.shown;
     const html = groups.map(group => {
       const visible = group.terms.slice(0, Math.max(remaining, 0));
       remaining -= visible.length;
       if (!visible.length) return '';
-      return `<section class="word-group"><h2>${escapeHTML(categories.length > 1 ? `${group.category.name} · ${group.section.name}` : group.section.name)} <span>${group.terms.length}語</span></h2><ul class="word-list">${visible.map(termRow).join('')}</ul></section>`;
+      return `<section class="word-group"><h2>${escapeHTML(categories.length > 1 ? `${group.category.name} · ${group.section.name}` : group.section.name)} <span>${group.terms.length}語</span></h2><ul class="word-list">${visible.map(entry => termRow(entry)).join('')}</ul></section>`;
     }).join('');
     container.innerHTML = `<p class="result-count">${total}語を表示${total > state.shown ? ` ・ 最初の${state.shown}語` : ''}</p>${total ? html : `<div class="empty"><div class="empty-symbol" aria-hidden="true">⌕</div><strong>用語が見つかりませんでした</strong><p>検索語や小分類を変えてみてください。</p></div>`}${total > state.shown ? `<button class="more-button" type="button" data-action="more">もっと見る（残り${total - state.shown}語）</button>` : ''}`;
   }
@@ -250,7 +287,8 @@
     const entry = state.detail;
     if (!entry) { go('genres'); return; }
     const checked = isChecked(entry.id);
-    main.innerHTML = `<div class="detail-wrap"><button class="back-link" type="button" data-action="back-detail"><span aria-hidden="true">‹</span> 一覧に戻る</button><article class="detail-card"><span class="tag">${escapeHTML(entry.categoryName)}</span>${addedLabel(entry)}<h1>${escapeHTML(entry.name)}</h1><p class="detail-category">${escapeHTML(entry.sectionName)}</p>${entry.reading ? `<div class="term-meta"><span>読み</span><strong>${escapeHTML(entry.reading)}</strong></div>` : ''}${entry.english ? `<div class="term-meta"><span>英語</span><strong>${escapeHTML(entry.english)}</strong></div>` : ''}<div class="detail-divider"></div><p class="detail-label">用語の説明</p><p class="detail-copy"></p></article></div><div class="detail-footer"><button class="outline-button" type="button" data-action="back-detail">戻る</button><button class="primary-button ${checked ? 'is-checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-pressed="${checked}">${checked ? '✓ チェックを外す' : '□ 分からないのでチェック'}</button></div>`;
+    const backLabel = state.detailOrigin === 'search' ? '検索結果に戻る' : state.detailOrigin === 'checked' ? 'チェック済みに戻る' : '一覧に戻る';
+    main.innerHTML = `<div class="detail-wrap"><button class="back-link" type="button" data-action="back-detail"><span aria-hidden="true">‹</span> ${backLabel}</button><article class="detail-card"><span class="tag">${escapeHTML(entry.categoryName)}</span>${addedLabel(entry)}<h1>${escapeHTML(entry.name)}</h1><p class="detail-category">${escapeHTML(entry.sectionName)}</p>${entry.reading ? `<div class="term-meta"><span>読み</span><strong>${escapeHTML(entry.reading)}</strong></div>` : ''}${entry.english ? `<div class="term-meta"><span>英語</span><strong>${escapeHTML(entry.english)}</strong></div>` : ''}<div class="detail-divider"></div><p class="detail-label">用語の説明</p><p class="detail-copy"></p></article></div><div class="detail-footer"><button class="outline-button" type="button" data-action="back-detail">戻る</button><button class="primary-button ${checked ? 'is-checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-pressed="${checked}">${checked ? '✓ チェックを外す' : '□ 分からないのでチェック'}</button></div>`;
     main.querySelector('.detail-copy').textContent = entry.description || 'この用語の説明はまだ収録されていません。';
   }
 
@@ -263,7 +301,7 @@
   }
 
   function startStudy(entries = selectedEntries(), origin = 'genres') {
-    if (!entries.length) { toast('ジャンルを選んでください'); return; }
+    if (!entries.length) { toast('表示する用語がありません'); return; }
     state.studyDeck = [...entries];
     if (state.shuffled) shuffle(state.studyDeck);
     state.studyIndex = 0;
@@ -292,7 +330,7 @@
     const checked = isChecked(entry.id);
     const note = profile().notes?.[entry.id] || '';
     const progress = Math.round((state.studyIndex + 1) / state.studyDeck.length * 100);
-    main.innerHTML = `<div class="study-top"><button class="back-link" type="button" data-action="back-study"><span aria-hidden="true">‹</span> ${state.studyOrigin === 'checked' ? 'チェック済みに戻る' : 'ジャンルを選び直す'}</button>${state.studyOrigin === 'checked' ? '' : '<button class="study-list-link" type="button" data-action="start-list">一覧</button>'}</div><div class="study-progress"><span>${state.studyIndex + 1} / ${state.studyDeck.length} 語</span></div><div class="progress-track"><div style="width:${progress}%"></div></div><p class="study-section">${escapeHTML(entry.categoryName)} · ${escapeHTML(entry.sectionName)}</p><article class="flashcard ${state.flipped ? 'is-back' : ''}" aria-label="${state.flipped ? 'カードの裏面。タップすると次の用語へ進みます' : 'カードの表面'}" ${state.flipped ? 'role="button" tabindex="0"' : ''}><span class="card-side">${state.flipped ? '裏面' : '表面'}</span>${addedLabel(entry)}${state.flipped ? `<h1>${escapeHTML(entry.name)}</h1><div class="card-info">${entry.reading ? `<div><span>読み</span><strong>${escapeHTML(entry.reading)}</strong></div>` : ''}${entry.english ? `<div><span>英語</span><strong>${escapeHTML(entry.english)}</strong></div>` : ''}</div><div class="card-note"><label for="study-note">自分用の説明メモ</label><textarea id="study-note" rows="3" maxlength="500" placeholder="意味を自分の言葉でメモできます">${escapeHTML(note)}</textarea><span>この端末に保存されます</span></div><span class="card-next-hint">${state.studyIndex < state.studyDeck.length - 1 ? 'カードをタップして次の用語へ →' : '最後の用語です'}</span>` : `<button class="card-face" type="button" data-action="flip-card"><span class="card-context">${escapeHTML(processContext(entry))}</span><span class="card-term">${escapeHTML(entry.name)}</span><span class="card-hint">タップして説明を見る ↻</span></button>`}</article><button class="study-check ${checked ? 'checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-pressed="${checked}"><span class="study-check-box">${checked ? '✓' : ''}</span>${checked ? 'チェック済み' : '分からないのでチェック'}</button>`;
+    main.innerHTML = `<div class="study-top"><button class="back-link" type="button" data-action="back-study"><span aria-hidden="true">‹</span> ${state.studyOrigin === 'checked' ? 'チェック済みに戻る' : state.studyOrigin === 'search' ? '検索結果に戻る' : 'ジャンルを選び直す'}</button>${state.studyOrigin !== 'genres' ? '' : '<button class="study-list-link" type="button" data-action="start-list">一覧</button>'}</div><div class="study-progress"><span>${state.studyIndex + 1} / ${state.studyDeck.length} 語</span></div><div class="progress-track"><div style="width:${progress}%"></div></div><p class="study-section">${escapeHTML(entry.categoryName)} · ${escapeHTML(entry.sectionName)}</p><article class="flashcard ${state.flipped ? 'is-back' : ''}" aria-label="${state.flipped ? 'カードの裏面。タップすると次の用語へ進みます' : 'カードの表面'}" ${state.flipped ? 'role="button" tabindex="0"' : ''}><span class="card-side">${state.flipped ? '裏面' : '表面'}</span>${addedLabel(entry)}${state.flipped ? `<h1>${escapeHTML(entry.name)}</h1><div class="card-info">${entry.reading ? `<div><span>読み</span><strong>${escapeHTML(entry.reading)}</strong></div>` : ''}${entry.english ? `<div><span>英語</span><strong>${escapeHTML(entry.english)}</strong></div>` : ''}</div><div class="card-note"><label for="study-note">自分用の説明メモ</label><textarea id="study-note" rows="3" maxlength="500" placeholder="意味を自分の言葉でメモできます">${escapeHTML(note)}</textarea><span>この端末に保存されます</span></div><span class="card-next-hint">${state.studyIndex < state.studyDeck.length - 1 ? 'カードをタップして次の用語へ →' : '最後の用語です'}</span>` : `<button class="card-face" type="button" data-action="flip-card"><span class="card-context">${escapeHTML(processContext(entry))}</span><span class="card-term">${escapeHTML(entry.name)}</span><span class="card-hint">タップして説明を見る ↻</span></button>`}</article><button class="study-check ${checked ? 'checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-pressed="${checked}"><span class="study-check-box">${checked ? '✓' : ''}</span>${checked ? 'チェック済み' : '分からないのでチェック'}</button>`;
     if (state.flipped) {
       const explanation = document.createElement('div');
       explanation.className = 'card-explanation';
@@ -306,10 +344,18 @@
   }
 
   function renderChecked() {
-    const ids = new Set(Object.keys(profile().flags).filter(isChecked));
-    const scope = state.checkedScope;
-    const entries = state.entries.filter(e => ids.has(e.id) && (scope === 'all' || e.categoryId === Number(scope)));
-    main.innerHTML = `<div class="page-head"><p class="eyebrow">REVIEW LIST</p><h1>チェック済み</h1><p>分からないと感じた用語を、ここで見返せます。</p></div><div class="stats-card"><div><strong>${checkedCount()}</strong><small>語をチェック中</small></div><span aria-hidden="true">☑</span></div>${renderFilters(true)}<p class="result-count">${entries.length}語</p>${entries.length ? `<button class="primary-button checked-study-button" type="button" data-action="study-checked">チェック済みをカードで見る →</button><ul class="word-list">${entries.map(termRow).join('')}</ul>` : `<div class="empty"><div class="empty-symbol" aria-hidden="true">✓</div><strong>チェックした用語はありません</strong><p>ジャンルを選び、分からない用語にチェックを付けてください。</p></div>`}`;
+    main.innerHTML = `<div class="page-head compact-page-head"><h1>チェック済み</h1><p>チェックした用語だけで復習できます。</p></div><div class="checked-summary"><span>チェックした用語</span><strong><span id="checked-total-count">${checkedCount()}</span>語</strong></div><section class="search-controls">${searchBox('checked-search', state.checkedQuery, 'チェックした用語を検索', 'clear-checked-search')}${renderFilters(true)}</section><div id="checked-results"></div><div class="selection-bar" id="checked-deck-actions"></div>`;
+    renderCheckedResults();
+  }
+
+  function renderCheckedResults() {
+    const entries = checkedEntries();
+    const visible = entries.slice(0, state.checkedShown);
+    document.getElementById('checked-total-count').textContent = checkedCount();
+    document.getElementById('checked-results').innerHTML = `<p class="result-count" role="status">復習する用語：${entries.length}語${entries.length > visible.length ? ` · ${visible.length}語を表示` : ''}</p>${entries.length ? `<ul class="word-list">${visible.map(entry => termRow(entry, true)).join('')}</ul>${entries.length > visible.length ? '<button class="more-button" type="button" data-action="more-checked">もっと見る</button>' : ''}` : `<div class="empty"><div class="empty-symbol" aria-hidden="true">☑</div><strong>${checkedCount() ? '条件に合うチェック済み用語がありません' : 'まだチェックした用語はありません'}</strong><p>${checkedCount() ? '検索語を消すか、ジャンルを変更してください。' : '検索結果やカードの「分からない」を押すと、ここに集まります。'}</p><button class="outline-button" type="button" data-action="${checkedCount() ? 'reset-checked-filter' : 'open-search'}">${checkedCount() ? '絞り込みを解除' : '用語を検索する'}</button></div>`}`;
+    document.getElementById('checked-deck-actions').innerHTML = deckActions(entries.length, 'study-checked', true);
+    const clear = main.querySelector('[data-action=clear-checked-search]');
+    if (clear) clear.hidden = !state.checkedQuery;
   }
 
   function renderRecords() {
@@ -317,42 +363,15 @@
     const history = [...current.history].reverse().slice(0, 30);
     main.innerHTML = `<div class="page-head"><p class="eyebrow">MY RECORD</p><h1>学習の記録</h1><p>チェックした用語と最近の操作を確認できます。</p></div><div class="profile-bar"><select id="profile-select" aria-label="使うプロフィール">${state.store.profiles.map(p => `<option value="${escapeHTML(p.id)}" ${p.id === current.id ? 'selected' : ''}>${escapeHTML(p.name)}</option>`).join('')}</select><button class="outline-button" type="button" data-action="add-profile">＋ 追加</button></div><div class="stats-card"><div><strong>${checkedCount()}</strong><small>語をチェック中</small></div><span aria-hidden="true">☑</span></div><section class="record-section"><div class="section-title"><h2>最近のチェック操作</h2><span>最大100件保存</span></div>${history.length ? `<ul class="history-list">${history.map(item => `<li class="history-item"><div><strong>${escapeHTML(item.name)}</strong><small>${formatDate(item.at)}</small></div><span class="history-action ${item.checked ? '' : 'off'}">${item.checked ? 'チェックした' : '外した'}</span></li>`).join('')}</ul>` : `<div class="empty"><div class="empty-symbol" aria-hidden="true">◷</div><strong>まだ記録はありません</strong><p>用語にチェックを付けると、ここに履歴が残ります。</p></div>`}${history.length ? `<button class="text-danger" type="button" data-action="clear-history">操作履歴を消す</button>` : ''}</section><section class="record-section"><div class="section-title"><h2>記録の保存</h2></div><p class="muted-note">記録はこのブラウザ内だけに保存されます。機種変更に備えてファイルに書き出せます。</p><div class="action-grid"><button class="outline-button" type="button" data-action="export">記録を書き出す</button><button class="outline-button" type="button" data-action="import">記録を読み込む</button></div><input id="import-file" type="file" accept="application/json,.json" hidden><button class="text-danger" type="button" data-action="delete-profile">このプロフィールを削除</button></section>`;
     main.insertAdjacentHTML('beforeend', '<section class="record-section"><div class="section-title"><h2>単語データ</h2></div><p class="muted-note">収録用語を検索・閲覧し、全件CSVを保存できます。</p><a class="source-button" href="./database.html">単語データを見る →</a><a class="source-button" href="./sources.html">参照資料・収録方針を見る →</a></section>');
-    main.insertAdjacentHTML('beforeend', '<section class="record-section"><a class="source-button" href="#" data-action="custom-terms">＋ 自分の用語を追加・編集する →</a></section>');
-  }
-
-  function renderCustomTerms() {
-    const terms = profile().customTerms || [];
-    const editing = terms.find(term => term.id === state.editingCustomId);
-    const categoryId = editing?.categoryId || (state.selectedCategories.length === 1 ? state.selectedCategories[0] : '');
-    main.innerHTML = `<div class="page-head"><button class="back-link" type="button" data-action="custom-back">‹ ジャンルに戻る</button><h1>自分の用語を追加</h1><p>用語名とジャンルだけで登録できます。意味はあとから入力できます。</p></div>
-      <form id="custom-term-form" class="custom-term-form"><h2>${editing ? '用語を編集' : '用語を登録'}</h2><label for="custom-name">用語名</label><input id="custom-name" name="name" maxlength="100" required autocomplete="off" placeholder="分からなかった用語" value="${escapeHTML(editing?.name || '')}"><label for="custom-category">ジャンル</label><select id="custom-category" name="category" required><option value="">ジャンルを選んでください</option>${state.baseData.categories.map(category => `<option value="${category.id}" ${Number(categoryId) === category.id ? 'selected' : ''}>${escapeHTML(category.name)}</option>`).join('')}</select>${editing ? `<label for="custom-description">意味（あとから入力できます）</label><textarea id="custom-description" name="description" rows="4" maxlength="2000" placeholder="意味や特徴、例など">${escapeHTML(editing.description || '')}</textarea>` : ''}<p class="custom-save-note">この端末・プロフィールに保存されます。</p><p id="custom-error" class="custom-error" role="alert"></p><div class="custom-form-actions">${editing ? '<button class="outline-button" type="button" data-action="cancel-custom-edit">キャンセル</button>' : ''}<button class="primary-button" type="submit">${editing ? '変更を保存' : '用語を追加'}</button></div></form>
-      <section class="record-section"><div class="section-title"><h2>追加した用語</h2><span>${terms.length}語</span></div><p class="custom-save-note">選んだジャンルの「自分で追加した用語」に表示されます。「新シラバスのみ」がONの間は表示対象に入りません。</p>${terms.length ? `<ul class="custom-term-list">${terms.map(term => `<li><div><strong>${escapeHTML(term.name)}</strong><span>${escapeHTML(state.baseData.categories.find(category => category.id === Number(term.categoryId))?.name || '')} · ${term.description ? '意味あり' : '意味は未入力'}</span></div><div class="custom-row-actions"><button type="button" data-action="edit-custom-term" data-key="${escapeHTML(term.id)}">編集</button><button type="button" data-action="delete-custom-term" data-key="${escapeHTML(term.id)}">削除</button></div></li>`).join('')}</ul>` : '<p class="custom-save-note">まだ追加した用語はありません。</p>'}</section>`;
-  }
-
-  function saveCustomTerm(form) {
-    const name = form.elements.name.value.trim();
-    const categoryId = Number(form.elements.category.value);
-    const editingId = state.editingCustomId;
-    const error = document.getElementById('custom-error');
-    if (!name || name.length > 100 || !state.baseData.categories.some(category => category.id === categoryId)) { error.textContent = '用語名とジャンルを入力してください。'; return; }
-    if (state.entries.some(entry => entry.id !== editingId && entry.categoryId === categoryId && normalize(entry.name) === normalize(name))) { error.textContent = 'このジャンルには同じ用語が登録されています。'; return; }
-    const before = JSON.stringify(state.store);
-    const current = profile();
-    if (!Array.isArray(current.customTerms)) current.customTerms = [];
-    const existing = current.customTerms.find(term => term.id === editingId);
-    if (editingId && !existing) { error.textContent = '編集する用語が見つかりません。'; return; }
-    if (existing) Object.assign(existing, { name, categoryId, description: form.elements.description.value.trim() });
-    else current.customTerms.push({ id: `custom-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`, name, categoryId, description: '', createdAt: new Date().toISOString() });
-    if (!saveStore()) { state.store = JSON.parse(before); error.textContent = '保存できませんでした。ブラウザの空き容量を確認してください。'; return; }
-    state.editingCustomId = null;
-    refreshEntries(); renderCustomTerms();
-    toast(existing ? '変更を保存しました' : '用語を追加しました');
-    document.getElementById('custom-name').focus();
   }
 
   document.addEventListener('submit', event => {
-    if (event.target.id !== 'custom-term-form') return;
-    event.preventDefault(); saveCustomTerm(event.target);
+    if (event.target.id === 'home-search-form') {
+      event.preventDefault();
+      state.searchQuery = document.getElementById('home-search').value.trim();
+      state.searchScope = 'all'; state.searchCheckedOnly = false; state.searchNewOnly = false; state.searchShown = PAGE_SIZE;
+      document.activeElement?.blur(); go('search'); return;
+    }
   });
 
   function toggleCheck(id) {
@@ -371,7 +390,10 @@
       render();
       return;
     }
+    renderNav();
     if (state.screen === 'list') renderListResults();
+    else if (state.screen === 'search') renderSearchResults();
+    else if (state.screen === 'checked') renderCheckedResults();
     else if (state.screen === 'detail') renderDetail();
     else if (state.screen === 'study') renderStudy();
     else render();
@@ -432,25 +454,25 @@
     const button = event.target.closest('[data-action]');
     if (!button) return;
     const action = button.dataset.action;
-    if (action === 'custom-terms') { event.preventDefault(); state.editingCustomId = null; go('custom'); return; }
-    if (action === 'custom-back') { state.editingCustomId = null; go('genres'); return; }
-    if (action === 'edit-custom-term') { state.editingCustomId = button.dataset.key; go('custom'); return; }
-    if (action === 'cancel-custom-edit') { state.editingCustomId = null; renderCustomTerms(); return; }
-    if (action === 'delete-custom-term') {
-      const id = button.dataset.key;
-      const term = profile().customTerms?.find(item => item.id === id);
-      if (!term) return;
-      showModal('追加した用語を削除しますか？', term.name, '削除する', () => {
-        const before = JSON.stringify(state.store), current = profile();
-        current.customTerms = current.customTerms.filter(item => item.id !== id);
-        delete current.flags[id]; delete current.notes[id];
-        current.history = current.history.filter(item => item.id !== id);
-        if (!saveStore()) { state.store = JSON.parse(before); toast('削除を保存できませんでした'); return false; }
-        if (state.editingCustomId === id) state.editingCustomId = null;
-        refreshEntries(); renderCustomTerms(); toast('用語を削除しました');
-      }); return;
+    if (action === 'open-search') { go('search'); document.getElementById('global-search')?.focus(); return; }
+    if (action === 'clear-search' || action === 'clear-checked-search') {
+      const checked = action === 'clear-checked-search';
+      if (checked) { state.checkedQuery = ''; state.checkedShown = PAGE_SIZE; }
+      else { state.searchQuery = ''; state.searchShown = PAGE_SIZE; }
+      const input = document.getElementById(checked ? 'checked-search' : 'global-search');
+      input.value = ''; checked ? renderCheckedResults() : renderSearchResults(); input.focus(); return;
     }
-    if (action === 'nav') { go(button.dataset.screen); return; }
+    if (action === 'reset-search') { state.searchQuery = ''; state.searchScope = 'all'; state.searchCheckedOnly = false; state.searchNewOnly = false; state.searchShown = PAGE_SIZE; renderSearch(); return; }
+    if (action === 'reset-checked-filter') { state.checkedQuery = ''; state.checkedScope = 'all'; state.checkedShown = PAGE_SIZE; renderChecked(); return; }
+    if (action === 'search-checked-only' || action === 'search-new-only') {
+      if (action === 'search-checked-only') state.searchCheckedOnly = !state.searchCheckedOnly;
+      else state.searchNewOnly = !state.searchNewOnly;
+      state.searchShown = PAGE_SIZE; renderSearch(); return;
+    }
+    if (action === 'study-search') { startStudy(searchEntries(), 'search'); return; }
+    if (action === 'more-search') { state.searchShown += PAGE_SIZE; renderSearchResults(); return; }
+    if (action === 'more-checked') { state.checkedShown += PAGE_SIZE; renderCheckedResults(); return; }
+    if (action === 'nav') { go(button.dataset.screen); if (button.dataset.screen === 'search') document.getElementById('global-search')?.focus(); return; }
     if (action === 'toggle-category') { const id = Number(button.dataset.id); const scroll = window.scrollY; state.selectedCategories = state.selectedCategories.includes(id) ? state.selectedCategories.filter(x => x !== id) : [...state.selectedCategories, id].sort((a, b) => a - b); renderGenres(); window.scrollTo(0, scroll); return; }
     if (action === 'select-all-categories' || action === 'clear-categories') {
       const scroll = window.scrollY;
@@ -462,7 +484,7 @@
     if (action === 'return-study') { go('study'); return; }
     if (action === 'back-study') { go(state.studyOrigin); return; }
     if (action === 'flip-card') { state.flipped = true; renderStudy(); return; }
-    if (action === 'shuffle-study') { state.shuffled = !state.shuffled; const scroll = window.scrollY; renderGenres(); window.scrollTo(0, scroll); return; }
+    if (action === 'shuffle-study') { state.shuffled = !state.shuffled; const scroll = window.scrollY; if (state.screen === 'search') renderSearchResults(); else if (state.screen === 'checked') renderCheckedResults(); else renderGenres(); window.scrollTo(0, scroll); return; }
     if (action === 'toggle-new-syllabus') {
       state.newSyllabusOnly = !state.newSyllabusOnly;
       if (state.newSyllabusOnly) {
@@ -471,7 +493,7 @@
       }
       renderGenres(); return;
     }
-    if (action === 'study-checked') { const scope = state.checkedScope; const entries = state.entries.filter(e => isChecked(e.id) && (scope === 'all' || e.categoryId === Number(scope))); startStudy(entries, 'checked'); return; }
+    if (action === 'study-checked') { startStudy(checkedEntries(), 'checked'); return; }
     if (action === 'toggle-list-filter') { state.filter = state.filter === 'checked' ? 'all' : 'checked'; state.shown = PAGE_SIZE; renderList(); return; }
     if (action === 'more') { state.shown += PAGE_SIZE; renderListResults(); return; }
     if (action === 'open-term') { openTerm(button.dataset.key); return; }
@@ -490,12 +512,15 @@
   });
 
   document.addEventListener('input', event => {
+    if (event.target.id === 'global-search') { state.searchQuery = event.target.value; state.searchShown = PAGE_SIZE; renderSearchResults(); }
+    if (event.target.id === 'checked-search') { state.checkedQuery = event.target.value; state.checkedShown = PAGE_SIZE; renderCheckedResults(); }
     if (event.target.id === 'search-input') { state.query = event.target.value; state.shown = PAGE_SIZE; renderListResults(); }
     if (event.target.id === 'study-note') { const id = state.studyDeck[state.studyIndex]?.id; if (!id) return; const current = profile(); const before = current.notes?.[id]; if (!current.notes) current.notes = {}; if (event.target.value) current.notes[id] = event.target.value; else delete current.notes[id]; if (!saveStore()) { if (before === undefined) delete current.notes[id]; else current.notes[id] = before; toast('メモを保存できませんでした'); } }
   });
   document.addEventListener('change', event => {
     if (event.target.id === 'section-filter') { state.section = event.target.value; state.shown = PAGE_SIZE; renderListResults(); }
-    if (event.target.id === 'checked-scope') { state.checkedScope = event.target.value; renderChecked(); }
+    if (event.target.id === 'checked-scope') { state.checkedScope = event.target.value; state.checkedShown = PAGE_SIZE; renderCheckedResults(); }
+    if (event.target.id === 'search-scope') { state.searchScope = event.target.value; state.searchShown = PAGE_SIZE; renderSearchResults(); }
     if (event.target.id === 'profile-select') { const previous = state.store.activeProfileId; state.store.activeProfileId = event.target.value; if (!saveStore()) { state.store.activeProfileId = previous; render(); toast('切り替えを保存できませんでした'); return; } refreshEntries(); render(); toast('プロフィールを切り替えました'); }
     if (event.target.id === 'import-file') importProfile(event.target.files[0]);
   });
@@ -523,4 +548,8 @@
     main.innerHTML = '<div class="empty"><strong>用語を読み込めませんでした</strong><p>アプリのファイルがそろっているか確認して、開き直してください。</p><button class="more-button" type="button" onclick="location.reload()">再読み込み</button></div>';
   }
 })();
+
+
+
+
 
