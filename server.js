@@ -7,7 +7,7 @@ const publicFiles = new Set(require('./scripts/public-files'));
 
 const root = __dirname;
 const port = Number(process.env.FE_LAN_PORT || 4173);
-const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.csv': 'text/csv' };
+const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.csv': 'text/csv', '.svg': 'image/svg+xml' };
 const csvPath = path.join(root, 'data', 'vocabulary.csv');
 let builtMtime = 0;
 function refreshData() {

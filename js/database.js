@@ -36,6 +36,24 @@
     description.className = `description ${entry.description ? '' : 'missing'}`;
     description.textContent = entry.description || '説明は未収録です。';
     article.append(title, meta, description);
+    const diagram = window.FE_DIAGRAMS?.[entry.id];
+    if (diagram) {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.className = 'diagram-toggle';
+      summary.textContent = '図で確認';
+      const viewport = document.createElement('div');
+      viewport.className = 'diagram-view';
+      const image = document.createElement('img');
+      image.src = diagram.src;
+      image.alt = diagram.caption;
+      image.loading = 'lazy';
+      image.width = 720;
+      image.height = 280;
+      viewport.append(image);
+      details.append(summary, viewport);
+      article.append(details);
+    }
     return article;
   }
   function render() {

@@ -1,31 +1,20 @@
 {
   "date": "2026-10-15",
   "syllabus": "9.2",
-  "total": 1000,
-  "syllabus_occurrences": 977,
-  "exam_only_occurrences": 20,
+  "total": 448,
+  "syllabus_occurrences": 446,
+  "exam_only_occurrences": 1,
   "supplements": [
     {
       "name": "HTTP/3",
       "note": "HTTPの世代・通信方式の比較を補う。HTTP/3自体のシラバス明記・出題は未確認。"
-    },
-    {
-      "name": "CTR",
-      "note": "暗号利用モードの比較を補う。CTR自体のシラバス明記・出題は未確認。"
-    },
-    {
-      "name": "スニッフィング",
-      "note": "利用者指定の追加語。シラバスの「盗聴」を具体的なパケット傍受・解析で理解するための補足。語そのものの出題実績は未確認。"
     }
   ],
   "exam_papers": 27,
   "added_since_9_0": 448,
-  "classification_changes": 10,
+  "classification_changes": 4,
   "ordering": "IPA中分類・小分類の順、学習用グループ、読みの五十音順",
-  "csv_sha256": "c1a8b7ddcf2a6c1a0cf0a4fb86258fb5d2efbef4606500bf4801783df7a31441",
-  "selection": {
-    "date": "2026-10-15",
-    "before": 1397,
-    "removed": 397
-  }
+  "csv_sha256": "da4efd0e17929cd4b1d15e898673ff78917df086a6dd952cad56d723c8244859",
+  "filtered_on": "2026-10-21",
+  "scope": "Ver.9.0以降に追加された用語のみ"
 }

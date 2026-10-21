@@ -2,10 +2,10 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const {execFileSync} = require('node:child_process');
-const files = require('./public-files');
 const root = path.resolve(__dirname,'..');
 execFileSync(process.execPath,[path.join(__dirname,'build-static-data.js')],{cwd:root,windowsHide:true,stdio:'inherit'});
 execFileSync(process.execPath,[path.join(__dirname,'export-exam-evidence.js')],{cwd:root,windowsHide:true,stdio:'inherit'});
+const files = require('./public-files');
 const output = path.join(root,'public-site');
 // Refuse unexpected leftovers instead of silently including private material.
 function inspect(directory, prefix='') {

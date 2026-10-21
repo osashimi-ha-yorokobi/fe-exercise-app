@@ -10,11 +10,11 @@
 
   const state = {
     data: null, baseData: null, entries: [], byId: new Map(),
-    screen: 'genres', selectedCategories: [], newSyllabusOnly: false, detail: null,
+    screen: 'genres', selectedCategories: [], detail: null,
     detailOrigin: 'list', detailScroll: 0,
     studyDeck: [], studyIndex: 0, flipped: false, shuffled: false, studyOrigin: 'genres',
     query: '', section: 'all', filter: 'all', checkedScope: 'all', shown: PAGE_SIZE,
-    searchQuery: '', searchScope: 'all', searchCheckedOnly: false, searchNewOnly: false, searchShown: PAGE_SIZE,
+    searchQuery: '', searchScope: 'all', searchCheckedOnly: false, searchShown: PAGE_SIZE,
     checkedQuery: '', checkedShown: PAGE_SIZE,
     store: loadStore(), toastTimer: null
   };
@@ -45,12 +45,11 @@
   const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
   const normalize = value => String(value).normalize('NFKC').toLocaleLowerCase('ja-JP').replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60)).replace(/\s+/g, '');
   const formatDate = value => { try { return new Intl.DateTimeFormat('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(value)); } catch { return ''; } };
-  const matchesSyllabus = term => !state.newSyllabusOnly || Boolean(term.addedInVersion);
-  const countCategory = category => category.sections.reduce((sum, section) => sum + section.terms.filter(matchesSyllabus).length, 0);
-  const checkedCategory = category => category.sections.reduce((sum, section) => sum + section.terms.filter(term => matchesSyllabus(term) && isChecked(term.id)).length, 0);
+  const countCategory = category => category.sections.reduce((sum, section) => sum + section.terms.length, 0);
+  const checkedCategory = category => category.sections.reduce((sum, section) => sum + section.terms.filter(term => isChecked(term.id)).length, 0);
   const checkedCount = () => state.entries.filter(entry => isChecked(entry.id)).length;
   const selectedCategories = () => state.data.categories.filter(c => state.selectedCategories.includes(c.id));
-  const selectedEntries = () => state.entries.filter(e => state.selectedCategories.includes(e.categoryId) && matchesSyllabus(e));
+  const selectedEntries = () => state.entries.filter(e => state.selectedCategories.includes(e.categoryId));
   const addedLabel = entry => entry.addedInVersion ? `<span class="added-tag">Ver.${escapeHTML(entry.addedInVersion)}追加</span>` : '';
   const processContexts = {
     'A/D変換': 'アナログ信号をデジタルデータに変える処理',
@@ -188,12 +187,12 @@
       <div class="page-head"><h1>単語帳をつくる</h1><p>ジャンルを選んで、そのまま学習。</p></div>
       <form id="home-search-form" class="home-search"><label for="home-search">キーワードで用語を探す</label><div><input id="home-search" type="search" placeholder="用語・読み・意味" autocomplete="off" enterkeyhint="search"><button type="submit" aria-label="全用語を検索する">検索</button></div></form>
       ${checkedCount() ? `<button class="review-shortcut" type="button" data-action="nav" data-screen="checked"><span>☑ チェック済みの${checkedCount()}語を復習</span><span aria-hidden="true">→</span></button>` : ''}
-      <div class="syllabus-picker"><button class="syllabus-toggle ${state.newSyllabusOnly ? 'active' : ''}" type="button" data-action="toggle-new-syllabus" aria-pressed="${state.newSyllabusOnly}"><span>新シラバスのみ</span><span class="syllabus-switch" aria-hidden="true">${state.newSyllabusOnly ? 'ON' : 'OFF'}</span></button><p>Ver.9.0以降の追加語・全${addedCount}語</p></div>
+      <div class="syllabus-picker"><strong>新シラバスの追加語のみ</strong><p>Ver.9.0以降・全${addedCount}語</p></div>
       <div class="genre-selection-tools"><span>ジャンル（複数選択）</span><div><button type="button" data-action="select-all-categories">全選択</button><button type="button" data-action="clear-categories" ${state.selectedCategories.length ? '' : 'disabled'}>解除</button></div></div>
       <p class="genre-selection-summary" role="status">${state.selectedCategories.length ? `選択中：${escapeHTML(selectedCategories().slice(0, 2).map(category => category.name).join('・'))}${state.selectedCategories.length > 2 ? ` ほか${state.selectedCategories.length - 2}ジャンル` : ''}` : '見たいジャンルを選んでください。'}</p>
       ${groups.map(([title, categories]) => `<section><div class="section-title"><h2>${title}</h2><span>${categories.length}ジャンル</span></div><ul class="genre-list">${categories.map(c => { const selected = state.selectedCategories.includes(c.id); const count = countCategory(c); return `<li class="genre-item"><button class="genre-button ${selected ? 'selected' : ''}" type="button" data-action="toggle-category" data-id="${c.id}" aria-pressed="${selected}" ${count ? '' : 'disabled'}><span class="genre-number">${String(c.id).padStart(2, '0')}</span><span class="genre-main"><span class="genre-name">${escapeHTML(c.name)}</span><span class="genre-count">${count ? `${count}語` : '追加語なし'}${checkedCategory(c) ? ` · ${checkedCategory(c)}件チェック` : ''}</span></span><span class="genre-choice" aria-hidden="true">${selected ? '✓' : ''}</span></button></li>`; }).join('')}</ul></section>`).join('')}
       <p class="footer-note">IPAのシラバスVer.9.2と公開問題を基準に用語を選んでいます。説明・例はこの単語帳で独自に作成しています。<br><a href="./sources.html">参照資料・収録方針を見る →</a></p>
-      <div class="selection-bar"><p>${selectedCount ? `${state.selectedCategories.length}ジャンル · ${selectedCount}語を選択中${state.newSyllabusOnly ? '（追加語のみ）' : ''}` : 'ジャンルを選んでください'}</p><div class="selection-actions"><button class="shuffle-picker ${state.shuffled ? 'active' : ''}" type="button" data-action="shuffle-study" aria-pressed="${state.shuffled}" aria-label="シャッフルして表示">⇄ シャッフル <span>${state.shuffled ? 'ON' : 'OFF'}</span></button><button class="primary-button" type="button" data-action="start-study" ${selectedCount ? '' : 'disabled'}>単語帳を開く →</button></div></div>`;
+      <div class="selection-bar"><p>${selectedCount ? `${state.selectedCategories.length}ジャンル · ${selectedCount}語を選択中` : 'ジャンルを選んでください'}</p><div class="selection-actions"><button class="shuffle-picker ${state.shuffled ? 'active' : ''}" type="button" data-action="shuffle-study" aria-pressed="${state.shuffled}" aria-label="シャッフルして表示">⇄ シャッフル <span>${state.shuffled ? 'ON' : 'OFF'}</span></button><button class="primary-button" type="button" data-action="start-study" ${selectedCount ? '' : 'disabled'}>単語帳を開く →</button></div></div>`;
   }
 
   function renderFilters(forChecked = false) {
@@ -227,7 +226,7 @@
 
   function searchEntries() {
     const tokens = keywordTokens(state.searchQuery);
-    const entries = state.entries.filter(entry => (state.searchScope === 'all' || entry.categoryId === Number(state.searchScope)) && (!state.searchCheckedOnly || isChecked(entry.id)) && (!state.searchNewOnly || entry.addedInVersion) && keywordMatches(entry, state.searchQuery));
+    const entries = state.entries.filter(entry => (state.searchScope === 'all' || entry.categoryId === Number(state.searchScope)) && (!state.searchCheckedOnly || isChecked(entry.id)) && keywordMatches(entry, state.searchQuery));
     const relevance = entry => tokens.reduce((score, token) => score + (normalize(entry.name) === token ? 100 : normalize(entry.english) === token ? 90 : normalize(entry.name).startsWith(token) ? 70 : normalize(entry.name).includes(token) ? 50 : normalize(entry.reading).includes(token) ? 40 : 10), 0);
     return tokens.length ? entries.sort((a, b) => relevance(b) - relevance(a)) : entries;
   }
@@ -245,7 +244,7 @@
   }
 
   function renderSearch() {
-    main.innerHTML = `<div class="page-head compact-page-head"><h1>用語を検索</h1><p>用語名・読み・英語・説明から探せます。</p></div><section class="search-controls">${searchBox('global-search', state.searchQuery, '例：RFID、暗号化、でぃーらむ', 'clear-search')}<div class="filters"><select class="filter-select" id="search-scope" aria-label="検索するジャンル"><option value="all">すべてのジャンル</option>${state.data.categories.map(category => `<option value="${category.id}" ${String(state.searchScope) === String(category.id) ? 'selected' : ''}>${escapeHTML(category.name)}</option>`).join('')}</select></div><div class="search-chips"><button class="filter-chip ${state.searchCheckedOnly ? 'active' : ''}" type="button" data-action="search-checked-only" aria-pressed="${state.searchCheckedOnly}">☑ チェック済みのみ</button><button class="filter-chip ${state.searchNewOnly ? 'active' : ''}" type="button" data-action="search-new-only" aria-pressed="${state.searchNewOnly}">新シラバスのみ</button></div></section><div id="search-results"></div><div class="selection-bar" id="search-deck-actions"></div>`;
+    main.innerHTML = `<div class="page-head compact-page-head"><h1>用語を検索</h1><p>Ver.9.0以降の追加語から、用語名・読み・英語・説明を探せます。</p></div><section class="search-controls">${searchBox('global-search', state.searchQuery, '例：RFID、暗号化、でぃーらむ', 'clear-search')}<div class="filters"><select class="filter-select" id="search-scope" aria-label="検索するジャンル"><option value="all">すべてのジャンル</option>${state.data.categories.map(category => `<option value="${category.id}" ${String(state.searchScope) === String(category.id) ? 'selected' : ''}>${escapeHTML(category.name)}</option>`).join('')}</select></div><div class="search-chips"><button class="filter-chip ${state.searchCheckedOnly ? 'active' : ''}" type="button" data-action="search-checked-only" aria-pressed="${state.searchCheckedOnly}">☑ チェック済みのみ</button></div></section><div id="search-results"></div><div class="selection-bar" id="search-deck-actions"></div>`;
     renderSearchResults();
   }
 
@@ -262,7 +261,7 @@
     const container = document.getElementById('results');
     if (!container) return;
     const categories = selectedCategories();
-    const groups = categories.flatMap(category => category.sections.map((section, index) => ({ category, section, terms: section.terms.filter(term => matchesSyllabus(term) && (state.section === 'all' || state.section === `${category.id}:${index}`) && (state.filter !== 'checked' || isChecked(term.id)) && keywordMatches(state.byId.get(term.id) || term, state.query)).map(term => ({ ...term, categoryName: category.name, sectionName: section.name })) }))).filter(group => group.terms.length);
+    const groups = categories.flatMap(category => category.sections.map((section, index) => ({ category, section, terms: section.terms.filter(term => (state.section === 'all' || state.section === `${category.id}:${index}`) && (state.filter !== 'checked' || isChecked(term.id)) && keywordMatches(state.byId.get(term.id) || term, state.query)).map(term => ({ ...term, categoryName: category.name, sectionName: section.name })) }))).filter(group => group.terms.length);
     const total = groups.reduce((sum, g) => sum + g.terms.length, 0);
     let remaining = state.shown;
     const html = groups.map(group => {
@@ -283,12 +282,18 @@
     go('detail');
   }
 
+  function diagramHTML(entry) {
+    const diagram = window.FE_DIAGRAMS?.[entry.id];
+    if (!diagram) return '';
+    return '<figure class="term-diagram"><div class="term-diagram-viewport"><img src="' + escapeHTML(diagram.src) + '" alt="' + escapeHTML(diagram.caption) + '" loading="lazy" width="720" height="280"></div><figcaption>' + escapeHTML(diagram.caption) + '</figcaption><button class="term-diagram-toggle" type="button" aria-expanded="false">図を拡大する</button></figure>';
+  }
+
   function renderDetail() {
     const entry = state.detail;
     if (!entry) { go('genres'); return; }
     const checked = isChecked(entry.id);
     const backLabel = state.detailOrigin === 'search' ? '検索結果に戻る' : state.detailOrigin === 'checked' ? 'チェック済みに戻る' : '一覧に戻る';
-    main.innerHTML = `<div class="detail-wrap"><button class="back-link" type="button" data-action="back-detail"><span aria-hidden="true">‹</span> ${backLabel}</button><article class="detail-card"><span class="tag">${escapeHTML(entry.categoryName)}</span>${addedLabel(entry)}<h1>${escapeHTML(entry.name)}</h1><p class="detail-category">${escapeHTML(entry.sectionName)}</p>${entry.reading ? `<div class="term-meta"><span>読み</span><strong>${escapeHTML(entry.reading)}</strong></div>` : ''}${entry.english ? `<div class="term-meta"><span>英語</span><strong>${escapeHTML(entry.english)}</strong></div>` : ''}<div class="detail-divider"></div><p class="detail-label">用語の説明</p><p class="detail-copy"></p></article></div><div class="detail-footer"><button class="outline-button" type="button" data-action="back-detail">戻る</button><button class="primary-button ${checked ? 'is-checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-pressed="${checked}">${checked ? '✓ チェックを外す' : '□ 分からないのでチェック'}</button></div>`;
+    main.innerHTML = `<div class="detail-wrap"><button class="back-link" type="button" data-action="back-detail"><span aria-hidden="true">‹</span> ${backLabel}</button><article class="detail-card"><span class="tag">${escapeHTML(entry.categoryName)}</span>${addedLabel(entry)}<h1>${escapeHTML(entry.name)}</h1><p class="detail-category">${escapeHTML(entry.sectionName)}</p>${entry.reading ? `<div class="term-meta"><span>読み</span><strong>${escapeHTML(entry.reading)}</strong></div>` : ''}${entry.english ? `<div class="term-meta"><span>英語</span><strong>${escapeHTML(entry.english)}</strong></div>` : ''}<div class="detail-divider"></div><p class="detail-label">用語の説明</p><p class="detail-copy"></p>${diagramHTML(entry)}</article></div><div class="detail-footer"><button class="outline-button" type="button" data-action="back-detail">戻る</button><button class="primary-button ${checked ? 'is-checked' : ''}" type="button" data-action="check" data-key="${escapeHTML(entry.id)}" aria-pressed="${checked}">${checked ? '✓ チェックを外す' : '□ 分からないのでチェック'}</button></div>`;
     main.querySelector('.detail-copy').textContent = entry.description || 'この用語の説明はまだ収録されていません。';
   }
 
@@ -339,6 +344,7 @@
       const copy = document.createElement('p');
       copy.textContent = entry.description || 'この用語の説明はまだ収録されていません。';
       explanation.append(label, copy);
+      explanation.insertAdjacentHTML('beforeend', diagramHTML(entry));
       main.querySelector('.card-note').before(explanation);
     }
   }
@@ -369,7 +375,7 @@
     if (event.target.id === 'home-search-form') {
       event.preventDefault();
       state.searchQuery = document.getElementById('home-search').value.trim();
-      state.searchScope = 'all'; state.searchCheckedOnly = false; state.searchNewOnly = false; state.searchShown = PAGE_SIZE;
+      state.searchScope = 'all'; state.searchCheckedOnly = false; state.searchShown = PAGE_SIZE;
       document.activeElement?.blur(); go('search'); return;
     }
   });
@@ -450,7 +456,15 @@
   }
 
   document.addEventListener('click', event => {
-    if (state.screen === 'study' && state.flipped && event.target.closest('.flashcard') && !event.target.closest('a, textarea, label')) { advanceStudy(); return; }
+    const diagramToggle = event.target.closest('.term-diagram-toggle');
+    if (diagramToggle) {
+      const viewport = diagramToggle.closest('.term-diagram').querySelector('.term-diagram-viewport');
+      const expanded = viewport.classList.toggle('is-zoomed');
+      diagramToggle.textContent = expanded ? '図を縮小する' : '図を拡大する';
+      diagramToggle.setAttribute('aria-expanded', String(expanded));
+      return;
+    }
+    if (state.screen === 'study' && state.flipped && event.target.closest('.flashcard') && !event.target.closest('a, textarea, label, .term-diagram')) { advanceStudy(); return; }
     const button = event.target.closest('[data-action]');
     if (!button) return;
     const action = button.dataset.action;
@@ -462,11 +476,10 @@
       const input = document.getElementById(checked ? 'checked-search' : 'global-search');
       input.value = ''; checked ? renderCheckedResults() : renderSearchResults(); input.focus(); return;
     }
-    if (action === 'reset-search') { state.searchQuery = ''; state.searchScope = 'all'; state.searchCheckedOnly = false; state.searchNewOnly = false; state.searchShown = PAGE_SIZE; renderSearch(); return; }
+    if (action === 'reset-search') { state.searchQuery = ''; state.searchScope = 'all'; state.searchCheckedOnly = false; state.searchShown = PAGE_SIZE; renderSearch(); return; }
     if (action === 'reset-checked-filter') { state.checkedQuery = ''; state.checkedScope = 'all'; state.checkedShown = PAGE_SIZE; renderChecked(); return; }
-    if (action === 'search-checked-only' || action === 'search-new-only') {
-      if (action === 'search-checked-only') state.searchCheckedOnly = !state.searchCheckedOnly;
-      else state.searchNewOnly = !state.searchNewOnly;
+    if (action === 'search-checked-only') {
+      state.searchCheckedOnly = !state.searchCheckedOnly;
       state.searchShown = PAGE_SIZE; renderSearch(); return;
     }
     if (action === 'study-search') { startStudy(searchEntries(), 'search'); return; }
@@ -485,14 +498,6 @@
     if (action === 'back-study') { go(state.studyOrigin); return; }
     if (action === 'flip-card') { state.flipped = true; renderStudy(); return; }
     if (action === 'shuffle-study') { state.shuffled = !state.shuffled; const scroll = window.scrollY; if (state.screen === 'search') renderSearchResults(); else if (state.screen === 'checked') renderCheckedResults(); else renderGenres(); window.scrollTo(0, scroll); return; }
-    if (action === 'toggle-new-syllabus') {
-      state.newSyllabusOnly = !state.newSyllabusOnly;
-      if (state.newSyllabusOnly) {
-        const available = state.data.categories.filter(category => countCategory(category) > 0).map(category => category.id);
-        state.selectedCategories = state.selectedCategories.filter(id => available.includes(id));
-      }
-      renderGenres(); return;
-    }
     if (action === 'study-checked') { startStudy(checkedEntries(), 'checked'); return; }
     if (action === 'toggle-list-filter') { state.filter = state.filter === 'checked' ? 'all' : 'checked'; state.shown = PAGE_SIZE; renderList(); return; }
     if (action === 'more') { state.shown += PAGE_SIZE; renderListResults(); return; }
@@ -527,7 +532,7 @@
 
   let touchStart = null;
   document.addEventListener('touchstart', event => {
-    if (state.screen !== 'study' || !event.target.closest('.flashcard') || event.target.closest('textarea, a')) return;
+    if (state.screen !== 'study' || !event.target.closest('.flashcard') || event.target.closest('textarea, a, .term-diagram')) return;
     touchStart = { x: event.changedTouches[0].clientX, y: event.changedTouches[0].clientY };
   }, { passive: true });
   document.addEventListener('touchend', event => {

@@ -47,9 +47,7 @@ button:disabled{opacity:.48;cursor:default}
 .shuffle-picker span{display:block;font-size:10px;margin-top:2px}
 .shuffle-picker.active{border-color:#137668;background:#e3f2e9;color:#0b7669}
 .syllabus-picker{padding:14px;border:1px solid #d7e4da;border-radius:14px;background:#fff;margin-bottom:22px}
-.syllabus-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:46px;border:0;border-radius:10px;padding:10px 12px;background:#edf2ee;color:#254d41;font-size:15px;font-weight:750}
-.syllabus-toggle.active{background:#dff0e6;color:#0b685a}
-.syllabus-switch{min-width:42px;text-align:center;border-radius:7px;padding:4px 7px;background:#fff;font-size:12px}
+.syllabus-picker strong{display:block;font-size:14px;color:#254d41}
 .syllabus-picker p{margin:10px 2px 0;font-size:12px;line-height:1.65;color:#4d685e}
 .genre-selection-tools{display:flex;align-items:center;justify-content:space-between;gap:4px 12px;flex-wrap:wrap;font-size:14px;font-weight:700}
 .genre-selection-tools>div{display:flex;gap:8px;flex-wrap:wrap}
@@ -63,6 +61,13 @@ button:disabled{opacity:.48;cursor:default}
 .card-explanation{margin-top:19px;padding:16px;border-radius:14px;background:#eaf3eb;color:#172d27}
 .card-explanation strong{display:block;font-size:13px;margin-bottom:8px;color:#245344}
 .card-explanation p{font-size:16px;font-weight:600;line-height:1.75;margin:0;overflow-wrap:anywhere;white-space:pre-line}
+.term-diagram{margin:18px 0 0;padding:12px;background:#fff;border:1px solid #dce8df;border-radius:14px}
+.term-diagram-viewport{overflow-x:auto;overscroll-behavior-inline:contain;touch-action:pan-x pan-y;border-radius:10px}
+.term-diagram img{display:block;width:100%;height:auto;max-width:720px}
+.term-diagram-viewport.is-zoomed img{width:720px;max-width:none;height:280px}
+.term-diagram figcaption{margin-top:9px;color:#405e52;font-size:12px;line-height:1.55;font-weight:650}
+.term-diagram-toggle{display:block;margin-top:8px;padding:6px 0;border:0;background:none;color:#0b7669;font-size:12px;font-weight:800}
+.detail-card .term-diagram{margin-top:20px}
 .footer-note a { display: inline-flex; align-items: center; min-height: 44px; color: var(--primary, #087568); font-size: 14px; font-weight: 600; text-underline-offset: 3px; }
 
 /* Find a term and begin review without leaving the current filters. */
@@ -80,8 +85,7 @@ button:disabled{opacity:.48;cursor:default}
 .home-search button{border:0;border-left:1px solid #d7e5dd;padding:0 15px;background:#eaf4ef;color:#0b685a;font-size:14px;font-weight:750;white-space:nowrap}
 .review-shortcut{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:48px;border:1px solid #c4ddce;border-radius:12px;padding:12px;background:#eaf4ef;color:#0b685a;font-size:14px;font-weight:750;text-align:left;margin:0 0 12px}
 .genre-mode .syllabus-picker{padding:8px 10px;margin-bottom:12px}
-.genre-mode .syllabus-toggle{min-height:44px;padding:8px}
-.genre-mode .syllabus-picker p{line-height:1.5;margin-top:3px}
+.genre-mode .syllabus-picker p{line-height:1.5;margin-top:4px}
 .compact-page-head{padding-top:20px;margin-bottom:16px}
 .compact-page-head p{font-size:14px;color:#405f51;line-height:1.6}
 .deck-mode{padding-bottom:200px}

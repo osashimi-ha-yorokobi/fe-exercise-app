@@ -19,6 +19,7 @@ for (const [index, row] of rows.entries()) {
   // Spreadsheet editors may save the numeric-looking 9.0 marker as 9.
   const addedInVersion = row.added_in_version === '9' ? '9.0' : row.added_in_version;
   if (!['', '9.0', '9.1', '9.2'].includes(addedInVersion)) throw new Error(`CSVの${index + 2}行目のadded_in_versionが不正です`);
+  if (!addedInVersion) throw new Error(`CSVの${index + 2}行目はVer.9.0以降の追加語ではありません`);
   seenIds.add(row.id);
   if (!categories.has(categoryId)) categories.set(categoryId, { id: categoryId, name: row.category, sections: [], bySection: new Map() });
   const category = categories.get(categoryId);
@@ -39,3 +40,4 @@ fs.writeFileSync(path.join(root, 'data', 'terms.json'), JSON.stringify(data, nul
 fs.writeFileSync(path.join(root, 'data', 'terms.js'), `window.FE_TERMS_DATA = ${JSON.stringify(data)};\n`, 'utf8');
 fs.writeFileSync(path.join(root, 'data', 'descriptions.js'), `window.FE_DESCRIPTIONS = ${JSON.stringify(descriptions)};\n`, 'utf8');
 console.log(`CSV: ${data.categories.length} genres, ${rows.length} terms, ${Object.keys(descriptions).length} explanations`);
+require('./build-diagrams')();
